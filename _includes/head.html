@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,8 +7,8 @@
   <meta name="description" content="Insight and creative ideas studio with social change at the heart.">
   <link rel="stylesheet" href="/assets/uikit.css">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/about/">
-  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://localhost:4000/feed.xml">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}">
   <link rel="apple-touch-icon" sizes="152x152" href="/assets/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
@@ -21,38 +18,8 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="msapplication-TileColor" content="#2c449c">
   <meta name="theme-color" content="#ffffff">
-  <meta property="og:title" content="The Good Side | Design" />
+  <meta property="og:title" content="The Good Side | {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://localhost:4000/about/" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
   <meta property="og:image" content="" />
 </head>
-
-
-  <body>
-    <div class="bg"></div>
-
-    <header>
-  
-</header>
-
-
-        <article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">Design</h1>
-  </header>
-
-  <div class="post-content">
-    <p>Something here</p>
-
-  </div>
-
-</article>
-
-
-    footer
-
-
-  </body>
-
-</html>

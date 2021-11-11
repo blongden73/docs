@@ -1,0 +1,21 @@
+body { margin: 0; padding: 0; }
+
+header { border-bottom: 1px solid #191A1E; padding: 8px 0; }
+
+.flex { display: flex; height: 500px; background-color: pink; flex-direction: column; }
+
+@media all and (min-width: 75em) { .flex { flex-direction: row; } }
+
+.flex__leftCol { width: 100%; height: 500px; background-color: blue; }
+
+@media all and (min-width: 75em) { .flex__leftCol { width: 240px; } }
+
+.flex__mainCol { width: 100%; height: 500px; background-color: pink; }
+
+@media all and (min-width: 75em) { .flex__mainCol { width: calc(60% - 120px); } }
+
+.flex__rightCol { width: 100%; height: 500px; background-color: green; }
+
+@media all and (min-width: 75em) { .flex__rightCol { width: calc(40% - 120px); } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,51 @@
+$spacer: 8px;
+
+header {
+  border-bottom: 1px solid $greyXdark;
+  padding: $spacer 0;
+}
+
+.flex {
+  display: flex;
+  height: 500px;
+  background-color: pink;
+  flex-direction: column;
+
+  @include mq($from: desktop) {
+    flex-direction: row;
+  }
+}
+
+.flex__leftCol {
+  width: 100%;
+  //delete this
+  height: 500px;
+  background-color: blue;
+  //
+
+  @include mq($from: desktop) {
+    width: 240px;
+  }
+}
+
+.flex__mainCol {
+  width: 100%;
+  //delete this
+  height: 500px;
+  background-color: pink;
+  //
+  @include mq($from: desktop) {
+    width: calc(60% - 120px);
+  }
+}
+
+.flex__rightCol {
+  width: 100%;
+  //delete this
+  height: 500px;
+  background-color: green;
+  //
+  @include mq($from: desktop) {
+    width: calc(40% - 120px);
+  }
+}
