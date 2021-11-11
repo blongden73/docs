@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Collaboration | Guides
 layout: home
 ---
 
