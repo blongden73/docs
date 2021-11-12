@@ -28,6 +28,12 @@ layout: default
     <div class="flex__leftCol"></div>
     <div class="flex__mainCol">
       {{page.content | markdownify}}
+      {% assign checklist = page.List %}
+      <ul class="page--checklist">
+        {% for item in checklist %}
+          <li><span class="page__checklist-number">{{forloop.index}}</span><span class="page__checklist-title">{{item.item}}</span></li>
+        {% endfor %}
+      </ul>
     </div>
     <div class="flex__rightCol"></div>
   </div>

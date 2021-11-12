@@ -1,4 +1,3 @@
-
 header {
   border-bottom: 1px solid $greyXdark;
   height: 60px;
@@ -109,4 +108,28 @@ header {
   &--Green {
     background-color: $green;
   }
+}
+
+.page--checklist {
+  border-top: 1px solid $greylight;
+  border-bottom: 1px solid $greylight;
+  padding-top: calc(#{$spacer} * 2);
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: calc(#{$spacer} * 2);
+  }
+}
+
+.page__checklist-number {
+  background-color: $greylight;
+  width: 3.5vh;
+  height: 3.5vh;
+  font-size: 0.6em;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: calc(#{$spacer} * 2);
 }

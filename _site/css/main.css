@@ -1,6 +1,6 @@
 body { margin: 0; padding: 0; }
 
-html { font-size: 2vw; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+html { font-size: 2vw; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: 'abc_favoritbook'; }
 
 @font-face { font-family: 'FavoritWeb'; src: url("../assets/Favorit-MonoBeta.woff2") format("woff2"), url("../assets/Favorit-MonoBeta.woff") format("woff"); font-weight: 100; font-style: normal; font-display: swap; }
 
@@ -13,6 +13,8 @@ html { font-size: 2vw; -webkit-font-smoothing: antialiased; -moz-osx-font-smooth
 h1 { font-family: 'abc_favoritbook'; font-weight: 400; font-size: 2em; line-height: 1; margin: 0; }
 
 p { font-family: 'abc_favoritbook'; font-weight: 400; font-size: 24px; line-height: 1.4; }
+
+ul { list-style: none; padding: 0; margin: 8px 0 calc(8px * 4); }
 
 .secondary { color: #797979; }
 
@@ -67,5 +69,11 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 .guide--Purple { background-color: #7371EE; }
 
 .guide--Green { background-color: #71BC8F; }
+
+.page--checklist { border-top: 1px solid #DADCE0; border-bottom: 1px solid #DADCE0; padding-top: calc(8px * 2); }
+
+.page--checklist li { display: flex; align-items: center; margin-bottom: calc(8px * 2); }
+
+.page__checklist-number { background-color: #DADCE0; width: 3.5vh; height: 3.5vh; font-size: 0.6em; display: flex; justify-content: center; align-items: center; border-radius: 50%; margin-right: calc(8px * 2); }
 
 /*# sourceMappingURL=main.css.map */
