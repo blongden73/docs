@@ -2,12 +2,26 @@
 header {
   border-bottom: 1px solid $greyXdark;
   height: 60px;
+  display: flex;
+  align-items: center;
 }
 
 .header--wrapper {
   width: calc(100% - 16px);
   margin-left: auto;
   margin-right: auto;
+}
+
+.header--logo {
+  display: flex;
+
+  svg {
+    margin-right: 6px;
+
+    &:nth-child(even) {
+      margin-top: 2px;
+    }
+  }
 }
 
 .flex {
