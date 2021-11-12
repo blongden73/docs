@@ -58,6 +58,8 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 
 .page--guides h1, .page--guides p { color: #fff; margin: 0; }
 
+.page--guides button { margin-top: calc(8px * 2); }
+
 .guide--Red { background-color: #EB5757; }
 
 .guide--Orange { background-color: #EF927B; }

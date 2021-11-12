@@ -90,6 +90,10 @@ header {
     color: #fff;
     margin: 0;
   }
+
+  button {
+    margin-top: calc(#{$spacer} * 2);
+  }
 }
 
 .guide {
