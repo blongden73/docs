@@ -18,7 +18,7 @@ p { font-family: 'abc_favoritbook'; font-weight: 400; font-size: 24px; line-heig
 
 header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-items: center; position: sticky; top: 0; z-index: 1000; background-color: #fff; }
 
-.header--wrapper { width: calc(100% - 16px); margin-left: auto; margin-right: auto; }
+.header--wrapper { width: calc(100% - 30px); margin-left: auto; margin-right: auto; }
 
 .header--logo { display: flex; }
 
