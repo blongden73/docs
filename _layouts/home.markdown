@@ -37,11 +37,16 @@ layout: default
     <div class="flex page--guides guide--{{guide.Colours}}">
       <div class="flex__leftCol"></div>
       <div class="flex__mainCol">
+        <div class="guide__inner-content">
         {% assign guideTitle = guide.title | split: '|' %}
         <h1>{{guideTitle[0]}}</h1>
         <h1 class="secondary">{{guideTitle[1]}}</h1>
+        <p>{{guide.['Overview Description']}}</p>
+        </div>
       </div>
-      <div class="flex__rightCol"></div>
+      <div class="flex__rightCol">
+        {{guide.Icon}}
+      </div>
     </div>
   </section>
 {% endfor %}

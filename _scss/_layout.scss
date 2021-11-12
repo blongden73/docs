@@ -34,12 +34,23 @@ header {
   .page--banner & {
     display: flex;
   }
+
+  .page--guides & {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .flex__rightCol {
   width: 100%;
   @include mq($from: desktop) {
     width: calc(40% - 120px);
+  }
+
+  svg {
+    width: 60%;
+    height: auto;
   }
 }
 
@@ -51,8 +62,9 @@ header {
 .page--guides {
   padding: calc(#{$spacer} * 3) 0;
 
-  h1 {
+  h1, p {
     color: #fff;
+    margin: 0;
   }
 }
 

@@ -34,15 +34,19 @@ header { border-bottom: 1px solid #191A1E; height: 60px; }
 
 .page--banner .flex__mainCol { display: flex; }
 
+.page--guides .flex__mainCol { display: flex; flex-direction: column; justify-content: center; }
+
 .flex__rightCol { width: 100%; }
 
 @media all and (min-width: 75em) { .flex__rightCol { width: calc(40% - 120px); } }
+
+.flex__rightCol svg { width: 60%; height: auto; }
 
 .page--title { background-color: #F7F7F7; padding: calc(8px * 3) 0; }
 
 .page--guides { padding: calc(8px * 3) 0; }
 
-.page--guides h1 { color: #fff; }
+.page--guides h1, .page--guides p { color: #fff; margin: 0; }
 
 .guide--Red { background-color: #EB5757; }
 
