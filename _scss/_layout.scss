@@ -1,14 +1,11 @@
-$spacer: 8px;
 
 header {
   border-bottom: 1px solid $greyXdark;
-  padding: $spacer 0;
+  height: 60px;
 }
 
 .flex {
   display: flex;
-  height: 500px;
-  background-color: pink;
   flex-direction: column;
 
   @include mq($from: desktop) {
@@ -18,10 +15,6 @@ header {
 
 .flex__leftCol {
   width: 100%;
-  //delete this
-  height: 500px;
-  background-color: blue;
-  //
 
   @include mq($from: desktop) {
     width: 240px;
@@ -30,22 +23,50 @@ header {
 
 .flex__mainCol {
   width: 100%;
-  //delete this
-  height: 500px;
-  background-color: pink;
-  //
   @include mq($from: desktop) {
     width: calc(60% - 120px);
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .page--banner & {
+    display: flex;
   }
 }
 
 .flex__rightCol {
   width: 100%;
-  //delete this
-  height: 500px;
-  background-color: green;
-  //
   @include mq($from: desktop) {
     width: calc(40% - 120px);
+  }
+}
+
+.page--title {
+  background-color: $greyXlight;
+  padding: calc(#{$spacer} * 3) 0;
+}
+
+.page--guides {
+  padding: calc(#{$spacer} * 3) 0;
+
+  h1 {
+    color: #fff;
+  }
+}
+
+.guide {
+  &--Red {
+    background-color: $alert;
+  }
+  &--Orange {
+    background-color: $orange;
+  }
+  &--Purple {
+    background-color: $purple;
+  }
+  &--Green {
+    background-color: $green;
   }
 }

@@ -1,0 +1,64 @@
+html {
+  font-size: 2vw;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+//Spacing
+$spacer: 8px;
+
+//Type
+
+@font-face {
+    font-family: 'FavoritWeb';
+    src: url('../assets/Favorit-MonoBeta.woff2') format('woff2'),
+        url('../assets/Favorit-MonoBeta.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FavoritWeb';
+    src: url('../assets/Favorit-Regular.woff2') format('woff2'),
+        url('../assets/Favorit-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FavoritWeb';
+    src: url('../assets/Favorit-Bold.woff2') format('woff2'),
+        url('../assets/Favorit-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'abc_favoritbook';
+    src: url('../assets/abcfavorit-book-webfont.woff2') format('woff2'),
+         url('../assets/abcfavorit-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+  font-family: 'abc_favoritbook';
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 1;
+  margin: 0;
+}
+
+p {
+  font-family: 'abc_favoritbook';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.secondary {
+  color: $greyDark;
+}
