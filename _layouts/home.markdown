@@ -1,13 +1,12 @@
 ---
 layout: default
 ---
-
 {% assign guides = site.guides %}
 <section id="pageBanner">
   <div class="flex page--banner" style="background-color:{{page.['Page Banner Colour']}}">
     <div class="flex__leftCol"></div>
     <div class="flex__mainCol">
-      <img src="{{page.['Page Banner Image']}}">
+      <img src="/docs/{{page.['Page Banner Image']}}">
     </div>
     <div class="flex__rightCol"></div>
   </div>

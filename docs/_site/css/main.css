@@ -1,0 +1,55 @@
+body { margin: 0; padding: 0; }
+
+html { font-size: 2vw; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+@font-face { font-family: 'FavoritWeb'; src: url("../assets/Favorit-MonoBeta.woff2") format("woff2"), url("../assets/Favorit-MonoBeta.woff") format("woff"); font-weight: 100; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'FavoritWeb'; src: url("../assets/Favorit-Regular.woff2") format("woff2"), url("../assets/Favorit-Regular.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'FavoritWeb'; src: url("../assets/Favorit-Bold.woff2") format("woff2"), url("../assets/Favorit-Bold.woff") format("woff"); font-weight: bold; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'abc_favoritbook'; src: url("../assets/abcfavorit-book-webfont.woff2") format("woff2"), url("../assets/abcfavorit-book-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+
+h1 { font-family: 'abc_favoritbook'; font-weight: 400; font-size: 2em; line-height: 1; margin: 0; }
+
+p { font-family: 'abc_favoritbook'; font-weight: 400; font-size: 24px; line-height: 1.4; }
+
+.secondary { color: #797979; }
+
+header { border-bottom: 1px solid #191A1E; height: 60px; }
+
+.flex { display: flex; flex-direction: column; }
+
+@media all and (min-width: 75em) { .flex { flex-direction: row; } }
+
+.flex__leftCol { width: 100%; }
+
+@media all and (min-width: 75em) { .flex__leftCol { width: 240px; } }
+
+.flex__mainCol { width: 100%; }
+
+@media all and (min-width: 75em) { .flex__mainCol { width: calc(60% - 120px); } }
+
+.flex__mainCol img { width: 100%; height: auto; }
+
+.page--banner .flex__mainCol { display: flex; }
+
+.flex__rightCol { width: 100%; }
+
+@media all and (min-width: 75em) { .flex__rightCol { width: calc(40% - 120px); } }
+
+.page--title { background-color: #F7F7F7; padding: calc(8px * 3) 0; }
+
+.page--guides { padding: calc(8px * 3) 0; }
+
+.page--guides h1 { color: #fff; }
+
+.guide--Red { background-color: #EB5757; }
+
+.guide--Orange { background-color: #EF927B; }
+
+.guide--Purple { background-color: #7371EE; }
+
+.guide--Green { background-color: #71BC8F; }
+
+/*# sourceMappingURL=main.css.map */
