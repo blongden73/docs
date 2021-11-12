@@ -1,6 +1,7 @@
 ---
 title: Design | Specification
 date: 2021-11-12 10:14:00 Z
+Introduction Text: Pricing lorem ipsum dolor est something small
 Colours: Red
 Overview Description: Pricing lorem ipsum dolor est something small
 Icon: <svg width="361" height="361" viewBox="0 0 361 361" fill="none" xmlns="http://www.w3.org/2000/svg"><path
