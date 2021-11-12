@@ -2,6 +2,9 @@
 title: Cord Docs
 timezone: UTC
 collections:
+  guides:
+    title: Guides
+    output: true
   posts:
     title: Posts
     output: true
