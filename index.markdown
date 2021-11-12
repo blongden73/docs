@@ -8,6 +8,7 @@ List:
 - item: Think about the full journey
 - item: What’s your identity model?
 - item: Gather your stakeholders
+- item: testing items
 layout: home
 ---
 
