@@ -25,7 +25,15 @@ layout: default
 </section>
 <section id="pageDescription">
   <div class="flex">
-    <div class="flex__leftCol"></div>
+    <div class="flex__leftCol">
+      <ul class="section__menu">
+        <li>Overview</li>
+        {% for guide in guides %}
+          {% assign guideTitle = guide.title | split: '|' %}
+          <li>{{guideTitle[0]}}</li>
+        {% endfor %}
+      </ul>
+    </div>
     <div class="flex__mainCol">
       {{page.content | markdownify}}
       {% assign checklist = page.List %}

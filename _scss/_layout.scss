@@ -133,3 +133,10 @@ header {
   border-radius: 50%;
   margin-right: calc(#{$spacer} * 2);
 }
+
+.section__menu {
+  font-size: 0.4em;
+  padding: calc(#{$spacer}*2) calc(#{$spacer}*4);
+  position: sticky;
+  top: calc(#{$spacer}*9);
+}
