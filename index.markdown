@@ -2,6 +2,12 @@
 title: Collaboration | Guides
 Page Banner Image: "/uploads/docs_home_image.png"
 Page Banner Colour: "#F4FFA0"
+List:
+- item: Understand you audience
+- item: Whats your use case?
+- item: Think about the full journey
+- item: What’s your identity model?
+- item: Gather your stakeholders
 layout: home
 ---
 
