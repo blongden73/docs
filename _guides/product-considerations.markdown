@@ -2,6 +2,7 @@
 title: Product | Considerations
 date: 2021-11-12 10:14:00 Z
 Colours: Orange
+Overview Description: Pricing lorem ipsum dolor est something small
 Icon: <svg width="361" height="361" viewBox="0 0 361 361" fill="none" xmlns="http://www.w3.org/2000/svg"><path
   stroke="#fff" d="M1.5 1.5h359v359H1.5z"/><path opacity=".5" d="M335.421 182.671c0
   85.901-69.636 155.537-155.537 155.537-85.901 0-155.537-69.636-155.537-155.537 0-85.9
