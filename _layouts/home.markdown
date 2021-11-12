@@ -42,6 +42,7 @@ layout: default
         <h1>{{guideTitle[0]}}</h1>
         <h1 class="secondary">{{guideTitle[1]}}</h1>
         <p>{{guide.['Overview Description']}}</p>
+        {% include button.html buttonText="Read More" %}
         </div>
       </div>
       <div class="flex__rightCol">

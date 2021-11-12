@@ -62,3 +62,13 @@ p {
 .secondary {
   color: $greyDark;
 }
+
+.button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 4px;
+  padding: calc(#{$spacer} * 2);
+  font-family: 'abc_favoritbook';
+  font-size: 16px;
+}
