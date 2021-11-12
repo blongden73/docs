@@ -9,6 +9,7 @@ List:
 - item: What’s your identity model?
 - item: Gather your stakeholders
 - item: testing items
+- item: numbers?
 layout: home
 ---
 
