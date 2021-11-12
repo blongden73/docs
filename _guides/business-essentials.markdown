@@ -2,6 +2,7 @@
 title: Business | Essentials
 date: 2021-11-12 10:13:00 Z
 Colours: Purple
+Overview Description: Pricing lorem ipsum dolor est something small
 Icon: <svg width="361" height="361" viewBox="0 0 361 361" fill="none" xmlns="http://www.w3.org/2000/svg"><path
   stroke="#fff" d="M1.5 1.5h358.999v358.999H1.5z"/><path opacity=".5" d="M335.148
   182.69c0 86.068-69.583 155.838-155.415 155.838-85.833 0-155.416-69.77-155.416-155.838S93.9
