@@ -12,9 +12,13 @@ html { font-size: 2vw; -webkit-font-smoothing: antialiased; -moz-osx-font-smooth
 
 h1 { font-family: 'abc_favoritbook'; font-weight: 400; font-size: 2em; line-height: 1; margin: 0; }
 
+@media all and (min-width: 75em) { h1 { font-size: 2em; line-height: 1; } }
+
 p { font-family: 'abc_favoritbook'; font-weight: 400; font-size: 24px; line-height: 1.4; }
 
 ul { list-style: none; padding: 0; margin: 8px 0 calc(8px * 4); }
+
+a { color: inherit; text-decoration: none; }
 
 .secondary { color: #797979; }
 
@@ -22,13 +26,15 @@ ul { list-style: none; padding: 0; margin: 8px 0 calc(8px * 4); }
 
 header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-items: center; position: sticky; top: 0; z-index: 1000; background-color: #fff; }
 
-.header--wrapper { width: calc(100% - 30px); margin-left: auto; margin-right: auto; }
+.header--wrapper, .footer--wrapper { width: calc(100% - 30px); margin-left: auto; margin-right: auto; }
 
-.header--logo { display: flex; }
+.header--logo, .footer--logo { display: flex; }
 
-.header--logo svg { margin-right: 6px; }
+.header--logo svg, .footer--logo svg { margin-right: 6px; }
 
-.header--logo svg:nth-child(even) { margin-top: 2px; }
+.header--logo svg:nth-child(even), .footer--logo svg:nth-child(even) { margin-top: 2px; }
+
+.footer--logo svg path { fill: #fff; }
 
 .flex { display: flex; flex-direction: column; }
 
@@ -38,9 +44,9 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 
 @media all and (min-width: 75em) { .flex__leftCol { width: 240px; } }
 
-.flex__mainCol { width: 100%; }
+.flex__mainCol { width: 100%; padding: 0 calc(8px * 2); box-sizing: border-box; }
 
-@media all and (min-width: 75em) { .flex__mainCol { width: calc(60% - 120px); } }
+@media all and (min-width: 75em) { .flex__mainCol { width: calc(60% - 120px); padding: unset; } }
 
 .flex__mainCol img { width: 100%; height: auto; }
 
@@ -79,5 +85,7 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 .section__menu { font-size: 0.5em; padding: calc(8px*2) calc(8px*4); position: sticky; top: calc(8px*9); }
 
 .section__menu li:hover { color: #7371EE; }
+
+footer { padding: calc(8px * 2) 0; background-color: #191A1E; }
 
 /*# sourceMappingURL=main.css.map */

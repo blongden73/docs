@@ -9,13 +9,13 @@ header {
   background-color: #fff;
 }
 
-.header--wrapper {
+.header--wrapper, .footer--wrapper {
   width: calc(100% - 30px);
   margin-left: auto;
   margin-right: auto;
 }
 
-.header--logo {
+.header--logo, .footer--logo {
   display: flex;
 
   svg {
@@ -23,6 +23,14 @@ header {
 
     &:nth-child(even) {
       margin-top: 2px;
+    }
+  }
+}
+
+.footer--logo {
+  svg {
+    path {
+      fill: #fff;
     }
   }
 }
@@ -46,8 +54,12 @@ header {
 
 .flex__mainCol {
   width: 100%;
+  padding: 0 calc(#{$spacer} * 2);
+  box-sizing: border-box;
+
   @include mq($from: desktop) {
     width: calc(60% - 120px);
+    padding: unset;
   }
   img {
     width: 100%;
@@ -145,4 +157,9 @@ header {
       color: $purple;
     }
   }
+}
+
+footer {
+  padding: calc(#{$spacer} * 2) 0;
+  background-color: $greyXdark;
 }

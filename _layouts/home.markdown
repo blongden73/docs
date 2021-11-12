@@ -30,7 +30,7 @@ layout: default
         <li>Overview</li>
         {% for guide in guides %}
           {% assign guideTitle = guide.title | split: '|' %}
-          <li>{{guideTitle[0]}}</li>
+          <li><a href="{{guide.url}}">{{guideTitle[0]}}</a></li>
         {% endfor %}
       </ul>
     </div>
