@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 {% assign guides = site.guides %}
 <section id="pageBanner">
   <div class="flex page--banner" style="background-color:{{page.['Page Banner Colour']}}">
