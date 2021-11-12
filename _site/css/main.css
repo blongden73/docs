@@ -78,4 +78,6 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 
 .section__menu { font-size: 0.5em; padding: calc(8px*2) calc(8px*4); position: sticky; top: calc(8px*9); }
 
+.section__menu li:hover { color: #7371EE; }
+
 /*# sourceMappingURL=main.css.map */

@@ -139,4 +139,10 @@ header {
   padding: calc(#{$spacer}*2) calc(#{$spacer}*4);
   position: sticky;
   top: calc(#{$spacer}*9);
+
+  li {
+    &:hover {
+      color: $purple;
+    }
+  }
 }
