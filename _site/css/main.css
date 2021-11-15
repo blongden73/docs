@@ -28,7 +28,9 @@ a { color: inherit; text-decoration: none; }
 
 .button { background-color: transparent; border: 1px solid #fff; color: #fff; border-radius: 4px; padding: calc(8px * 2); font-family: 'abc_favoritbook'; font-size: 16px; }
 
-.toast { position: fixed; top: 32px; left: 50%; padding: calc(8px * 2); transform: translateX(-50%); background-color: #EBE9FF; border: 1px solid #7371EE; z-index: 10000; font-size: 16px; color: #7371EE; border-radius: 4px; }
+.toast { position: fixed; top: 32px; left: 50%; padding: calc(8px * 2); transform: translateX(-50%); background-color: #EBE9FF; border: 1px solid #7371EE; z-index: 10000; font-size: 16px; color: #7371EE; border-radius: 4px; opacity: 0; pointer-events: none; transition: opacity ease-in-out 0.3s; }
+
+.toast.copied { opacity: 1; }
 
 header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-items: center; position: sticky; top: 0; z-index: 1000; background-color: #fff; }
 

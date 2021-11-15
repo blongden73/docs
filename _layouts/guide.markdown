@@ -36,7 +36,7 @@ layout: default
         {% if section.Title %}
           <div class="guides__title-wrapper">
             <h2>{{section.Title}}</h2>
-            <span class="guides__title-icon">
+            <span data-uri="/docs{{page.url}}#{{section.Title | replace: " ", "-" | downcase}}" class="guides__title-icon js-copy-clipboard">
               {% include shareIcon.html %}
             </span>
           </div>

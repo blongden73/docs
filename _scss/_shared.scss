@@ -114,4 +114,11 @@ a {
   font-size: 16px;
   color: $purple;
   border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity ease-in-out 0.3s;
+
+  &.copied {
+    opacity: 1;
+  }
 }
