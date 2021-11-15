@@ -59,6 +59,8 @@ h1 {
 }
 
 h2 {
+  font-family: 'FavoritWeb';
+  font-weight: 400;
   font-size: 32px;
   line-height: 1.2;
 
@@ -98,4 +100,18 @@ a {
   padding: calc(#{$spacer} * 2);
   font-family: 'abc_favoritbook';
   font-size: 16px;
+}
+
+.toast {
+  position: fixed;
+  top: 32px;
+  left: 50%;
+  padding: calc(#{$spacer} * 2);
+  transform: translateX(-50%);
+  background-color: $purpleLight;
+  border: 1px solid $purple;
+  z-index: 10000;
+  font-size: 16px;
+  color: $purple;
+  border-radius: 4px;
 }

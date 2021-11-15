@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign guides = site.guides %}
 {% assign sections = page.Sections %}
 <section id="guideHeader">
   <div class="flex page--guides guide--{{page.Colours}}">
@@ -20,10 +21,25 @@ layout: default
 {% for section in sections %}
   <section id="{{section.Title | replace: " ", "-" | downcase}}">
     <div class="flex guides--content">
-      <div class="flex__leftCol"></div>
+      <div class="flex__leftCol">
+        {% if forloop.index == 1 %}
+        <ul class="section__menu">
+          <li>Overview</li>
+          {% for guide in guides %}
+            {% assign guideTitle = guide.title | split: '|' %}
+            <li><a href="/docs{{guide.url}}">{{guideTitle[0]}}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
       <div class="flex__mainCol">
         {% if section.Title %}
-          <h2>{{section.Title}}</h2>
+          <div class="guides__title-wrapper">
+            <h2>{{section.Title}}</h2>
+            <span class="guides__title-icon">
+              {% include shareIcon.html %}
+            </span>
+          </div>
           {{section.Text | markdownify }}
         {% endif %}
       </div>

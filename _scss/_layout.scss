@@ -234,6 +234,42 @@ header {
   }
 }
 
+.guides__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    .guides__title-icon {
+      background-color: $greylight;
+      opacity: 1;
+    }
+  }
+}
+
+.guides__title-icon {
+  background-color: transparent;
+  opacity: 0.5;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all ease-in-out 0.3s;
+
+  &:hover {
+    background-color: $greylight;
+    opacity: 1;
+  }
+
+  svg {
+    width: 66%;
+    height: auto;
+  }
+}
+
 footer {
   padding: calc(#{$spacer} * 2) 0;
   background-color: $greyXdark;
