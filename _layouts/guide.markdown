@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign sections = page.Sections %}
 <section id="guideHeader">
   <div class="flex page--guides guide--{{page.Colours}}">
     <div class="flex__leftCol"></div>
@@ -16,10 +17,17 @@ layout: default
     </div>
   </div>
 </section>
-<section id="pageContent">
-  <div class="flex page--guides guide--{{page.Colours}}">
-    <div class="flex__leftCol"></div>
-    <div class="flex__mainCol"></div>
-    <div class="flex__rightCol"></div>
-  </div>
-</section>
+{% for section in sections %}
+  <section id="{{section.Title | replace: " ", "-" | downcase}}">
+    <div class="flex guides--content">
+      <div class="flex__leftCol"></div>
+      <div class="flex__mainCol">
+        {% if section.Title %}
+          <h2>{{section.Title}}</h2>
+          {{section.Text | markdownify }}
+        {% endif %}
+      </div>
+      <div class="flex__rightCol"></div>
+    </div>
+  </section>
+{% endfor %}
