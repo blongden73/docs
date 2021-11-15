@@ -1,10 +1,28 @@
 console.log('Welcome to Docs');
 
+function elementInViewport(el) {
+  var top = el.offsetTop;
+  var left = el.offsetLeft;
+  var width = el.offsetWidth;
+  var height = el.offsetHeight;
+
+  while(el.offsetParent) {
+    el = el.offsetParent;
+    top += el.offsetTop;
+    left += el.offsetLeft;
+  }
+
+  return (
+    top >= window.pageYOffset &&
+    left >= window.pageXOffset &&
+    (top + height) <= (window.pageYOffset + window.innerHeight) &&
+    (left + width) <= (window.pageXOffset + window.innerWidth)
+  );
+}
+
 function copyClipBoard(){
   var copyClipboard = document.querySelectorAll('.js-copy-clipboard');
   var toast = document.querySelector('.toast');
-
-  console.log(copyClipboard);
 
   if(copyClipboard){
     copyClipboard.forEach((item, i) => {
@@ -23,6 +41,24 @@ function copyClipBoard(){
   }
 }
 
+function inviewIcons() {
+  var guideIcons = document.querySelectorAll('.js-guide-icons');
+  console.log(guideIcons);
+  var guideIconsCheck = document.querySelector('.js-guide-icons');
+  if(guideIconsCheck){
+    document.addEventListener('scroll', function(){
+      guideIcons.forEach((item, i) => {
+        if(elementInViewport(item)){
+          item.classList.add('inview');
+        }else {
+          item.classList.remove('inview');
+        }
+      });
+    });
+  }
+}
+
 function init(){
   copyClipBoard();
+  inviewIcons();
 };init();

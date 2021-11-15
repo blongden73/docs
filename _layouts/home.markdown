@@ -61,7 +61,9 @@ layout: default
         </div>
       </div>
       <div class="flex__rightCol">
-        {{guide.Icon}}
+        <span class="js-guide-icons">
+          {{guide.Icon}}
+        </span>
       </div>
     </div>
   </section>

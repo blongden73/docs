@@ -62,11 +62,15 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 
 .page--guides .flex__mainCol { display: flex; flex-direction: column; justify-content: center; }
 
+@keyframes dash { to { stroke-dashoffset: 0; } }
+
 .flex__rightCol { width: 100%; padding: 0 calc(8px * 2); box-sizing: border-box; }
 
 @media all and (min-width: 75em) { .flex__rightCol { width: calc(40% - 120px); padding: unset; } }
 
-.flex__rightCol svg { height: auto; width: 100%; margin-top: calc(8px * 2); }
+.flex__rightCol .inview svg { stroke-dasharray: 3000; stroke-dashoffset: 3000; animation: dash 5s linear forwards; }
+
+.flex__rightCol svg { height: auto; width: 100%; margin-top: calc(8px * 2); stroke-dasharray: 0; stroke-dashoffset: 0; }
 
 @media all and (min-width: 75em) { .flex__rightCol svg { width: 60%; margin-top: unset; } }
 
