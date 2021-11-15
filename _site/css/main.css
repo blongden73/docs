@@ -62,7 +62,9 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 
 .page--title { background-color: #F7F7F7; padding: calc(8px * 3) 0; }
 
-.page--guides { padding: calc(8px * 3) 0; }
+.page--guides { padding: calc(8px * 3) 0; position: relative; transition: padding ease-in-out 0.3s; transition-delay: 0.2s; cursor: pointer; }
+
+.page--guides:hover { padding: calc(8px * 6) 0; }
 
 .page--guides h1, .page--guides p { color: #fff; margin: 0; }
 
@@ -75,6 +77,8 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 .guide--Purple { background-color: #7371EE; }
 
 .guide--Green { background-color: #71BC8F; }
+
+.guide__link { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1000; }
 
 .page--checklist { border-top: 1px solid #DADCE0; border-bottom: 1px solid #DADCE0; padding-top: calc(8px * 2); }
 

@@ -30,7 +30,7 @@ layout: default
         <li>Overview</li>
         {% for guide in guides %}
           {% assign guideTitle = guide.title | split: '|' %}
-          <li><a href="{{guide.url}}">{{guideTitle[0]}}</a></li>
+          <li><a href="/docs{{guide.url}}">{{guideTitle[0]}}</a></li>
         {% endfor %}
       </ul>
     </div>
@@ -49,6 +49,7 @@ layout: default
 {% for guide in guides %}
   <section id="pageGuides">
     <div class="flex page--guides guide--{{guide.Colours}}">
+      <a class="guide__link" href="/docs{{guide.url}}"></a>
       <div class="flex__leftCol"></div>
       <div class="flex__mainCol">
         <div class="guide__inner-content">

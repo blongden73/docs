@@ -96,6 +96,14 @@ header {
 
 .page--guides {
   padding: calc(#{$spacer} * 3) 0;
+  position: relative;
+  transition: padding ease-in-out 0.3s;
+  transition-delay: 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    padding: calc(#{$spacer} * 6) 0;
+  }
 
   h1, p {
     color: #fff;
@@ -120,6 +128,15 @@ header {
   &--Green {
     background-color: $green;
   }
+}
+
+.guide__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
 }
 
 .page--checklist {
