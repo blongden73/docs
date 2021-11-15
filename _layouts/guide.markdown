@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <section id="guideHeader">
   <div class="flex page--guides guide--{{page.Colours}}">
     <div class="flex__leftCol"></div>
