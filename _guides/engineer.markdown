@@ -21,6 +21,7 @@ Icon: <svg width="360" height="361" viewBox="0 0 360 361" fill="none" xmlns="htt
   155.537-85.901 0-155.537-69.636-155.537-155.537 0-85.9 69.636-155.537 155.537-155.537
   85.901 0 155.537 69.636 155.537 155.537ZM1.27 359.865 358.776 2.27M1.051 1.064 359.1
   359.114" stroke="#fff"/></svg>
+layout: guide
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
