@@ -254,6 +254,12 @@ header {
   flex-wrap: wrap;
   margin: 0;
 
+  &.position-fixed {
+    position: fixed;
+    //magic number for the fixed position
+    max-width: 176px;
+  }
+
   @include mq($from: desktop) {
     flex-direction: column;
     font-size: 0.5em;
@@ -288,7 +294,11 @@ header {
 }
 
 .section__menu-sub {
-  margin:0 calc(#{$spacer}*2) calc(#{$spacer}*2);
+  margin:$spacer 0 $spacer $spacer;
+
+  li {
+    margin:calc(#{$spacer}/2) 0;
+  }
 }
 
 .guides__title-wrapper {

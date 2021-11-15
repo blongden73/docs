@@ -26,6 +26,7 @@ layout: default
     <div class="flex guides--content">
       <div class="flex__leftCol">
         {% if forloop.index == 1 %}
+        <div class="section__menu-anchor"></div>
         <ul class="section__menu">
           <li>Overview</li>
           {% for guide in guides %}

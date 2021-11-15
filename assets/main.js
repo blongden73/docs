@@ -58,7 +58,23 @@ function inviewIcons() {
   }
 }
 
+function menuPosition(){
+  var menu = document.querySelector('.guides__container .section__menu')
+  var menuTracker = document.querySelector('.section__menu-anchor')
+  if(menuTracker) {
+    document.addEventListener('scroll', function(){
+      var position = menuTracker.getBoundingClientRect();
+      if(position.top <= 72 ) {
+        menu.classList.add('position-fixed');
+      }else {
+        menu.classList.remove('position-fixed');
+      }
+    });
+  }
+}
+
 function init(){
   copyClipBoard();
   inviewIcons();
+  menuPosition();
 };init();
