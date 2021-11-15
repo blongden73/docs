@@ -75,6 +75,29 @@ header {
     flex-direction: column;
     justify-content: center;
   }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  //for responsive YouTube videos
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @keyframes dash {
@@ -180,6 +203,10 @@ header {
   z-index: 1000;
 }
 
+.guides__container {
+  margin-bottom: calc(#{$spacer} * 9);
+}
+
 .page--checklist {
   border-top: 1px solid $greylight;
   border-bottom: 1px solid $greylight;
@@ -248,7 +275,7 @@ header {
       }
     }
 
-    &:hover {
+    a:hover {
       color: $purple;
     }
 
@@ -258,6 +285,10 @@ header {
       }
     }
   }
+}
+
+.section__menu-sub {
+  margin:0 calc(#{$spacer}*2) calc(#{$spacer}*2);
 }
 
 .guides__title-wrapper {

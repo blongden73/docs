@@ -22,7 +22,7 @@ layout: default
   </div>
 </section>
 {% for section in sections %}
-  <section id="{{section.Title | replace: " ", "-" | downcase}}">
+  <section id="{{section.Title | replace: " ", "-" | downcase}}" class="guides__container">
     <div class="flex guides--content">
       <div class="flex__leftCol">
         {% if forloop.index == 1 %}
@@ -30,7 +30,17 @@ layout: default
           <li>Overview</li>
           {% for guide in guides %}
             {% assign guideTitle = guide.title | split: '|' %}
-            <li><a href="/docs{{guide.url}}">{{guideTitle[0]}}</a></li>
+            <li>
+              <a href="/docs{{guide.url}}">{{guideTitle[0]}}</a>
+              {% if guide.title == page.title %}
+                <ul class="section__menu-sub">
+                  {% assign submenu = sections %}
+                  {% for items in submenu %}
+                    <li><a href="#{{items.Title | replace: " ", "-" | downcase}}">{{items.Title}}</a></li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
           {% endfor %}
         </ul>
         {% endif %}
