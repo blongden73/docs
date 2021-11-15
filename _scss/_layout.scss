@@ -204,7 +204,7 @@ header {
   @include mq($from: desktop) {
     flex-direction: column;
     font-size: 0.5em;
-    padding: calc(#{$spacer}*2) calc(#{$spacer}*4);
+    padding: calc(#{$spacer}*4) calc(#{$spacer}*4);
   }
 
   li {

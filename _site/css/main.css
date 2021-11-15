@@ -98,7 +98,7 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 
 .section__menu { font-size: 16px; padding: calc(8px*2) calc(8px*2); position: sticky; top: calc(8px*9); display: flex; flex-wrap: wrap; margin: 0; }
 
-@media all and (min-width: 75em) { .section__menu { flex-direction: column; font-size: 0.5em; padding: calc(8px*2) calc(8px*4); } }
+@media all and (min-width: 75em) { .section__menu { flex-direction: column; font-size: 0.5em; padding: calc(8px*4) calc(8px*4); } }
 
 .section__menu li { margin: 0 calc(8px/2) 0 0; }
 
