@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 {% assign guides = site.guides %}
 {% assign sections = page.Sections %}
 <section id="guideHeader">
