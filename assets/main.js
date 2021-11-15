@@ -1,4 +1,6 @@
-
+function copyClipBoard(){
+  
+}
 
 function init(){
 
