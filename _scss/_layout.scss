@@ -98,6 +98,7 @@ header {
       stroke-dasharray: 3000;
       stroke-dashoffset: 3000;
       animation: dash 5s linear forwards;
+      opacity: 1;
     }
   }
 
@@ -105,8 +106,8 @@ header {
     height: auto;
     width: 100%;
     margin-top: calc(#{$spacer} * 2);
-    stroke-dasharray: 0;
-    stroke-dashoffset: 0;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
 
     @include mq($from: desktop) {
       width: 60%;
