@@ -1,6 +1,6 @@
 body { margin: 0; padding: 0; }
 
-html { font-size: 2vw; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: 'abc_favoritbook'; }
+html { font-size: 2vw; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: 'abc_favoritbook'; scroll-behavior: smooth; }
 
 @font-face { font-family: 'FavoritWeb'; src: url("../assets/Favorit-MonoBeta.woff2") format("woff2"), url("../assets/Favorit-MonoBeta.woff") format("woff"); font-weight: 100; font-style: normal; font-display: swap; }
 
@@ -70,9 +70,11 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 
 .flex__rightCol .inview svg { stroke-dasharray: 3000; stroke-dashoffset: 3000; animation: dash 5s linear forwards; opacity: 1; }
 
-.flex__rightCol svg { height: auto; width: 100%; margin-top: calc(8px * 2); opacity: 0; transition: all ease-in-out 0.3s; }
+.flex__rightCol svg { height: auto; width: 100%; margin-top: calc(8px * 2); opacity: 0; transition: opacity ease-in-out 0.3s; }
 
 @media all and (min-width: 75em) { .flex__rightCol svg { width: 60%; margin-top: unset; } }
+
+@media all and (min-width: 75em) { #guideHeader svg { width: 90%; margin-top: unset; } }
 
 .page--title { background-color: #F7F7F7; padding: calc(8px * 3) 0; }
 

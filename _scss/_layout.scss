@@ -107,10 +107,19 @@ header {
     width: 100%;
     margin-top: calc(#{$spacer} * 2);
     opacity: 0;
-    transition: all ease-in-out 0.3s;
+    transition: opacity ease-in-out 0.3s;
 
     @include mq($from: desktop) {
       width: 60%;
+      margin-top: unset;
+    }
+  }
+}
+
+#guideHeader {
+  svg {
+    @include mq($from: desktop) {
+      width: 90%;
       margin-top: unset;
     }
   }
