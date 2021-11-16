@@ -146,9 +146,11 @@ tabletheader { border-bottom: 1px solid #191A1E; height: 60px; display: flex; al
 
 @media all and (min-width: 75em) { .section__menu li:after { display: none; } }
 
-.section__menu-sub { margin: 8px 0 8px 8px; }
+.section__menu-sub { margin: 8px 0 8px 8px; display: none; }
 
 .section__menu-sub li { margin: calc(8px/2) 0; }
+
+@media all and (min-width: 75em) { .section__menu-sub { display: block; } }
 
 .guides__title-wrapper { display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
 

@@ -334,9 +334,14 @@ tabletheader {
 
 .section__menu-sub {
   margin:$spacer 0 $spacer $spacer;
+  display: none;
 
   li {
     margin:calc(#{$spacer}/2) 0;
+  }
+
+  @include mq($from: desktop) {
+    display: block;
   }
 }
 
