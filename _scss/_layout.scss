@@ -348,16 +348,16 @@ header {
   flex-wrap: wrap;
   margin: 0;
 
+  @include mq($from: desktop) {
+    flex-direction: column;
+    font-size: 16px;
+    padding: calc(#{$spacer}*4) calc(#{$spacer}*4);
+  }
+
   &.position-fixed {
     position: fixed;
     //magic number for the fixed position
     max-width: 176px;
-  }
-
-  @include mq($from: desktop) {
-    flex-direction: column;
-    font-size: 0.5em;
-    padding: calc(#{$spacer}*4) calc(#{$spacer}*4);
   }
 
   li {
