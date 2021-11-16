@@ -100,13 +100,15 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 
 .page--guides button { margin-top: calc(8px * 2); }
 
-.guide--Red { background-color: #EB5757; }
+.guide--Red, .header--Red { background-color: #EB5757; }
 
-.guide--Orange { background-color: #EF927B; }
+.guide--Orange, .header--Orange { background-color: #EF927B; }
 
-.guide--Purple { background-color: #7371EE; }
+.guide--Purple, .header--Purple { background-color: #7371EE; }
 
-.guide--Green { background-color: #71BC8F; }
+.guide--Green, .header--Green { background-color: #71BC8F; }
+
+.header--Red .header--logo svg:nth-child(even) path, .header--Orange .header--logo svg:nth-child(even) path, .header--Purple .header--logo svg:nth-child(even) path, .header--Green .header--logo svg:nth-child(even) path { fill: #fff; }
 
 .guide__link { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1000; }
 

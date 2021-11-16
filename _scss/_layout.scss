@@ -193,7 +193,7 @@ header {
   }
 }
 
-.guide {
+.guide, .header {
   &--Red {
     background-color: $alert;
   }
@@ -207,6 +207,18 @@ header {
     background-color: $green;
   }
 }
+.header {
+  &--Red, &--Orange, &--Purple, &--Green {
+    .header--logo svg {
+      &:nth-child(even) {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}
+
 
 .guide__link {
   position: absolute;
