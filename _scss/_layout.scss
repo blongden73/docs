@@ -42,6 +42,7 @@ header {
       height: 100%;
       display: flex;
       border-left: 1px solid #000;
+      position: relative;
 
       span {
         align-self: center;
@@ -51,6 +52,39 @@ header {
         background-color: #fff;
       }
     }
+  }
+
+  .submenu--item {
+    .header__nav-sub {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    &:hover {
+      .header__nav-sub {
+        opacity: 1;
+      }
+    }
+  }
+
+  .header__nav-sub {
+    position: absolute;
+    top: 60px;
+    left: -1px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: $spacer;
+    border-left: 1px solid #000;
+    transition: opacity ease-in-out 0.3s;
+
+      li {
+        font-size: 1em;
+        border: none;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
   }
 }
 
@@ -269,7 +303,7 @@ header {
 }
 
 
-.guide__link {
+.window__link {
   position: absolute;
   top: 0;
   left: 0;
@@ -360,9 +394,11 @@ header {
   }
 
   &.position-fixed {
-    position: fixed;
-    //magic number for the fixed position
-    max-width: 176px;
+    @include mq($from: desktop) {
+      position: fixed;
+      //magic number for the fixed position
+      max-width: 176px;
+    }
   }
 
   li {

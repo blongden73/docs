@@ -49,7 +49,7 @@ layout: default
 {% for guide in guides %}
   <section id="pageGuides">
     <div class="flex page--guides guide--{{guide.Colours}}">
-      <a class="guide__link" href="/docs{{guide.url}}"></a>
+      <a class="guide__link window__link" href="/docs{{guide.url}}"></a>
       <div class="flex__leftCol"></div>
       <div class="flex__mainCol">
         <div class="guide__inner-content">

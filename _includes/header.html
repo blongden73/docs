@@ -9,7 +9,17 @@
   <nav class="header--nav">
     <ul>
       {% for item in navigation %}
-        <li><a href="{{item.Link}}"></a><span>{{item.title}}</span></li>
+        <li {% if item.Sub-menu %} class="submenu--item" {% endif %}>
+          {% unless item.Sub-menu %}<a class="window__link" href="{{item.Link}}"></a>{% endunless %}
+          <span>{{item.title}}</span>
+          {% if item.Sub-menu %}
+            <ul class="header__nav-sub">
+              <li>About</li>
+              <li>Features</li>
+              <li>Pricing</li>
+            </ul>
+          {% endif %}
+        </li>
       {% endfor %}
       <li class="veggie--burger">
         <span></span>

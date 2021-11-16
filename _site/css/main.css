@@ -46,11 +46,21 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 
 .header--nav ul { margin: 0; display: flex; height: 100%; align-items: center; }
 
-.header--nav ul li { font-size: 0.5em; width: max-content; padding: 0 8px; height: 100%; display: flex; border-left: 1px solid #000; }
+.header--nav ul li { font-size: 0.5em; width: max-content; padding: 0 8px; height: 100%; display: flex; border-left: 1px solid #000; position: relative; }
 
 .header--nav ul li span { align-self: center; }
 
 .header--nav ul li:hover { background-color: #fff; }
+
+.header--nav .submenu--item .header__nav-sub { opacity: 0; pointer-events: none; }
+
+.header--nav .submenu--item:hover .header__nav-sub { opacity: 1; }
+
+.header--nav .header__nav-sub { position: absolute; top: 60px; left: -1px; flex-direction: column; align-items: flex-start; padding-top: 8px; border-left: 1px solid #000; transition: opacity ease-in-out 0.3s; }
+
+.header--nav .header__nav-sub li { font-size: 1em; border: none; }
+
+.header--nav .header__nav-sub li:hover { background-color: transparent; }
 
 .veggie--burger { background-color: #71BC8F; flex-direction: column; justify-content: center; }
 
@@ -128,7 +138,7 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 
 .header--Red .header--logo svg:nth-child(even) path, .header--Orange .header--logo svg:nth-child(even) path, .header--Purple .header--logo svg:nth-child(even) path, .header--Green .header--logo svg:nth-child(even) path { fill: #fff; }
 
-.guide__link { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1000; }
+.window__link { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1000; }
 
 .guides__container { margin-bottom: calc(8px * 9); }
 
@@ -154,7 +164,7 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 
 @media all and (min-width: 75em) { .section__menu { flex-direction: column; padding: calc(8px*4) calc(8px*4); } }
 
-.section__menu.position-fixed { position: fixed; max-width: 176px; }
+@media all and (min-width: 75em) { .section__menu.position-fixed { position: fixed; max-width: 176px; } }
 
 .section__menu li { margin: 0 calc(8px/2) calc(8px/2) 0; }
 
