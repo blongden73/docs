@@ -14,6 +14,8 @@ Icon: <svg width="361" height="361" viewBox="0 0 361 361" fill="none" xmlns="htt
   fill-rule="evenodd" clip-rule="evenodd" d="M242.941 1h118.7V121.373h-35.109V60.099L265.71
   120.92l-43.155 123.342-122.424 26.726-74.052 90.302h-49.458L80.922 239.247l114.975-25.1
   39.321-112.385 65.653-65.653h-57.93V1.001Z" fill="#fff"/></g></svg>
+Sections:
+- Title: Something here
 layout: guide
 ---
 
