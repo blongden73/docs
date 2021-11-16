@@ -7,12 +7,11 @@ header {
   top: 0;
   z-index: 1000;
   background-color: $acid;
+  justify-content: space-between;
 }
 
-.header--wrapper, .footer--wrapper {
-  width: calc(100% - 30px);
-  margin-left: auto;
-  margin-right: auto;
+.header--wrapper {
+  padding-left: calc(#{$spacer} * 2);
 }
 
 .header--logo, .footer--logo {
@@ -23,6 +22,50 @@ header {
 
     &:nth-child(even) {
       margin-top: 2px;
+    }
+  }
+}
+
+.header--nav {
+  height: 100%;
+
+  ul {
+    margin: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    li {
+      font-size: 0.5em;
+      width: max-content;
+      padding: 0 $spacer;
+      height: 100%;
+      display: flex;
+      border-left: 1px solid #000;
+
+      span {
+        align-self: center;
+      }
+
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.veggie--burger {
+  background-color: $green;
+  flex-direction: column;
+  justify-content: center;
+
+  span {
+    height: 1px;
+    width: 40px;
+    background-color: #000;
+
+    &:nth-child(even) {
+      margin: $spacer 0;
     }
   }
 }
@@ -400,4 +443,10 @@ header {
 footer {
   padding: calc(#{$spacer} * 2) 0;
   background-color: $greyXdark;
+}
+
+.footer--wrapper {
+  width: calc(100% - 30px);
+  margin-left: auto;
+  margin-right: auto;
 }
