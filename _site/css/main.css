@@ -12,11 +12,11 @@ html { font-size: 2vw; -webkit-font-smoothing: antialiased; -moz-osx-font-smooth
 
 h1 { font-family: 'abc_favoritbook'; font-weight: 400; font-size: 48px; line-height: 1; margin: 0; }
 
-@media all and (min-width: 75em) { h1 { font-size: 2em; line-height: 1; } }
+@media all and (min-width: 48em) { h1 { font-size: 2em; line-height: 1; } }
 
 h2 { font-family: 'FavoritWeb'; font-weight: 400; font-size: 32px; line-height: 1.2; }
 
-@media all and (min-width: 75em) { h2 { font-size: 1em; line-height: 1; } }
+@media all and (min-width: 48em) { h2 { font-size: 1em; line-height: 1; } }
 
 p { font-family: 'abc_favoritbook'; font-weight: 400; font-size: 24px; line-height: 1.4; }
 
@@ -32,7 +32,7 @@ a { color: inherit; text-decoration: none; }
 
 .toast.copied { opacity: 1; }
 
-header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-items: center; position: sticky; top: 0; z-index: 1000; background-color: #F4FFA0; }
+tabletheader { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-items: center; position: sticky; top: 0; z-index: 1000; background-color: #F4FFA0; }
 
 .header--wrapper, .footer--wrapper { width: calc(100% - 30px); margin-left: auto; margin-right: auto; }
 
@@ -44,15 +44,19 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 
 .footer--logo svg path { fill: #fff; }
 
-.flex { display: flex; flex-direction: column; }
+.flex { display: flex; flex-direction: column; flex-wrap: wrap; }
 
-@media all and (min-width: 75em) { .flex { flex-direction: row; } }
+@media all and (min-width: 48em) { .flex { flex-direction: row; } }
 
 .flex__leftCol { width: 100%; }
+
+@media all and (min-width: 48em) { .flex__leftCol { width: 100%; } }
 
 @media all and (min-width: 75em) { .flex__leftCol { width: 240px; } }
 
 .flex__mainCol { width: 100%; padding: 0 calc(8px * 2); box-sizing: border-box; }
+
+@media all and (min-width: 48em) { .flex__mainCol { width: calc(60%); } }
 
 @media all and (min-width: 75em) { .flex__mainCol { width: calc(60% - 120px); padding: unset; } }
 
@@ -72,15 +76,17 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 
 .flex__rightCol { width: 100%; padding: 0 calc(8px * 2); box-sizing: border-box; }
 
+@media all and (min-width: 48em) { .flex__rightCol { width: calc(40%); padding: unset; } }
+
 @media all and (min-width: 75em) { .flex__rightCol { width: calc(40% - 120px); padding: unset; } }
 
 .flex__rightCol .inview svg { stroke-dasharray: 3000; stroke-dashoffset: 3000; animation: dash 5s linear forwards; opacity: 1; }
 
 .flex__rightCol svg { height: auto; width: 100%; margin-top: calc(8px * 2); opacity: 0; transition: opacity ease-in-out 0.3s; }
 
-@media all and (min-width: 75em) { .flex__rightCol svg { width: 60%; margin-top: unset; } }
+@media all and (min-width: 48em) { .flex__rightCol svg { width: 60%; margin-top: unset; } }
 
-@media all and (min-width: 75em) { #guideHeader svg { width: 90%; margin-top: unset; } }
+@media all and (min-width: 48em) { #guideHeader svg { width: 90%; margin-top: unset; } }
 
 .page--title { background-color: #F7F7F7; padding: calc(8px * 3) 0; }
 
@@ -106,17 +112,23 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 
 .guides__container { margin-bottom: calc(8px * 9); }
 
+.guides__container .flex__mainCol ul li { display: flex; align-items: center; margin-bottom: 8px; padding-left: calc(8px * 4); }
+
+.guides__container .flex__mainCol ul li:before { display: block; content: ''; width: 20px; height: 20px; background-color: #DADCE0; margin-right: 8px; border-radius: 50%; }
+
+.guides__container .flex__mainCol ul li p { margin: 0; }
+
 .page--checklist { border-top: 1px solid #DADCE0; border-bottom: 1px solid #DADCE0; padding-top: calc(8px * 2); }
 
 .page--checklist li { display: flex; align-items: center; margin-bottom: calc(8px * 2); }
 
 .page__checklist-number { background-color: #DADCE0; width: 40px; height: 40px; font-size: 24px; display: flex; justify-content: center; align-items: center; border-radius: 50%; margin-right: calc(8px * 2); }
 
-@media all and (min-width: 75em) { .page__checklist-number { width: 3.5vh; height: 3.5vh; font-size: 0.6em; } }
+@media all and (min-width: 48em) { .page__checklist-number { width: 3.5vh; height: 3.5vh; font-size: 0.6em; } }
 
 .page__checklist-title { font-size: 24px; }
 
-@media all and (min-width: 75em) { .page__checklist-title { font-size: 1em; } }
+@media all and (min-width: 48em) { .page__checklist-title { font-size: 1em; } }
 
 .section__menu { font-size: 16px; padding: calc(8px*2) calc(8px*2); position: sticky; top: calc(8px*9); display: flex; flex-wrap: wrap; margin: 0; }
 
@@ -149,3 +161,5 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 .guides__title-icon svg { width: 66%; height: auto; }
 
 footer { padding: calc(8px * 2) 0; background-color: #191A1E; }
+
+/*# sourceMappingURL=main.css.map */

@@ -77,4 +77,5 @@ function init(){
   copyClipBoard();
   inviewIcons();
   menuPosition();
+  hljs.highlightAll();
 };init();

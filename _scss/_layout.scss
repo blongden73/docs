@@ -1,4 +1,4 @@
-header {
+tabletheader {
   border-bottom: 1px solid $greyXdark;
   height: 60px;
   display: flex;
@@ -38,14 +38,19 @@ header {
 .flex {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 
-  @include mq($from: desktop) {
+  @include mq($from: tablet) {
     flex-direction: row;
   }
 }
 
 .flex__leftCol {
   width: 100%;
+
+  @include mq($from: tablet) {
+    width: 100%;
+  }
 
   @include mq($from: desktop) {
     width: 240px;
@@ -56,6 +61,10 @@ header {
   width: 100%;
   padding: 0 calc(#{$spacer} * 2);
   box-sizing: border-box;
+
+  @include mq($from: tablet) {
+    width: calc(60%);
+  }
 
   @include mq($from: desktop) {
     width: calc(60% - 120px);
@@ -111,6 +120,11 @@ header {
   padding: 0 calc(#{$spacer} * 2);
   box-sizing: border-box;
 
+  @include mq($from: tablet) {
+    width: calc(40%);
+    padding: unset;
+  }
+
   @include mq($from: desktop) {
     width: calc(40% - 120px);
     padding: unset;
@@ -132,7 +146,7 @@ header {
     opacity: 0;
     transition: opacity ease-in-out 0.3s;
 
-    @include mq($from: desktop) {
+    @include mq($from: tablet) {
       width: 60%;
       margin-top: unset;
     }
@@ -141,7 +155,7 @@ header {
 
 #guideHeader {
   svg {
-    @include mq($from: desktop) {
+    @include mq($from: tablet) {
       width: 90%;
       margin-top: unset;
     }
@@ -205,6 +219,31 @@ header {
 
 .guides__container {
   margin-bottom: calc(#{$spacer} * 9);
+
+  .flex__mainCol {
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: $spacer;
+        padding-left: calc(#{$spacer} * 4);
+
+        &:before {
+          display: block;
+          content: '';
+          width: 20px;
+          height: 20px;
+          background-color: $greylight;
+          margin-right: $spacer;
+          border-radius: 50%;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
 }
 
 .page--checklist {
@@ -230,7 +269,7 @@ header {
   border-radius: 50%;
   margin-right: calc(#{$spacer} * 2);
 
-  @include mq($from: desktop) {
+  @include mq($from: tablet) {
     width: 3.5vh;
     height: 3.5vh;
     font-size: 0.6em;
@@ -240,7 +279,7 @@ header {
 .page__checklist-title {
   font-size: 24px;
 
-  @include mq($from: desktop) {
+  @include mq($from: tablet) {
     font-size: 1em;
   }
 }

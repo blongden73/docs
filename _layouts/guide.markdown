@@ -57,7 +57,8 @@ layout: default
           {{section.Text | markdownify }}
         {% endif %}
       </div>
-      <div class="flex__rightCol"></div>
+      <div class="flex__rightCol">
+      </div>
     </div>
   </section>
 {% endfor %}
