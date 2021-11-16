@@ -136,7 +136,9 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 
 @media all and (min-width: 75em) { .section__menu { flex-direction: column; font-size: 0.5em; padding: calc(8px*4) calc(8px*4); } }
 
-.section__menu li { margin: 0 calc(8px/2) 0 0; }
+.section__menu li { margin: 0 calc(8px/2) calc(8px/2) 0; }
+
+.section__menu li.active > a { color: #7371EE; }
 
 .section__menu li:after { content: '/'; display: inline-block; margin-left: calc(8px/2); }
 

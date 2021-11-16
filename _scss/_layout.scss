@@ -306,7 +306,11 @@ header {
   }
 
   li {
-    margin: 0 calc(#{$spacer}/2) 0 0;
+    margin: 0 calc(#{$spacer}/2) calc(#{$spacer}/2) 0;
+
+    &.active > a{
+      color: $purple;
+    }
 
     &:after {
       content: '/';
