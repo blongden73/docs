@@ -51,6 +51,14 @@ header {
       &:hover {
         background-color: #fff;
       }
+
+      &.veggie--burger {
+        display: flex;
+
+        @include mq($from: desktop) {
+          display: none;
+        }
+      }
     }
   }
 

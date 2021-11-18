@@ -52,6 +52,10 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 
 .header--nav ul li:hover { background-color: #fff; }
 
+.header--nav ul li.veggie--burger { display: flex; }
+
+@media all and (min-width: 75em) { .header--nav ul li.veggie--burger { display: none; } }
+
 .header--nav .submenu--item .header__nav-sub { opacity: 0; pointer-events: none; }
 
 .header--nav .submenu--item:hover .header__nav-sub { opacity: 1; }
