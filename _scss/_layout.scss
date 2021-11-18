@@ -1,13 +1,13 @@
 header {
-  border-bottom: 1px solid $greyXdark;
-  height: 60px;
-  display: flex;
   align-items: center;
+  border-bottom: 1px solid $greyXdark;
+  background-color: $acid;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: $acid;
-  justify-content: space-between;
 }
 
 .header--wrapper {
@@ -30,19 +30,19 @@ header {
   height: 100%;
 
   ul {
-    margin: 0;
-    display: flex;
-    height: 100%;
     align-items: center;
+    display: flex;
+    margin: 0;
+    height: 100%;
 
     li {
-      font-size: 0.5em;
-      width: max-content;
-      padding: 0 $spacer;
-      height: 100%;
-      display: flex;
       border-left: 1px solid #000;
+      display: flex;
+      font-size: 0.5em;
+      height: 100%;
+      padding: 0 $spacer;
       position: relative;
+      width: max-content;
 
       span {
         align-self: center;
@@ -67,32 +67,32 @@ header {
       opacity: 0;
       pointer-events: none;
     }
-
-    &:hover {
-      .header__nav-sub {
-        opacity: 1;
-      }
-    }
   }
 
   .header__nav-sub {
-    position: absolute;
-    top: 60px;
-    left: -1px;
-    flex-direction: column;
     align-items: flex-start;
-    padding-top: $spacer;
     border-left: 1px solid #000;
+    flex-direction: column;
+    height: auto;
+    left: -1px;
+    padding-top: $spacer;
+    position: absolute;
     transition: opacity ease-in-out 0.3s;
+    top: 60px;
 
-      li {
-        font-size: 1em;
-        border: none;
+    &.hovered {
+      opacity: 1;
+      pointer-events: all;
+    }
 
-        &:hover {
-          background-color: transparent;
-        }
+    li {
+      border: none;
+      font-size: 1em;
+
+      &:hover {
+        background-color: transparent;
       }
+    }
   }
 }
 
@@ -102,9 +102,10 @@ header {
   justify-content: center;
 
   span {
+    background-color: #000;
+    //magic numbers should remove these?
     height: 1px;
     width: 40px;
-    background-color: #000;
 
     &:nth-child(even) {
       margin: $spacer 0;
@@ -143,21 +144,21 @@ header {
 }
 
 .flex__mainCol {
-  width: 100%;
-  padding: 0 calc(#{$spacer} * 2);
   box-sizing: border-box;
+  padding: 0 calc(#{$spacer} * 2);
+  width: 100%;
 
   @include mq($from: tablet) {
     width: calc(60%);
   }
 
   @include mq($from: desktop) {
-    width: calc(60% - 120px);
     padding: unset;
+    width: calc(60% - 120px);
   }
   img {
-    width: 100%;
     height: auto;
+    width: 100%;
   }
 
   .page--banner & {
@@ -178,19 +179,19 @@ header {
   //for responsive YouTube videos
 
   .video-container {
-    position: relative;
+    height: 0;
     padding-bottom: 56.25%;
     padding-top: 30px;
-    height: 0;
+    position: relative;
     overflow: hidden;
   }
 
   .video-container iframe, .video-container object, .video-container embed {
+    height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
   }
 }
 
@@ -201,39 +202,39 @@ header {
 }
 
 .flex__rightCol {
-  width: 100%;
-  padding: 0 calc(#{$spacer} * 2);
   box-sizing: border-box;
+  padding: 0 calc(#{$spacer} * 2);
+  width: 100%;
 
   @include mq($from: tablet) {
-    width: calc(40%);
     padding: unset;
+    width: calc(40%);
   }
 
   @include mq($from: desktop) {
-    width: calc(40% - 120px);
     padding: unset;
+    width: calc(40% - 120px);
   }
 
   .inview {
     svg {
+      animation: dash 5s linear forwards;
       stroke-dasharray: 3000;
       stroke-dashoffset: 3000;
-      animation: dash 5s linear forwards;
       opacity: 1;
     }
   }
 
   svg {
     height: auto;
-    width: 100%;
     margin-top: calc(#{$spacer} * 2);
     opacity: 0;
     transition: opacity ease-in-out 0.3s;
+    width: 100%;
 
     @include mq($from: tablet) {
-      width: 60%;
       margin-top: unset;
+      width: 60%;
     }
   }
 }
@@ -241,8 +242,8 @@ header {
 #guideHeader {
   svg {
     @include mq($from: tablet) {
-      width: 90%;
       margin-top: unset;
+      width: 90%;
     }
   }
 }
@@ -253,11 +254,11 @@ header {
 }
 
 .page--guides {
+  cursor: pointer;
   padding: calc(#{$spacer} * 3) 0;
   position: relative;
   transition: padding ease-in-out 0.3s;
   transition-delay: 0.2s;
-  cursor: pointer;
 
   .layout--guide & {
     &:hover {
@@ -312,20 +313,20 @@ header {
 
 
 .window__link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   bottom: 0;
+  left: 0;
+  top: 0;
+  position: absolute;
+  right: 0;
   z-index: 1000;
 }
 
 .guides__container {
   margin-bottom: calc(#{$spacer} * 9);
+  margin-top: -$offset;
   position: relative;
   top: -$offset;
   padding-top: $offset;
-  margin-top: -$offset;
 
   &:nth-child(5) {
     margin-top: 0;
@@ -334,19 +335,19 @@ header {
   .flex__mainCol {
     ul {
       li {
-        display: flex;
         align-items: center;
+        display: flex;
         margin-bottom: $spacer;
         padding-left: calc(#{$spacer} * 4);
 
         &:before {
+          background-color: $greylight;
+          border-radius: 50%;
           display: block;
           content: '';
-          width: 20px;
           height: 20px;
-          background-color: $greylight;
           margin-right: $spacer;
-          border-radius: 50%;
+          width: 20px;
         }
 
         p {
@@ -363,27 +364,27 @@ header {
   padding-top: calc(#{$spacer} * 2);
 
   li {
-    display: flex;
     align-items: center;
+    display: flex;
     margin-bottom: calc(#{$spacer} * 2);
   }
 }
 
 .page__checklist-number {
-  background-color: $greylight;
-  width: 40px;
-  height: 40px;
-  font-size: 24px;
-  display:flex;
-  justify-content: center;
   align-items: center;
+  background-color: $greylight;
   border-radius: 50%;
+  display:flex;
+  font-size: 24px;
+  height: 40px;
+  justify-content: center;
   margin-right: calc(#{$spacer} * 2);
+  width: 40px;
 
   @include mq($from: tablet) {
-    width: 3.5vh;
-    height: 3.5vh;
     font-size: 0.6em;
+    height: 3.5vh;
+    width: 3.5vh;
   }
 }
 
@@ -396,13 +397,13 @@ header {
 }
 
 .section__menu {
+  display: flex;
   font-size: 16px;
+  flex-wrap: wrap;
+  margin: 0;
   padding: calc(#{$spacer}*2) calc(#{$spacer}*2);
   position: sticky;
   top: calc(#{$spacer}*9);
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
 
   @include mq($from: desktop) {
     flex-direction: column;
@@ -411,9 +412,9 @@ header {
 
   &.position-fixed {
     @include mq($from: desktop) {
-      position: fixed;
       //magic number for the fixed position
       max-width: 176px;
+      position: fixed;
       z-index: 1000;
     }
   }
@@ -450,8 +451,8 @@ header {
 }
 
 .section__menu-sub {
-  margin:$spacer 0 $spacer $spacer;
   display: none;
+  margin:$spacer 0 $spacer $spacer;
 
   li {
     margin:calc(#{$spacer}/2) 0;
@@ -463,10 +464,10 @@ header {
 }
 
 .guides__title-wrapper {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
 
   &:hover {
     .guides__title-icon {
@@ -477,15 +478,15 @@ header {
 }
 
 .guides__title-icon {
-  background-color: transparent;
-  opacity: 0.5;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: transparent;
   border-radius: 50%;
+  display: flex;
+  height: 40px;
+  opacity: 0.5;
+  justify-content: center;
   transition: all ease-in-out 0.3s;
+  width: 40px;
 
   &:hover {
     background-color: $greylight;
@@ -493,18 +494,18 @@ header {
   }
 
   svg {
-    width: 66%;
     height: auto;
+    width: 66%;
   }
 }
 
 footer {
-  padding: calc(#{$spacer} * 2) 0;
   background-color: $greyXdark;
+  padding: calc(#{$spacer} * 2) 0;
 }
 
 .footer--wrapper {
-  width: calc(100% - 30px);
   margin-left: auto;
   margin-right: auto;
+  width: calc(100% - 30px);
 }

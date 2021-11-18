@@ -73,9 +73,32 @@ function menuPosition(){
   }
 }
 
+
+function menuHover(){
+  var menuItem = document.querySelector('.submenu--item');
+  var subMenu = document.querySelector('.header__nav-sub');
+  if(menuItem){
+    menuItem.addEventListener('mouseenter', function(){
+      this.classList.add('hovered');
+      subMenu.classList.add('hovered');
+    });
+    menuItem.addEventListener('mouseleave', function(){
+      setTimeout(function(){
+        menuItem.classList.remove('hovered');
+        subMenu.classList.remove('hovered');
+      }, 1000)
+    });
+  }
+}
+//hover over the more li
+//add class to more li and add class to overflow menu li
+//after mouseleave settimeout remove class
+
+
 function init(){
   copyClipBoard();
   inviewIcons();
   menuPosition();
+  menuHover()
   hljs.highlightAll();
 };init();
