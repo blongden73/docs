@@ -144,7 +144,9 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 
 .window__link { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1000; }
 
-.guides__container { margin-bottom: calc(8px * 9); position: relative; top: -100px; padding-top: 100px; }
+.guides__container { margin-bottom: calc(8px * 9); position: relative; top: -96px; padding-top: 96px; margin-top: -96px; }
+
+.guides__container:nth-child(5) { margin-top: 0; }
 
 .guides__container .flex__mainCol ul li { display: flex; align-items: center; margin-bottom: 8px; padding-left: calc(8px * 4); }
 

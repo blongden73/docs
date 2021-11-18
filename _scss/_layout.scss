@@ -323,8 +323,13 @@ header {
 .guides__container {
   margin-bottom: calc(#{$spacer} * 9);
   position: relative;
-  top: -100px;
-  padding-top: 100px;
+  top: -$offset;
+  padding-top: $offset;
+  margin-top: -$offset;
+
+  &:nth-child(5) {
+    margin-top: 0;
+  }
 
   .flex__mainCol {
     ul {
