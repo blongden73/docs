@@ -409,6 +409,7 @@ header {
       position: fixed;
       //magic number for the fixed position
       max-width: 176px;
+      z-index: 1000;
     }
   }
 

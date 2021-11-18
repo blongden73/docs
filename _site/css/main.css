@@ -168,7 +168,7 @@ header { border-bottom: 1px solid #191A1E; height: 60px; display: flex; align-it
 
 @media all and (min-width: 75em) { .section__menu { flex-direction: column; padding: calc(8px*4) calc(8px*4); } }
 
-@media all and (min-width: 75em) { .section__menu.position-fixed { position: fixed; max-width: 176px; } }
+@media all and (min-width: 75em) { .section__menu.position-fixed { position: fixed; max-width: 176px; z-index: 1000; } }
 
 .section__menu li { margin: 0 calc(8px/2) calc(8px/2) 0; }
 
