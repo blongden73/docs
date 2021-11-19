@@ -38,6 +38,10 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .header--logo, .footer--logo { display: flex; }
 
+.header--logo a svg, .footer--logo a svg { margin-right: 6px; }
+
+.header--logo a:nth-child(even) svg, .footer--logo a:nth-child(even) svg { margin-bottom: -3px; }
+
 .header--logo svg, .footer--logo svg { margin-right: 6px; }
 
 .header--logo svg:nth-child(even), .footer--logo svg:nth-child(even) { margin-top: 2px; }
@@ -140,7 +144,7 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .guide--Green, .header--Green { background-color: #71BC8F; }
 
-.header--Red .header--logo svg:nth-child(even) path, .header--Orange .header--logo svg:nth-child(even) path, .header--Purple .header--logo svg:nth-child(even) path, .header--Green .header--logo svg:nth-child(even) path { fill: #fff; }
+.header--Red .header--logo a:nth-child(even) svg path, .header--Orange .header--logo a:nth-child(even) svg path, .header--Purple .header--logo a:nth-child(even) svg path, .header--Green .header--logo a:nth-child(even) svg path { fill: #fff; }
 
 .window__link { bottom: 0; left: 0; top: 0; position: absolute; right: 0; z-index: 1000; }
 

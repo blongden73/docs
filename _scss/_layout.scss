@@ -17,6 +17,17 @@ header {
 .header--logo, .footer--logo {
   display: flex;
 
+  a {
+    svg {
+      margin-right: 6px;
+    }
+    &:nth-child(even) {
+      svg {
+        margin-bottom: -3px;
+      }
+    }
+  }
+
   svg {
     margin-right: 6px;
 
@@ -303,15 +314,17 @@ header {
 }
 .header {
   &--Red, &--Orange, &--Purple, &--Green {
-    .header--logo svg {
+    .header--logo a {
       &:nth-child(even) {
-        path {
-          fill: #fff;
+        svg {
+          path {
+            fill: #fff;
+          }
         }
       }
     }
   }
-}
+}  
 
 
 .window__link {
