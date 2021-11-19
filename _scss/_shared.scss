@@ -126,3 +126,29 @@ a {
     opacity: 1;
   }
 }
+
+.tooltip-hover {
+  position: relative;
+
+  &:after {
+    background-color: $greyXdark;
+    border-radius: 4px;
+    bottom: -50%;
+    content: attr(data-tooltip);
+    color: #fff;
+    font-size: 12px;
+    left: 50%;
+    padding: $spacer;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: opacity ease-in-out 0.3s;
+    opacity: 0;
+    width: max-content;
+  }
+
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+}
