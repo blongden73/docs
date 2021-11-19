@@ -63,6 +63,11 @@ header {
         background-color: #fff;
       }
 
+      //slightly annoying thing here is that last-child is the nav, so needs to be specific to the amount of items in the nav.
+      &:nth-child(5) {
+        background-color: $green;
+      }
+
       &.veggie--burger {
         display: flex;
 
