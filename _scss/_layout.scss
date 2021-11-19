@@ -93,7 +93,7 @@ header {
     flex-direction: column;
     height: auto;
     left: -1px;
-    padding-top: $spacer;
+    padding-top: calc(#{$spacer} * 2);
     position: absolute;
     transition: opacity ease-in-out 0.3s;
     top: 60px;
@@ -106,6 +106,7 @@ header {
     li {
       border: none;
       font-size: 1em;
+      margin-bottom: $spacer;
 
       &:hover {
         background-color: transparent;
