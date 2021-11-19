@@ -56,7 +56,7 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 @media all and (min-width: 75em) { .header--nav ul li.veggie--burger { display: none; } }
 
-.header--nav .submenu--item .header__nav-sub { opacity: 0; pointer-events: none; }
+.header--nav .submenu--item .header__nav-sub { background-color: #fff; opacity: 0; padding-bottom: 8px; pointer-events: none; }
 
 .header--nav .header__nav-sub { align-items: flex-start; border-left: 1px solid #000; flex-direction: column; height: auto; left: -1px; padding-top: 8px; position: absolute; transition: opacity ease-in-out 0.3s; top: 60px; }
 

@@ -64,7 +64,9 @@ header {
 
   .submenu--item {
     .header__nav-sub {
+      background-color: #fff;
       opacity: 0;
+      padding-bottom: $spacer;
       pointer-events: none;
     }
   }
