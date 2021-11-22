@@ -90,10 +90,10 @@ function menuHover(){
     });
   }
 }
-//hover over the more li
-//add class to more li and add class to overflow menu li
-//after mouseleave settimeout remove class
 
+function mobileNav(){
+  var veggieBurger = document.querySelector('.veggieBurger');
+}
 
 function init(){
   copyClipBoard();

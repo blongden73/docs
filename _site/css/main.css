@@ -230,6 +230,8 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .guides__title-icon svg { height: auto; width: 66%; }
 
+.code--block { font-size: 16px; }
+
 footer { background-color: #191A1E; padding: calc(8px * 2) 0; }
 
 @media all and (min-width: 75em) { footer { padding: 140px calc(8px * 2) 0; } }

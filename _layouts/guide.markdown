@@ -65,6 +65,9 @@ layout: default
           </div>
           {{section.Text | markdownify }}
         {% endif %}
+        {% if section.Code %}
+          <pre class="code--block"><code class="language-js">{{section.Code}}</code></pre>
+        {% endif %}
       </div>
       <div class="flex__rightCol">
       </div>

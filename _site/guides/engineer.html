@@ -199,6 +199,8 @@
                   
                     <li><a href="#list-test">List test</a></li>
                   
+                    <li><a href="#code-block">Code block</a></li>
+                  
                 </ul>
               
             </li>
@@ -243,6 +245,7 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0QmW7qvPucc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 
         
+        
       </div>
       <div class="flex__rightCol">
       </div>
@@ -269,6 +272,7 @@
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+        
         
       </div>
       <div class="flex__rightCol">
@@ -298,6 +302,7 @@
 
 <p><img src="/docs/uploads/Chat.jpg" alt="Chat.jpg" /></p>
 
+        
         
       </div>
       <div class="flex__rightCol">
@@ -333,6 +338,38 @@
   </li>
 </ul>
 
+        
+        
+      </div>
+      <div class="flex__rightCol">
+      </div>
+    </div>
+  </section>
+
+  <section id="code-block" class="guides__container">
+    <div class="flex guides--content">
+      <div class="flex__leftCol">
+        
+      </div>
+      <div class="flex__mainCol">
+        
+          <div class="guides__title-wrapper">
+            <h2>Code block</h2>
+            <span data-uri="/docs/guides/engineer.html#code-block" class="guides__title-icon js-copy-clipboard">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21h6V5H11v6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 11H5v16h16V11Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            </span>
+          </div>
+          <p>If we add an extra field to this section called Code, we can see that this will give us a code block on the page.</p>
+
+        
+        
+          <pre class="code--block"><code class="language-js">import jwt from 'jsonwebtoken';
+
+const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
+  expiresIn: '1 min',
+  algorithm: 'HS512',
+});</code></pre>
         
       </div>
       <div class="flex__rightCol">
