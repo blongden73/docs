@@ -119,6 +119,40 @@ header {
   }
 }
 
+.mobile--nav {
+  background-color: $purple;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100vh;
+  overflow: scroll;
+  opacity: 0;
+  padding: calc(#{$spacer} * 2);
+  position: fixed;
+  pointer-events: none;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+
+  ul {
+    li {
+      font-size: 32px;
+    }
+  }
+
+  & > ul > li {
+    border-top: 1px solid #fff;
+    padding-top: $spacer;
+    padding-bottom: $spacer;
+  }
+
+  .header__nav-sub {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: calc(#{$spacer} * 2);
+  }
+}
+
 .veggie--burger {
   background-color: $green;
   flex-direction: column;
@@ -215,6 +249,10 @@ header {
     position: absolute;
     top: 0;
     width: 100%;
+  }
+
+  p {
+    max-width: 700px;
   }
 }
 
@@ -352,7 +390,7 @@ header {
   top: -$offset;
   padding-top: $offset;
 
-  &:nth-child(6) {
+  &:nth-child(7) {
     margin-top: 0;
   }
 

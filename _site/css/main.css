@@ -18,7 +18,7 @@ h2 { line-height: 1.2; font-family: 'FavoritWeb'; font-weight: 400; font-size: 3
 
 @media all and (min-width: 48em) { h2 { line-height: 1; font-size: 1em; } }
 
-h3 { line-height: 1.2; font-family: 'FavoritWeb'; font-weight: 400; font-size: 24px; }
+h3 { line-height: 1.2; font-family: 'FavoritWeb'; font-weight: 400; font-size: 20px; }
 
 @media all and (min-width: 48em) { h3 { line-height: 1.4; font-size: 0.7em; } }
 
@@ -84,6 +84,14 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .header--nav .header__nav-sub li:hover { background-color: transparent; }
 
+.mobile--nav { background-color: #7371EE; bottom: 0; left: 0; max-width: 100%; max-height: 100vh; overflow: scroll; opacity: 0; padding: calc(8px * 2); position: fixed; pointer-events: none; right: 0; top: 0; z-index: 1000; }
+
+.mobile--nav ul li { font-size: 32px; }
+
+.mobile--nav > ul > li { border-top: 1px solid #fff; padding-top: 8px; padding-bottom: 8px; }
+
+.mobile--nav .header__nav-sub { margin-bottom: 0; margin-top: 0; padding-left: calc(8px * 2); }
+
 .veggie--burger { background-color: #71BC8F; flex-direction: column; justify-content: center; }
 
 .veggie--burger span { background-color: #000; height: 1px; width: 40px; }
@@ -119,6 +127,8 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 .flex__mainCol .video-container { height: 0; padding-bottom: 56.25%; padding-top: 30px; position: relative; overflow: hidden; }
 
 .flex__mainCol .video-container iframe, .flex__mainCol .video-container object, .flex__mainCol .video-container embed { height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
+
+.flex__mainCol p { max-width: 700px; }
 
 @keyframes dash { to { stroke-dashoffset: 0; } }
 
@@ -164,7 +174,7 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .guides__container { margin-bottom: calc(8px * 9); margin-top: -96px; position: relative; top: -96px; padding-top: 96px; }
 
-.guides__container:nth-child(6) { margin-top: 0; }
+.guides__container:nth-child(7) { margin-top: 0; }
 
 .guides__container .flex__mainCol ul li { align-items: center; display: flex; margin-bottom: 8px; padding-left: calc(8px * 4); }
 
