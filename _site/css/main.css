@@ -228,15 +228,21 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .guides__title-icon svg { height: auto; width: 66%; }
 
-footer { background-color: #191A1E; padding: 140px calc(8px * 2) 0; }
+footer { background-color: #191A1E; padding: calc(8px * 2) 0; }
+
+@media all and (min-width: 75em) { footer { padding: 140px calc(8px * 2) 0; } }
 
 .footer--wrapper { margin-left: auto; margin-right: auto; width: calc(100% - 30px); }
+
+@media all and (max-width: 47.99em) { .footer--wrapper .flex { flex-direction: column-reverse; } }
 
 .footer--wrapper p { color: #797979; margin-bottom: calc(8px); }
 
 .footer--wrapper ul li { color: #DADCE0; font-size: 16px; margin-bottom: calc(8px/2); }
 
-.footer--wrapper .footer__col-third { width: 33%; }
+.footer--wrapper .footer__col-third { width: 100%; }
+
+@media all and (min-width: 75em) { .footer--wrapper .footer__col-third { width: 33%; } }
 
 .footer--wrapper .footer__col-twoThirds { justify-content: space-around; width: 66%; }
 

@@ -563,13 +563,23 @@ header {
 
 footer {
   background-color: $greyXdark;
-  padding: 140px calc(#{$spacer} * 2) 0;
+  padding: calc(#{$spacer} * 2) 0;
+
+  @include mq($from: desktop) {
+    padding: 140px calc(#{$spacer} * 2) 0;
+  }
 }
 
 .footer--wrapper {
   margin-left: auto;
   margin-right: auto;
   width: calc(100% - 30px);
+
+  .flex {
+    @include mq($until: tablet) {
+      flex-direction: column-reverse;
+    }
+  }
 
   p {
     color: $greyDark;
@@ -585,7 +595,11 @@ footer {
   }
 
   .footer__col-third {
-    width: 33%;
+    width: 100%;
+
+    @include mq($from: desktop) {
+      width: 33%;
+    }
   }
 
   .footer__col-twoThirds {
