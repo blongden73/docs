@@ -21,6 +21,15 @@ layout: default
     </div>
   </div>
 </section>
+<section>
+  <div class="flex guides--content">
+    <div class="flex__leftCol"></div>
+    <div class="flex__mainCol">
+      <h3>{{page.['Introduction Text']}}</h3>
+    </div>
+    <div class="flex__rightCol"></div>
+  </div>
+</section>
 {% for section in sections %}
   <section id="{{section.Title | replace: " ", "-" | downcase}}" class="guides__container">
     <div class="flex guides--content">

@@ -20,7 +20,7 @@ h2 { line-height: 1.2; font-family: 'FavoritWeb'; font-weight: 400; font-size: 3
 
 h3 { line-height: 1.2; font-family: 'FavoritWeb'; font-weight: 400; font-size: 24px; }
 
-@media all and (min-width: 48em) { h3 { line-height: 1; font-size: 0.8em; } }
+@media all and (min-width: 48em) { h3 { line-height: 1.4; font-size: 0.7em; } }
 
 p { line-height: 1.4; font-family: 'abc_favoritbook'; font-weight: 400; font-size: 16px; }
 
@@ -164,7 +164,7 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .guides__container { margin-bottom: calc(8px * 9); margin-top: -96px; position: relative; top: -96px; padding-top: 96px; }
 
-.guides__container:nth-child(5) { margin-top: 0; }
+.guides__container:nth-child(6) { margin-top: 0; }
 
 .guides__container .flex__mainCol ul li { align-items: center; display: flex; margin-bottom: 8px; padding-left: calc(8px * 4); }
 
