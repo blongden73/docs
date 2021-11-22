@@ -55,6 +55,16 @@ Sections:
     * Another list item
 
     * and another one
+- Title: Code block
+  Text: 'If we add an extra field to this section called Code, we can see that this
+    will give us a code block on the page. '
+  Code: |-
+    import jwt from 'jsonwebtoken';
+
+    const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
+      expiresIn: '1 min',
+      algorithm: 'HS512',
+    });
 layout: guide
 ---
 
