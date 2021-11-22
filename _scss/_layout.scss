@@ -251,8 +251,8 @@ header {
     width: 100%;
   }
 
-  p {
-    max-width: 700px;
+  h1, h2, h3, p {
+    max-width: 955px;
   }
 }
 
@@ -563,11 +563,49 @@ header {
 
 footer {
   background-color: $greyXdark;
-  padding: calc(#{$spacer} * 2) 0;
+  padding: 140px calc(#{$spacer} * 2) 0;
 }
 
 .footer--wrapper {
   margin-left: auto;
   margin-right: auto;
   width: calc(100% - 30px);
+
+  p {
+    color: $greyDark;
+    margin-bottom: calc(#{$spacer});
+  }
+
+  ul {
+    li {
+      color: $greylight;
+      font-size: 16px;
+      margin-bottom: calc(#{$spacer}/2);
+    }
+  }
+
+  .footer__col-third {
+    width: 33%;
+  }
+
+  .footer__col-twoThirds {
+    justify-content: space-around;
+    width: 66%;
+  }
+
+  .footer__col-half {
+    width: 50%;
+  }
+
+  .footer__col-quarter {
+    width: max-width;
+  }
+
+  svg {
+    height: auto;
+    width: 100%;
+    path {
+      fill: #fff;
+    }
+  }
 }

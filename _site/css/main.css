@@ -128,7 +128,7 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .flex__mainCol .video-container iframe, .flex__mainCol .video-container object, .flex__mainCol .video-container embed { height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
 
-.flex__mainCol p { max-width: 700px; }
+.flex__mainCol h1, .flex__mainCol h2, .flex__mainCol h3, .flex__mainCol p { max-width: 955px; }
 
 @keyframes dash { to { stroke-dashoffset: 0; } }
 
@@ -228,8 +228,24 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .guides__title-icon svg { height: auto; width: 66%; }
 
-footer { background-color: #191A1E; padding: calc(8px * 2) 0; }
+footer { background-color: #191A1E; padding: 140px calc(8px * 2) 0; }
 
 .footer--wrapper { margin-left: auto; margin-right: auto; width: calc(100% - 30px); }
+
+.footer--wrapper p { color: #797979; margin-bottom: calc(8px); }
+
+.footer--wrapper ul li { color: #DADCE0; font-size: 16px; margin-bottom: calc(8px/2); }
+
+.footer--wrapper .footer__col-third { width: 33%; }
+
+.footer--wrapper .footer__col-twoThirds { justify-content: space-around; width: 66%; }
+
+.footer--wrapper .footer__col-half { width: 50%; }
+
+.footer--wrapper .footer__col-quarter { width: max-width; }
+
+.footer--wrapper svg { height: auto; width: 100%; }
+
+.footer--wrapper svg path { fill: #fff; }
 
 /*# sourceMappingURL=main.css.map */
