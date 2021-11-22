@@ -160,6 +160,8 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .page--guides button { margin-top: calc(8px * 2); }
 
+.overview--introduction p { font-size: 24px; }
+
 .guide--Red, .header--Red { background-color: #EB5757; }
 
 .guide--Orange, .header--Orange { background-color: #EF927B; }

@@ -346,6 +346,12 @@ header {
   }
 }
 
+.overview--introduction {
+  p {
+    font-size: 24px;
+  }
+}
+
 .guide, .header {
   &--Red {
     background-color: $alert;

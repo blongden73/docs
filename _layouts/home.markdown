@@ -34,7 +34,7 @@ layout: default
         {% endfor %}
       </ul>
     </div>
-    <div class="flex__mainCol">
+    <div class="flex__mainCol overview--introduction">
       {{page.content | markdownify}}
       {% assign checklist = page.List %}
       <ul class="page--checklist">
