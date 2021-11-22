@@ -74,11 +74,23 @@ h2 {
   }
 }
 
+h3 {
+  line-height: 1.2;
+  font-family: 'FavoritWeb';
+  font-weight: 400;
+  font-size: 24px;
+
+  @include mq($from: tablet) {
+    line-height: 1;
+    font-size: 0.8em;
+  }
+}
+
 p {
   line-height: 1.4;
   font-family: 'abc_favoritbook';
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 ul {

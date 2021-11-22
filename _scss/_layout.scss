@@ -48,12 +48,16 @@ header {
 
     li {
       border-left: 1px solid #000;
-      display: flex;
+      display: none;
       font-size: 16px;
       height: 100%;
       padding: 0 $spacer;
       position: relative;
       width: max-content;
+
+      @include mq($from: desktop) {
+        display: flex;
+      }
 
       span {
         align-self: center;
