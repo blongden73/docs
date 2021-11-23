@@ -131,19 +131,32 @@ header {
   position: fixed;
   pointer-events: none;
   right: 0;
-  top: 0;
+  top: 61px;
+  transition: opacity ease-in-out 0.3s;
   z-index: 1000;
-
-  ul {
-    li {
-      font-size: 32px;
-    }
-  }
 
   & > ul > li {
     border-top: 1px solid #fff;
     padding-top: $spacer;
     padding-bottom: $spacer;
+  }
+
+  &.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  ul {
+    li {
+      font-size: 32px;
+      position:relative;
+    }
+  }
+
+  .submenu--item {
+    svg {
+      display: none;
+    }
   }
 
   .header__nav-sub {
@@ -163,9 +176,26 @@ header {
     //magic numbers should remove these?
     height: 1px;
     width: 40px;
+    transition: all ease-in-out 0.3s;
 
     &:nth-child(even) {
       margin: $spacer 0;
+    }
+  }
+
+  &.open {
+    span {
+      &:nth-child(1) {
+        transform: rotate(45deg) translateY(5px) translateX(5px);
+        transform-origin: center;
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translateX(7px) translateY(-8px);
+        transform-origin: center;
+      }
     }
   }
 }

@@ -92,13 +92,20 @@ function menuHover(){
 }
 
 function mobileNav(){
-  var veggieBurger = document.querySelector('.veggieBurger');
+  var veggieBurger = document.querySelector('.veggie--burger');
+  var mobileNav = document.querySelector('.mobile--nav');
+
+  veggieBurger.addEventListener('click', function(){
+    this.classList.toggle('open');
+    mobileNav.classList.toggle('open');
+  });
 }
 
 function init(){
   copyClipBoard();
   inviewIcons();
   menuPosition();
-  menuHover()
+  menuHover();
+  mobileNav();
   hljs.highlightAll();
 };init();
