@@ -244,7 +244,9 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .onward__journeys-wrapper { background-color: #F7F7F7; padding: calc(8px * 6) 0; }
 
-.onward__journeys-flex { display: flex; }
+.onward__journeys-flex { display: flex; flex-direction: column; }
+
+@media all and (min-width: 75em) { .onward__journeys-flex { flex-direction: row; } }
 
 .onward__journeys-flex > * { margin-right: calc(8px * 6); }
 

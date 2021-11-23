@@ -597,6 +597,11 @@ header {
 
 .onward__journeys-flex {
   display: flex;
+  flex-direction: column;
+
+  @include mq($from: desktop) {
+    flex-direction: row;
+  }
 
   & > * {
     margin-right: calc(#{$spacer} * 6);

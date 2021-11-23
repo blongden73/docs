@@ -103,12 +103,12 @@ layout: default
       <div class="onward__journeys-flex">
         {% if prev %}
           <div class="flex--previous">
-            <a href="/docs{{ prev.url }}" class="prev" title="{{ prev.title }}">Previous <span class="previous--{{prev.Colours}}">{{ prev.title | replace: ' | ', ' ' }}</span></a>
+            <h2><a href="/docs{{ prev.url }}" class="prev" title="{{ prev.title }}">Previous <span class="previous--{{prev.Colours}}">{{ prev.title | replace: ' | ', ' ' }}</span></a></h2>
           </div>
         {% endif %}
         {% if next %}
           <div class="flex--next">
-            <a href="/docs{{ next.url }}" class="next" title="{{ next.title }}">Next up <span class="next--{{next.Colours}}">{{ next.title | replace: ' | ', ' ' }}</span></a>
+            <h2><a href="/docs{{ next.url }}" class="next" title="{{ next.title }}">Next up <span class="next--{{next.Colours}}">{{ next.title | replace: ' | ', ' ' }}</span></a></h2>
           </div>
         {% endif %}
       </div>
