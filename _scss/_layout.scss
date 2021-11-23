@@ -626,6 +626,32 @@ header {
   }
 }
 
+.table {
+  flex-wrap: nowrap;
+
+  & > * {
+    font-size: 16px;
+    font-family: 'FavoritWeb';
+    font-weight: 100;
+  }
+
+  .col {
+    border-right: 1px solid $greylight;
+    flex: 1;
+    flex-shrink: 1;
+
+
+    .column-header {
+      border-bottom: 1px solid $greylight;
+    }
+
+    span {
+      display: block;
+      padding: $spacer;
+    }
+  }
+}
+
 .onward__journeys-wrapper {
   background-color: $greyXlight;
   padding: calc(#{$spacer} * 6) 0;

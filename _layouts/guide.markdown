@@ -70,7 +70,16 @@ layout: default
         {% endif %}
         {% if section.['Table Columns'] %}
           {% assign table = section.['Table Columns'] %}
-          {{ table }}
+          <div class="flex table">
+            {% for column in table %}
+              <div class="col">
+                <span class="column-header">{{column.['Column Title']}}</span>
+                {% for row in column.Rows %}
+                  <span class="row">{{row}}</span>
+                {% endfor %}
+              </div>
+            {% endfor %}
+          </div>
         {% endif %}
       </div>
       <div class="flex__rightCol">

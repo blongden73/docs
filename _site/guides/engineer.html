@@ -404,7 +404,49 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
         
         
           
-          {"Column Title"=>"Column 1", "Rows"=>["Content of row", "Next row"]}{"Column Title"=>"Column 2", "Rows"=>["Content of second colum", "Otro row"]}{"Column Title"=>"Un otro column", "Rows"=>["This is the content"]}
+          <div class="flex table">
+            
+              <div class="col">
+                <span class="column-header">Column 1</span>
+                
+                  <span class="row">Content of row</span>
+                
+                  <span class="row">Next row</span>
+                
+              </div>
+            
+              <div class="col">
+                <span class="column-header">Column 2</span>
+                
+                  <span class="row">Content of second colum</span>
+                
+                  <span class="row">Otro row</span>
+                
+              </div>
+            
+              <div class="col">
+                <span class="column-header">Un otro column</span>
+                
+                  <span class="row">This is the content</span>
+                
+              </div>
+            
+              <div class="col">
+                <span class="column-header">4th column testing</span>
+                
+                  <span class="row">How </span>
+                
+                  <span class="row">many</span>
+                
+                  <span class="row">rows</span>
+                
+                  <span class="row">will</span>
+                
+                  <span class="row">work</span>
+                
+              </div>
+            
+          </div>
         
       </div>
       <div class="flex__rightCol">

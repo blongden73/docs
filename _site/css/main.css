@@ -254,6 +254,16 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .code--block code { border-radius: 4px; }
 
+.table { flex-wrap: nowrap; }
+
+.table > * { font-size: 16px; font-family: 'FavoritWeb'; font-weight: 100; }
+
+.table .col { border-right: 1px solid #DADCE0; flex: 1; flex-shrink: 1; }
+
+.table .col .column-header { border-bottom: 1px solid #DADCE0; }
+
+.table .col span { display: block; padding: 8px; }
+
 .onward__journeys-wrapper { background-color: #F7F7F7; padding: calc(8px * 6) 0; }
 
 .onward__journeys-flex { display: flex; flex-direction: column; }
