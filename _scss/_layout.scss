@@ -55,7 +55,7 @@ header {
       position: relative;
       width: max-content;
 
-      @include mq($from: desktop) {
+      @include mq($from: tablet) {
         display: flex;
       }
 
@@ -75,7 +75,7 @@ header {
       &.veggie--burger {
         display: flex;
 
-        @include mq($from: desktop) {
+        @include mq($from: tablet) {
           display: none;
         }
       }
