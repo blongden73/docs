@@ -65,6 +65,21 @@ Sections:
       expiresIn: '1 min',
       algorithm: 'HS512',
     });
+- Title: Table block
+  Text: 'This is how we could use tables in the API docs below is an example of how
+    this would behave. '
+  Table Columns:
+  - Column Title: Column 1
+    Rows:
+    - Content of row
+    - Next row
+  - Column Title: Column 2
+    Rows:
+    - Content of second colum
+    - Otro row
+  - Column Title: Un otro column
+    Rows:
+    - This is the content
 layout: guide
 ---
 
