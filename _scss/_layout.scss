@@ -694,7 +694,7 @@ header {
 
 .onward__journeys-wrapper {
   background-color: $greyXlight;
-  padding: calc(#{$spacer} * 6) 0;
+  padding: calc(#{$spacer} * 6) 0 calc(#{$spacer} * 2);
 }
 
 .onward__journeys-flex {
@@ -710,7 +710,21 @@ header {
   }
 }
 
+
+.onward__journeys-arrow {
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(10px);
+  transition: all ease-in-out 0.3s;
+}
+
 .flex--previous, .flex--next {
+  &:hover {
+    .onward__journeys-arrow {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   span {
     display: block;
   }

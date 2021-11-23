@@ -117,11 +117,13 @@ layout: default
         {% if prev %}
           <div class="flex--previous">
             <h2><a href="/docs{{ prev.url }}" class="prev" title="{{ prev.title }}">Previous <span class="previous--{{prev.Colours}}">{{ prev.title | replace: ' | ', ' ' }}</span></a></h2>
+            <h2 class="onward__journeys-arrow">→</h2>
           </div>
         {% endif %}
         {% if next %}
           <div class="flex--next">
             <h2><a href="/docs{{ next.url }}" class="next" title="{{ next.title }}">Next up <span class="next--{{next.Colours}}">{{ next.title | replace: ' | ', ' ' }}</span></a></h2>
+            <h2 class="onward__journeys-arrow">→</h2>
           </div>
         {% endif %}
       </div>

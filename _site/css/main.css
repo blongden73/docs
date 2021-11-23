@@ -278,13 +278,17 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .table .col .row.color--optional span { background-color: #71BC8F; }
 
-.onward__journeys-wrapper { background-color: #F7F7F7; padding: calc(8px * 6) 0; }
+.onward__journeys-wrapper { background-color: #F7F7F7; padding: calc(8px * 6) 0 calc(8px * 2); }
 
 .onward__journeys-flex { display: flex; flex-direction: column; }
 
 @media all and (min-width: 75em) { .onward__journeys-flex { flex-direction: row; } }
 
 .onward__journeys-flex > * { margin-right: calc(8px * 6); }
+
+.onward__journeys-arrow { opacity: 0; overflow: hidden; transform: translateY(10px); transition: all ease-in-out 0.3s; }
+
+.flex--previous:hover .onward__journeys-arrow, .flex--next:hover .onward__journeys-arrow { opacity: 1; transform: translateY(0); }
 
 .flex--previous span, .flex--next span { display: block; }
 
