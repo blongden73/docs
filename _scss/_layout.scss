@@ -640,14 +640,32 @@ header {
     flex: 1;
     flex-shrink: 1;
 
+    &:first-child {
+      & > span {
+        padding-left: 0;
+      }
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
 
     .column-header {
       border-bottom: 1px solid $greylight;
+      font-weight: 800;
     }
 
-    span {
+    & > span {
       display: block;
       padding: $spacer;
+    }
+
+    .row {
+      span {
+        background-color: $greylight;
+        border-radius: 4px;
+        padding: calc(#{$spacer}/2);
+      }
     }
   }
 }

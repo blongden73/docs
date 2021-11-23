@@ -75,7 +75,7 @@ layout: default
               <div class="col">
                 <span class="column-header">{{column.['Column Title']}}</span>
                 {% for row in column.Rows %}
-                  <span class="row">{{row}}</span>
+                  <span class="row"><span>{{row}}</span></span>
                 {% endfor %}
               </div>
             {% endfor %}
