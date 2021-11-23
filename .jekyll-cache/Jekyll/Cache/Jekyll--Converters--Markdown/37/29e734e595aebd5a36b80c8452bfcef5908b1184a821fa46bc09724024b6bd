@@ -1,0 +1,8 @@
+I"u<p>Welcome to the Cord API!</p>
+
+<p>This document describes integration APIs and flows available to partners who wish to embed the Cord experience directly into their application</p>
+
+<p>Use the Cord API to pre-populate the identities of your teams and users. This ensures a fast and seamless user experience, where the Cord sidebar appears immediately and the user is already logged in. This architecture ensures that when a user is requesting a page, Cord already has all their details (name, profile picture) as well as the other people in their organization.</p>
+
+<p><a href="https://cord.com/">Get started with Cord</a></p>
+:ET

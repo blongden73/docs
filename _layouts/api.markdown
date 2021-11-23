@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign guides = site.guides %}
+{% assign guides = site.api %}
 {% assign sections = page.Sections %}
 <section id="guideHeader">
   <div class="flex page--guides guide--{{page.Colours}}">
