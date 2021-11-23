@@ -525,6 +525,7 @@ header {
   margin: 0;
   padding: calc(#{$spacer}*2) calc(#{$spacer}*2);
   position: sticky;
+  transition: opacity ease-in-out 0.3s;
   top: calc(#{$spacer}*9);
 
   @include mq($from: desktop) {
@@ -539,6 +540,10 @@ header {
       position: fixed;
       z-index: 1000;
     }
+  }
+
+  &.hide {
+    opacity: 0;
   }
 
   li {

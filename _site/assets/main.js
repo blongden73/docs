@@ -43,7 +43,6 @@ function copyClipBoard(){
 
 function inviewIcons() {
   var guideIcons = document.querySelectorAll('.js-guide-icons');
-  console.log(guideIcons);
   var guideIconsCheck = document.querySelector('.js-guide-icons');
   if(guideIconsCheck){
     document.addEventListener('scroll', function(){
@@ -101,11 +100,26 @@ function mobileNav(){
   });
 }
 
+function onwardJourneyTracking(){
+  var onwards = document.querySelector('.onward__journeys-wrapper');
+  var sectionMenu = document.querySelector('.section__menu');
+  if(onwards) {
+    document.addEventListener('scroll', function(){
+      if(elementInViewport(onwards)) {
+        sectionMenu.classList.add('hide');
+      }else {
+        sectionMenu.classList.remove('hide');
+      }
+    });
+  }
+}
+
 function init(){
   copyClipBoard();
   inviewIcons();
   menuPosition();
   menuHover();
   mobileNav();
+  onwardJourneyTracking();
   hljs.highlightAll();
 };init();

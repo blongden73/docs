@@ -218,11 +218,13 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 @media all and (min-width: 48em) { .page__checklist-title { font-size: 1em; } }
 
-.section__menu { display: flex; font-size: 16px; flex-wrap: wrap; margin: 0; padding: calc(8px*2) calc(8px*2); position: sticky; top: calc(8px*9); }
+.section__menu { display: flex; font-size: 16px; flex-wrap: wrap; margin: 0; padding: calc(8px*2) calc(8px*2); position: sticky; transition: opacity ease-in-out 0.3s; top: calc(8px*9); }
 
 @media all and (min-width: 75em) { .section__menu { flex-direction: column; padding: calc(8px*4) calc(8px*4); } }
 
 @media all and (min-width: 75em) { .section__menu.position-fixed { max-width: 176px; position: fixed; z-index: 1000; } }
+
+.section__menu.hide { opacity: 0; }
 
 .section__menu li { margin: 0 calc(8px/2) calc(8px/2) 0; }
 
