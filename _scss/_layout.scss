@@ -132,6 +132,7 @@ header {
   right: 0;
   top: 61px;
   transition: opacity ease-in-out 0.3s;
+  visibility: hidden;
   z-index: 1000;
 
   & > ul > li {
@@ -148,6 +149,7 @@ header {
   &.open {
     opacity: 1;
     pointer-events: all;
+    visibility: visible;
   }
 
   ul {

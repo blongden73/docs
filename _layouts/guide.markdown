@@ -68,6 +68,10 @@ layout: default
         {% if section.Code %}
           <pre class="code--block"><code class="language-js">{{section.Code}}</code></pre>
         {% endif %}
+        {% if section.['Table Columns'] %}
+          {% assign table = section.['Table Columns'] %}
+          {{ table }}
+        {% endif %}
       </div>
       <div class="flex__rightCol">
       </div>
