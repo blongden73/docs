@@ -569,6 +569,10 @@ header {
 
 .code--block {
   font-size: 16px;
+
+  code {
+    border-radius: 4px;
+  }
 }
 
 footer {
