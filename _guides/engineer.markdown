@@ -69,13 +69,18 @@ Sections:
   Text: 'This is how we could use tables in the API docs below is an example of how
     this would behave. '
   Table Columns:
-  - Column Title: Column 1
+  - Column Title: Field
     Rows:
-    - Content of row
-    - Next row
-  - Column Title: Column 2
+    - id
+    - email
+    - name
+    - status
+    - profile_picture_url
+    - first_name
+    - last_name
+  - Column Title: Type
     Rows:
-    - Content of second colum
+    - String
     - Otro row
   - Column Title: Un otro column
     Rows:
