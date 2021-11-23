@@ -231,14 +231,6 @@ Use the Cord API to pre-populate the identities of your teams and users. This en
 
         
         
-          <pre class="code--block"><code class="language-js">import jwt from 'jsonwebtoken';
-
-const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
-  expiresIn: '1 min',
-  algorithm: 'HS512',
-});</code></pre>
-        
-        
           
           <div class="flex table">
             
@@ -264,6 +256,14 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
               </div>
             
           </div>
+        
+        
+          <pre class="code--block"><code class="language-js">import jwt from 'jsonwebtoken';
+
+const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
+  expiresIn: '1 min',
+  algorithm: 'HS512',
+});</code></pre>
         
       </div>
       <div class="flex__rightCol">

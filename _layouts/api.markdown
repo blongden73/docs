@@ -65,9 +65,6 @@ layout: default
           </div>
           {{section.Text | markdownify }}
         {% endif %}
-        {% if section.Code %}
-          <pre class="code--block"><code class="language-js">{{section.Code}}</code></pre>
-        {% endif %}
         {% if section.['Table Columns'] %}
           {% assign table = section.['Table Columns'] %}
           <div class="flex table">
@@ -80,6 +77,9 @@ layout: default
               </div>
             {% endfor %}
           </div>
+        {% endif %}
+        {% if section.Code %}
+          <pre class="code--block"><code class="language-js">{{section.Code}}</code></pre>
         {% endif %}
       </div>
       <div class="flex__rightCol">
