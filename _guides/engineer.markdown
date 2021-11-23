@@ -99,3 +99,19 @@ Sections:
 layout: guide
 ---
 
+This field will be used as a ReadMe for each of the pages. 
+
+**Introduction Text**\
+This lives at the top of each of the guide, this field is totally optional, if you use it it will display as the first paragraph on each of the guides. 
+
+**Colours**\
+This defines the colour of the page, you can choose the colour from the dropdown list and it will add the corresponding Cord colour to the page
+
+**Overview description**\
+This field is only visual on the overview section. It is a simple extract to be used underneath the title of the section.
+
+**Icon**\
+This field contains the relevant icon for each of the sections. It will only accept SVG code. 
+
+**Sections**\
+The section fields contain Title and Text, these fields will be predefined, there are extra optional fields which can be added below each of these, these are *Code* and *Table Columns. *Code will add a code block at the end of the section, this gets automatically converted in JS (currently only JS is supported). Table Columns will start the process of adding a table to the page. Within Table Columns add an object field. Within this object field you will need *Column Title* and *Rows. Rows *needs to also be set to be a list. 
