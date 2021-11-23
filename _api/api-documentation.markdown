@@ -43,5 +43,6 @@ Sections:
       expiresIn: '1 min',
       algorithm: 'HS512',
     });
+layout: api
 ---
 
