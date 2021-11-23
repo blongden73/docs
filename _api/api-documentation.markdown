@@ -43,6 +43,55 @@ Sections:
       expiresIn: '1 min',
       algorithm: 'HS512',
     });
+- Title: Users
+  Text: |-
+    ## **Create a user**
+
+    **HTTP Request**
+
+    `POST https://api.cord.com/v1/users`
+
+    **Request Body**
+  Table Columns:
+  - Column Title: Field
+    Rows:
+    - id
+    - email
+    - name
+    - status
+    - profile_picture_url
+    - first_name
+    - last_name
+  - Column Title: Type
+    Rows:
+    - string
+    - string
+    - string
+    - string
+    - string
+    - string
+    - string
+  - Column Title: Description
+    Rows:
+    - required
+    - required
+    - optional
+    - optional
+    - optional
+    - optional
+    - optional
+  Code: |-
+    curl "https://api.cord.com/v1/users" \
+      -X POST \
+      -H "Authorization: Bearer <ACCESS_TOKEN>" \
+      -H "Content-Type: application/json" \
+      -d '{
+        "id": "3001",
+        "name": "Philip J Fry",
+        "email": "delivery@planetexpress.nny",
+        "first_name": "Philip",
+        "last_name": "Fry"
+      }'
 layout: api
 ---
 
