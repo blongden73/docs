@@ -258,7 +258,7 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .code--block code { border-radius: 4px; }
 
-.table { flex-wrap: nowrap; }
+.table { flex-wrap: nowrap; margin-bottom: calc(8px*4); }
 
 @media all and (max-width: 47.99em) { .table { flex-direction: row; overflow: scroll; padding-bottom: calc(8px*3); } }
 

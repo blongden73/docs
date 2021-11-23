@@ -636,6 +636,7 @@ header {
 
 .table {
   flex-wrap: nowrap;
+  margin-bottom: calc(#{$spacer}*4);
 
   @include mq($until: tablet) {
     flex-direction: row;
