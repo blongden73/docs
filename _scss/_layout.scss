@@ -441,11 +441,14 @@ header {
 }
 
 .guides__container {
-  margin-bottom: calc(#{$spacer} * 9);
   margin-top: -$offset;
   position: relative;
   top: -$offset;
   padding-top: $offset;
+
+  @include mq($from: desktop) {
+    margin-bottom: calc(#{$spacer} * 9);
+  }
 
   &:nth-child(7) {
     margin-top: 0;
@@ -628,6 +631,12 @@ header {
 
 .table {
   flex-wrap: nowrap;
+
+  @include mq($until: tablet) {
+    flex-direction: row;
+    overflow: scroll;
+    padding-bottom: calc(#{$spacer}*3);
+  }
 
   & > * {
     font-size: 16px;
