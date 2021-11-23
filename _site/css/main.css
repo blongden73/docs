@@ -270,6 +270,10 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .table .col .row span { background-color: #DADCE0; border-radius: 4px; padding: calc(8px/2); }
 
+.table .col .row.color--required span { background-color: #EB5757; }
+
+.table .col .row.color--optional span { background-color: #71BC8F; }
+
 .onward__journeys-wrapper { background-color: #F7F7F7; padding: calc(8px * 6) 0; }
 
 .onward__journeys-flex { display: flex; flex-direction: column; }
@@ -305,5 +309,3 @@ footer { background-color: #191A1E; padding: calc(8px * 2) 0; }
 .footer--wrapper svg { height: auto; width: 100%; }
 
 .footer--wrapper svg path { fill: #fff; }
-
-/*# sourceMappingURL=main.css.map */

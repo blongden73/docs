@@ -666,6 +666,18 @@ header {
         border-radius: 4px;
         padding: calc(#{$spacer}/2);
       }
+
+      &.color--required {
+        span {
+          background-color: $alert;
+        }
+      }
+
+      &.color--optional {
+        span {
+          background-color: $green;
+        }
+      }
     }
   }
 }
