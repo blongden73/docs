@@ -74,3 +74,45 @@ layout: default
     </div>
   </section>
 {% endfor %}
+
+{% assign onwardList = site.guides | where: 'type', page.type %}
+{% assign onwardPage = onwardList | reverse %}
+
+{% if onwardPage.size > 1 %}
+  {% for item in onwardPage %}
+    {% if item.title == page.title %}
+      {% assign item_index = forloop.index %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign prev_index = item_index | plus: 1 %}
+  {% assign next_index = item_index | minus: 1 %}
+
+  {% for item in onwardPage %}
+    {% if forloop.index == prev_index %}
+      {% assign prev = item %}
+    {% endif %}
+    {% if forloop.index == next_index %}
+      {% assign next = item %}
+    {% endif %}
+  {% endfor %}
+
+  <div class="flex onward__journeys-wrapper">
+    <div class="flex__leftCol"></div>
+    <div class="flex__mainCol">
+      <div class="onward__journeys-flex">
+        {% if prev %}
+          <div class="flex--previous">
+            <a href="/docs{{ prev.url }}" class="prev" title="{{ prev.title }}">Previous <span class="previous--{{prev.Colours}}">{{ prev.title | replace: ' | ', ' ' }}</span></a>
+          </div>
+        {% endif %}
+        {% if next %}
+          <div class="flex--next">
+            <a href="/docs{{ next.url }}" class="next" title="{{ next.title }}">Next up <span class="next--{{next.Colours}}">{{ next.title | replace: ' | ', ' ' }}</span></a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="flex__rightCol"></div>
+  </div>
+{% endif %}

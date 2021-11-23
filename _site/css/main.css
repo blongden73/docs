@@ -162,6 +162,14 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .overview--introduction p { font-size: 24px; }
 
+.next--Red, .previous--Red { color: #EB5757; }
+
+.next--Orange, .previous--Orange { color: #EF927B; }
+
+.next--Purple, .previous--Purple { color: #7371EE; }
+
+.next--Green, .previous--Green { color: #71BC8F; }
+
 .guide--Red, .header--Red { background-color: #EB5757; }
 
 .guide--Orange, .header--Orange { background-color: #EF927B; }
@@ -231,6 +239,16 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 .guides__title-icon svg { height: auto; width: 66%; }
 
 .code--block { font-size: 16px; }
+
+.code--block code { border-radius: 4px; }
+
+.onward__journeys-wrapper { background-color: #F7F7F7; padding: calc(8px * 6) 0; }
+
+.onward__journeys-flex { display: flex; }
+
+.onward__journeys-flex > * { margin-right: calc(8px * 6); }
+
+.flex--previous span, .flex--next span { display: block; }
 
 footer { background-color: #191A1E; padding: calc(8px * 2) 0; }
 

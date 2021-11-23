@@ -352,6 +352,21 @@ header {
   }
 }
 
+.next, .previous {
+  &--Red {
+    color: $alert;
+  }
+  &--Orange {
+    color: $orange;
+  }
+  &--Purple {
+    color: $purple;
+  }
+  &--Green {
+    color: $green;
+  }
+}
+
 .guide, .header {
   &--Red {
     background-color: $alert;
@@ -572,6 +587,25 @@ header {
 
   code {
     border-radius: 4px;
+  }
+}
+
+.onward__journeys-wrapper {
+  background-color: $greyXlight;
+  padding: calc(#{$spacer} * 6) 0;
+}
+
+.onward__journeys-flex {
+  display: flex;
+
+  & > * {
+    margin-right: calc(#{$spacer} * 6);
+  }
+}
+
+.flex--previous, .flex--next {
+  span {
+    display: block;
   }
 }
 
