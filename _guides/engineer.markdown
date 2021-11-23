@@ -80,6 +80,13 @@ Sections:
   - Column Title: Un otro column
     Rows:
     - This is the content
+  - Column Title: 4th column testing
+    Rows:
+    - 'How '
+    - many
+    - rows
+    - will
+    - work
 layout: guide
 ---
 
