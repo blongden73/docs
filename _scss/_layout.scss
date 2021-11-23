@@ -653,6 +653,7 @@ header {
     .column-header {
       border-bottom: 1px solid $greylight;
       font-weight: 800;
+      margin-bottom: $spacer;
     }
 
     & > span {

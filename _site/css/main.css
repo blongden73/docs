@@ -264,7 +264,7 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .table .col:last-child { border-right: 0; }
 
-.table .col .column-header { border-bottom: 1px solid #DADCE0; font-weight: 800; }
+.table .col .column-header { border-bottom: 1px solid #DADCE0; font-weight: 800; margin-bottom: 8px; }
 
 .table .col > span { display: block; padding: 8px; }
 
@@ -309,3 +309,5 @@ footer { background-color: #191A1E; padding: calc(8px * 2) 0; }
 .footer--wrapper svg { height: auto; width: 100%; }
 
 .footer--wrapper svg path { fill: #fff; }
+
+/*# sourceMappingURL=main.css.map */
