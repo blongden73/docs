@@ -80,18 +80,22 @@ Sections:
     - last_name
   - Column Title: Type
     Rows:
-    - String
-    - Otro row
-  - Column Title: Un otro column
+    - string
+    - string
+    - string
+    - string
+    - string
+    - string
+    - string
+  - Column Title: Description
     Rows:
-    - This is the content
-  - Column Title: 4th column testing
-    Rows:
-    - 'How '
-    - many
-    - rows
-    - will
-    - work
+    - required
+    - required
+    - optional
+    - optional
+    - optional
+    - optional
+    - optional
 layout: guide
 ---
 
