@@ -3,13 +3,13 @@ title: Cord Api | Documentation
 date: 2021-11-23 15:35:00 Z
 Colours: Purple
 Introduction Text: |-
-  Welcome to the Cord API!
+  ### Welcome to the Cord API!
 
-  This document describes integration APIs and flows available to partners who wish to embed the Cord experience directly into their application
+  ### This document describes integration APIs and flows available to partners who wish to embed the Cord experience directly into their application
 
-  Use the Cord API to pre-populate the identities of your teams and users. This ensures a fast and seamless user experience, where the Cord sidebar appears immediately and the user is already logged in. This architecture ensures that when a user is requesting a page, Cord already has all their details (name, profile picture) as well as the other people in their organization.
+  ### Use the Cord API to pre-populate the identities of your teams and users. This ensures a fast and seamless user experience, where the Cord sidebar appears immediately and the user is already logged in. This architecture ensures that when a user is requesting a page, Cord already has all their details (name, profile picture) as well as the other people in their organization.
 
-  [Get started with Cord](https://cord.com/)
+  ### [Get started with Cord](https://cord.com/)
 Sections:
 - Title: Authentication
   Text: |-
