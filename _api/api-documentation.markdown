@@ -113,6 +113,60 @@ Sections:
       {
         "success": true
       }
+- Title: Create or update a user
+  Text: |-
+    This endpoint creates or updates a user:
+
+    * if the user does not exist in the Cord backend (based on its ID), it will be created; some fields are required.
+
+    * if the user exists, it will be updated; all fields are optional, only the fields provided will be updated.
+
+    **HTTP Request**
+
+    `PUT https://api.cord.com/v1/users/<ID>`
+
+    **Request Body**
+  Table Columns:
+  - Column Title: Field
+    Rows:
+    - email
+    - "name\t"
+    - status
+    - "profile_picture_url\t"
+    - first_name
+    - last_name
+  - Column Title: Type
+    Rows:
+    - string
+    - string
+    - string
+    - string
+    - string
+    - string
+  - Column Title: Description
+    Rows:
+    - required on create
+    - optional
+    - optional
+    - optional
+    - optional
+    - optional
+  Code:
+  - Text: 'Example request that updates a user''s name and profile picture:'
+    Code: |-
+      curl "https://api.cord.com/v1/users/123" \
+        -X PUT \
+        -H "Authorization: Bearer <ACCESS_TOKEN>" \
+        -H "Content-Type: application/json" \
+        -d '{
+          "name": "Bender Bending Rodriguez",
+          "profile_picture_url": "https://cord.com/favicon-32x32.png"
+        }'
+  - Text: 'If successful, the response will be:'
+    Code: |-
+      {
+        "success": true
+      }
 layout: api
 ---
 
