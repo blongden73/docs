@@ -35,6 +35,16 @@ header {
       margin-top: 2px;
     }
   }
+
+  .layout--api & {
+    a {
+      &:nth-child(even) {
+        svg {
+          margin-bottom: 2px;
+        }
+      }
+    }
+  }
 }
 
 .header--nav {
@@ -636,6 +646,7 @@ header {
 
   code {
     border-radius: 4px;
+    background-color: $greyXlight;
   }
 }
 

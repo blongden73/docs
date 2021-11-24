@@ -56,6 +56,8 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .header--logo svg:nth-child(even), .footer--logo svg:nth-child(even) { margin-top: 2px; }
 
+.layout--api .header--logo a:nth-child(even) svg, .layout--api .footer--logo a:nth-child(even) svg { margin-bottom: 2px; }
+
 .header--nav { height: 100%; }
 
 .header--nav ul { align-items: center; display: flex; margin: 0; height: 100%; }
@@ -258,7 +260,7 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .code--block { font-size: 16px; }
 
-.code--block code { border-radius: 4px; }
+.code--block code { border-radius: 4px; background-color: #F7F7F7; }
 
 .table { flex-wrap: nowrap; margin-bottom: calc(8px*4); }
 
