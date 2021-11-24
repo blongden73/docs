@@ -36,13 +36,27 @@ Sections:
   - Column Title: Description
     Rows:
     - required
-  Code: |-
-    import jwt from 'jsonwebtoken';
+  Code:
+  - Text: '1. Generate a signed app token:'
+    Code: |-
+      import jwt from 'jsonwebtoken';
 
-    const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
-      expiresIn: '1 min',
-      algorithm: 'HS512',
-    });
+      const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
+        expiresIn: '1 min',
+        algorithm: 'HS512',
+      });
+  - Text: '2. Exchange the signed app token for an access token:'
+    Code: |-
+      curl "https://api.cord.com/v1/authorize" \
+        -X POST \
+        -H "Content-Type: application/json" \
+        -d '{ "signed_app_token": "<SIGNED_APP_TOKEN>" }'
+  - Text: 'If successful, the response will be:'
+    Code: |-
+      {
+        "access_token": "eyJzZX...",
+        "expires": "2021-06-29T14:54:17.050Z" // ISO timestamp
+      }
 - Title: Users
   Text: |-
     ## **Create a user**
@@ -80,18 +94,25 @@ Sections:
     - optional
     - optional
     - optional
-  Code: |-
-    curl "https://api.cord.com/v1/users" \
-      -X POST \
-      -H "Authorization: Bearer <ACCESS_TOKEN>" \
-      -H "Content-Type: application/json" \
-      -d '{
-        "id": "3001",
-        "name": "Philip J Fry",
-        "email": "delivery@planetexpress.nny",
-        "first_name": "Philip",
-        "last_name": "Fry"
-      }'
+  Code:
+  - Text: 'Example request that creates a user:'
+    Code: |-
+      curl "https://api.cord.com/v1/users" \
+        -X POST \
+        -H "Authorization: Bearer <ACCESS_TOKEN>" \
+        -H "Content-Type: application/json" \
+        -d '{
+          "id": "3001",
+          "name": "Philip J Fry",
+          "email": "delivery@planetexpress.nny",
+          "first_name": "Philip",
+          "last_name": "Fry"
+        }'
+  - Text: 'If successful, the response will be:'
+    Code: |-
+      {
+        "success": true
+      }
 layout: api
 ---
 
