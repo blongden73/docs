@@ -260,12 +260,37 @@
           </div>
         
         
-          <pre class="code--block"><code class="language-js">import jwt from 'jsonwebtoken';
+          
+          
+            
+              <p>1. Generate a signed app token:</p>
+              
+              <pre class="code--block"><code class="language-js">import jwt from 'jsonwebtoken';
 
 const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
   expiresIn: '1 min',
   algorithm: 'HS512',
 });</code></pre>
+            
+          
+            
+              <p>2. Exchange the signed app token for an access token:</p>
+              
+              <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/authorize" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -d '{ "signed_app_token": "<SIGNED_APP_TOKEN>" }'</code></pre>
+            
+          
+            
+              <p>If successful, the response will be:</p>
+              
+              <pre class="code--block"><code class="language-js">{
+  "access_token": "eyJzZX...",
+  "expires": "2021-06-29T14:54:17.050Z" // ISO timestamp
+}</code></pre>
+            
+          
         
       </div>
       <div class="flex__rightCol">
@@ -358,7 +383,12 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
           </div>
         
         
-          <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/users" \
+          
+          
+            
+              <p>Example request that creates a user:</p>
+              
+              <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/users" \
   -X POST \
   -H "Authorization: Bearer <ACCESS_TOKEN>" \
   -H "Content-Type: application/json" \
@@ -369,6 +399,16 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
     "first_name": "Philip",
     "last_name": "Fry"
   }'</code></pre>
+            
+          
+            
+              <p>If successful, the response will be:</p>
+              
+              <pre class="code--block"><code class="language-js">{
+  "success": true
+}</code></pre>
+            
+          
         
       </div>
       <div class="flex__rightCol">

@@ -76,7 +76,14 @@ layout: default
           </div>
         {% endif %}
         {% if section.Code %}
-          <pre class="code--block"><code class="language-js">{{section.Code}}</code></pre>
+          {% assign code = section.Code %}
+          {% for el in code %}
+            {% if el.Text %}
+              <p>{{el.Text}}</p>
+              {{else}}
+              <pre class="code--block"><code class="language-js">{{el.Code}}</code></pre>
+            {% endif %}
+          {% endfor %}
         {% endif %}
       </div>
       <div class="flex__rightCol">
