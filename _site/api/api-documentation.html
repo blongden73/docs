@@ -168,17 +168,39 @@
     </div>
   </div>
 </section>
-<section>
+<section id="guideIntro" class="guide--introduction">
   <div class="flex guides--content">
-    <div class="flex__leftCol"></div>
+    <div class="flex__leftCol">
+      <div class="section__menu-anchor"></div>
+      <ul class="section__menu">
+        <li><a href="/docs/">Overview</a></li>
+        
+          
+          <li  class="active" >
+            <a href="/docs/api/api-documentation.html">Cord Api </a>
+            
+              <ul class="section__menu-sub">
+                
+                
+                  <li><a href="#authentication">Authentication</a></li>
+                
+                  <li><a href="#users">Users</a></li>
+                
+              </ul>
+            
+          </li>
+        
+      </ul>
+    </div>
     <div class="flex__mainCol">
-      <h3>Welcome to the Cord API!
+      <h3><h3 id="welcome-to-the-cord-api">Welcome to the Cord API!</h3>
 
-This document describes integration APIs and flows available to partners who wish to embed the Cord experience directly into their application
+<h3 id="this-document-describes-integration-apis-and-flows-available-to-partners-who-wish-to-embed-the-cord-experience-directly-into-their-application">This document describes integration APIs and flows available to partners who wish to embed the Cord experience directly into their application</h3>
 
-Use the Cord API to pre-populate the identities of your teams and users. This ensures a fast and seamless user experience, where the Cord sidebar appears immediately and the user is already logged in. This architecture ensures that when a user is requesting a page, Cord already has all their details (name, profile picture) as well as the other people in their organization.
+<h3 id="use-the-cord-api-to-pre-populate-the-identities-of-your-teams-and-users-this-ensures-a-fast-and-seamless-user-experience-where-the-cord-sidebar-appears-immediately-and-the-user-is-already-logged-in-this-architecture-ensures-that-when-a-user-is-requesting-a-page-cord-already-has-all-their-details-name-profile-picture-as-well-as-the-other-people-in-their-organization">Use the Cord API to pre-populate the identities of your teams and users. This ensures a fast and seamless user experience, where the Cord sidebar appears immediately and the user is already logged in. This architecture ensures that when a user is requesting a page, Cord already has all their details (name, profile picture) as well as the other people in their organization.</h3>
 
-[Get started with Cord](https://cord.com/)</h3>
+<h3 id="get-started-with-cord"><a href="https://cord.com/">Get started with Cord</a></h3>
+</h3>
     </div>
     <div class="flex__rightCol"></div>
   </div>
@@ -186,28 +208,7 @@ Use the Cord API to pre-populate the identities of your teams and users. This en
 
   <section id="authentication" class="guides__container">
     <div class="flex guides--content">
-      <div class="flex__leftCol">
-        
-        <div class="section__menu-anchor"></div>
-        <ul class="section__menu">
-          <li><a href="/docs/">Overview</a></li>
-          
-            
-            <li  class="active" >
-              <a href="/docs/api/api-documentation.html">Cord Api </a>
-              
-                <ul class="section__menu-sub">
-                  
-                  
-                    <li><a href="#authentication">Authentication</a></li>
-                  
-                </ul>
-              
-            </li>
-          
-        </ul>
-        
-      </div>
+      <div class="flex__leftCol"></div>
       <div class="flex__mainCol">
         
           <div class="guides__title-wrapper">
@@ -266,6 +267,109 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
   expiresIn: '1 min',
   algorithm: 'HS512',
 });</code></pre>
+        
+      </div>
+      <div class="flex__rightCol">
+      </div>
+    </div>
+  </section>
+
+  <section id="users" class="guides__container">
+    <div class="flex guides--content">
+      <div class="flex__leftCol"></div>
+      <div class="flex__mainCol">
+        
+          <div class="guides__title-wrapper">
+            <h2>Users</h2>
+            <span data-uri="/docs/api/api-documentation.html#users" class="guides__title-icon js-copy-clipboard">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21h6V5H11v6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 11H5v16h16V11Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            </span>
+          </div>
+          <h2 id="create-a-user"><strong>Create a user</strong></h2>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">POST https://api.cord.com/v1/users</code></p>
+
+<p><strong>Request Body</strong></p>
+
+        
+        
+          
+          <div class="flex table">
+            
+              <div class="col">
+                <span class="column-header">Field</span>
+                
+                  <span class="row "><span>id</span></span>
+                
+                  <span class="row "><span>email</span></span>
+                
+                  <span class="row "><span>name</span></span>
+                
+                  <span class="row "><span>status</span></span>
+                
+                  <span class="row "><span>profile_picture_url</span></span>
+                
+                  <span class="row "><span>first_name</span></span>
+                
+                  <span class="row "><span>last_name</span></span>
+                
+              </div>
+            
+              <div class="col">
+                <span class="column-header">Type</span>
+                
+                  <span class="row "><span>string</span></span>
+                
+                  <span class="row "><span>string</span></span>
+                
+                  <span class="row "><span>string</span></span>
+                
+                  <span class="row "><span>string</span></span>
+                
+                  <span class="row "><span>string</span></span>
+                
+                  <span class="row "><span>string</span></span>
+                
+                  <span class="row "><span>string</span></span>
+                
+              </div>
+            
+              <div class="col">
+                <span class="column-header">Description</span>
+                
+                  <span class="row color--required "><span>required</span></span>
+                
+                  <span class="row color--required "><span>required</span></span>
+                
+                  <span class="row color--optional"><span>optional</span></span>
+                
+                  <span class="row color--optional"><span>optional</span></span>
+                
+                  <span class="row color--optional"><span>optional</span></span>
+                
+                  <span class="row color--optional"><span>optional</span></span>
+                
+                  <span class="row color--optional"><span>optional</span></span>
+                
+              </div>
+            
+          </div>
+        
+        
+          <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/users" \
+  -X POST \
+  -H "Authorization: Bearer <ACCESS_TOKEN>" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "id": "3001",
+    "name": "Philip J Fry",
+    "email": "delivery@planetexpress.nny",
+    "first_name": "Philip",
+    "last_name": "Fry"
+  }'</code></pre>
         
       </div>
       <div class="flex__rightCol">

@@ -162,7 +162,7 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .page--guides { cursor: pointer; padding: calc(8px * 3) 0; position: relative; transition: padding ease-in-out 0.3s; transition-delay: 0.2s; }
 
-.layout--guide .page--guides:hover { padding: calc(8px * 3) 0; }
+.layout--guide .page--guides:hover, .layout--api .page--guides:hover { padding: calc(8px * 3) 0; }
 
 .page--guides:hover { padding: calc(8px * 6) 0; }
 
@@ -193,6 +193,8 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 .header--Red .header--logo a:nth-child(even) svg path, .header--Orange .header--logo a:nth-child(even) svg path, .header--Purple .header--logo a:nth-child(even) svg path, .header--Green .header--logo a:nth-child(even) svg path { fill: #fff; }
 
 .window__link { bottom: 0; left: 0; top: 0; position: absolute; right: 0; z-index: 1000; }
+
+.guide--introduction { position: relative; z-index: 100; }
 
 .guides__container { margin-top: -96px; position: relative; top: -96px; padding-top: 96px; }
 

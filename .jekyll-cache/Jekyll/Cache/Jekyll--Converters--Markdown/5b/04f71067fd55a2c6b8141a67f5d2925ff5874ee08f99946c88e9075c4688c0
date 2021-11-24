@@ -1,0 +1,8 @@
+I"ì<h2 id="create-a-user"><strong>Create a user</strong></h2>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">POST https://api.cord.com/v1/users</code></p>
+
+<p><strong>Request Body</strong></p>
+:ET

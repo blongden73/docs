@@ -357,7 +357,7 @@ header {
   transition: padding ease-in-out 0.3s;
   transition-delay: 0.2s;
 
-  .layout--guide & {
+  .layout--guide &, .layout--api & {
     &:hover {
       padding: calc(#{$spacer} * 3) 0;
     }
@@ -438,6 +438,11 @@ header {
   position: absolute;
   right: 0;
   z-index: 1000;
+}
+
+.guide--introduction {
+  position: relative;
+  z-index: 100;
 }
 
 .guides__container {

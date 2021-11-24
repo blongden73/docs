@@ -58,7 +58,7 @@ function inviewIcons() {
 }
 
 function menuPosition(){
-  var menu = document.querySelector('.guides__container .section__menu')
+  var menu = document.querySelector('.section__menu')
   var menuTracker = document.querySelector('.section__menu-anchor')
   if(menuTracker) {
     document.addEventListener('scroll', function(){
