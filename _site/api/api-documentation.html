@@ -185,6 +185,8 @@
                 
                   <li><a href="#users">Users</a></li>
                 
+                  <li><a href="#create-or-update-a-user">Create or update a user</a></li>
+                
               </ul>
             
           </li>
@@ -253,7 +255,7 @@
               <div class="col">
                 <span class="column-header">Description</span>
                 
-                  <span class="row color--required "><span>required</span></span>
+                  <span class="row  color--required "><span>required</span></span>
                 
               </div>
             
@@ -364,9 +366,9 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
               <div class="col">
                 <span class="column-header">Description</span>
                 
-                  <span class="row color--required "><span>required</span></span>
+                  <span class="row  color--required "><span>required</span></span>
                 
-                  <span class="row color--required "><span>required</span></span>
+                  <span class="row  color--required "><span>required</span></span>
                 
                   <span class="row color--optional"><span>optional</span></span>
                 
@@ -398,6 +400,124 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
     "email": "delivery@planetexpress.nny",
     "first_name": "Philip",
     "last_name": "Fry"
+  }'</code></pre>
+            
+          
+            
+              <p>If successful, the response will be:</p>
+              
+              <pre class="code--block"><code class="language-js">{
+  "success": true
+}</code></pre>
+            
+          
+        
+      </div>
+      <div class="flex__rightCol">
+      </div>
+    </div>
+  </section>
+
+  <section id="create-or-update-a-user" class="guides__container">
+    <div class="flex guides--content">
+      <div class="flex__leftCol"></div>
+      <div class="flex__mainCol">
+        
+          <div class="guides__title-wrapper">
+            <h2>Create or update a user</h2>
+            <span data-uri="/docs/api/api-documentation.html#create-or-update-a-user" class="guides__title-icon js-copy-clipboard">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21h6V5H11v6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 11H5v16h16V11Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            </span>
+          </div>
+          <p>This endpoint creates or updates a user:</p>
+
+<ul>
+  <li>
+    <p>if the user does not exist in the Cord backend (based on its ID), it will be created; some fields are required.</p>
+  </li>
+  <li>
+    <p>if the user exists, it will be updated; all fields are optional, only the fields provided will be updated.</p>
+  </li>
+</ul>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">PUT https://api.cord.com/v1/users/&lt;ID&gt;</code></p>
+
+<p><strong>Request Body</strong></p>
+
+        
+        
+          
+          <div class="flex table">
+            
+              <div class="col">
+                <span class="column-header">Field</span>
+                
+                  <span class="row "><span>email</span></span>
+                
+                  <span class="row "><span>name	</span></span>
+                
+                  <span class="row "><span>status</span></span>
+                
+                  <span class="row "><span>profile_picture_url	</span></span>
+                
+                  <span class="row "><span>first_name</span></span>
+                
+                  <span class="row "><span>last_name</span></span>
+                
+              </div>
+            
+              <div class="col">
+                <span class="column-header">Type</span>
+                
+                  <span class="row "><span>string</span></span>
+                
+                  <span class="row "><span>string</span></span>
+                
+                  <span class="row "><span>string</span></span>
+                
+                  <span class="row "><span>string</span></span>
+                
+                  <span class="row "><span>string</span></span>
+                
+                  <span class="row "><span>string</span></span>
+                
+              </div>
+            
+              <div class="col">
+                <span class="column-header">Description</span>
+                
+                  <span class="row color--required-on-create "><span>required on create</span></span>
+                
+                  <span class="row color--optional"><span>optional</span></span>
+                
+                  <span class="row color--optional"><span>optional</span></span>
+                
+                  <span class="row color--optional"><span>optional</span></span>
+                
+                  <span class="row color--optional"><span>optional</span></span>
+                
+                  <span class="row color--optional"><span>optional</span></span>
+                
+              </div>
+            
+          </div>
+        
+        
+          
+          
+            
+              <p>Example request that updates a user's name and profile picture:</p>
+              
+              <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/users/123" \
+  -X PUT \
+  -H "Authorization: Bearer <ACCESS_TOKEN>" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Bender Bending Rodriguez",
+    "profile_picture_url": "https://cord.com/favicon-32x32.png"
   }'</code></pre>
             
           

@@ -472,7 +472,7 @@ header {
   .flex__mainCol {
     ul {
       li {
-        align-items: center;
+        align-items: flex-start;
         display: flex;
         margin-bottom: $spacer;
         padding-left: calc(#{$spacer} * 4);
@@ -480,10 +480,12 @@ header {
         &:before {
           background-color: $greylight;
           border-radius: 50%;
-          display: block;
           content: '';
+          display: block;
+          flex-shrink: 0;
           height: 20px;
           margin-right: $spacer;
+          margin-top: 2px;
           width: 20px;
         }
 

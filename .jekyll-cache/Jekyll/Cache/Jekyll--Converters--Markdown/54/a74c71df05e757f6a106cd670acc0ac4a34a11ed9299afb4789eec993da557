@@ -1,0 +1,17 @@
+I"<p>This endpoint creates or updates a user:</p>
+
+<ul>
+  <li>
+    <p>if the user does not exist in the Cord backend (based on its ID), it will be created; some fields are required.</p>
+  </li>
+  <li>
+    <p>if the user exists, it will be updated; all fields are optional, only the fields provided will be updated.</p>
+  </li>
+</ul>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">PUT https://api.cord.com/v1/users/&lt;ID&gt;</code></p>
+
+<p><strong>Request Body</strong></p>
+:ET
