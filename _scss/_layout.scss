@@ -707,6 +707,12 @@ header {
         }
       }
 
+      &.color--required-on-create {
+        span {
+          background-color: $orange;
+        }
+      }
+
       &.color--optional {
         span {
           background-color: $green;
