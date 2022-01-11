@@ -64,19 +64,31 @@ Sections:
     \n\n- Alternatively, if you're embedding a [custom launcher button](), you can
     style it via HTML attributes.\n\n- React components that can be styled with any
     CSS you like, and further out-of-the-box customisation options are coming soon.
-    [E-mail us](mailto:support@cord.com) about what you'd like to customise - we accept
-    pictures, Figma links, CSS styles or text descriptions."
+    [E-mail us](mailto:partner-support@cord.com) about what you'd like to customise
+    - we accept pictures, Figma links, CSS styles or text descriptions."
 - Title: API keys
   Text: |-
-    Need a staging API key and a separate live key? You can create up to 10 keys in your [Developer Console](https://console.cord.com/) to separate logging, messages, etc. (Let [us know] (mailto:support@cord.com) if you need more).
+    Need a staging API key and a separate live key? You can create up to 10 keys in your [Developer Console](https://console.cord.com/) to separate logging, messages, etc. (Let [us know](mailto:partner-support@cord.com) if you need more).
 
     The keys are completely separate and can be configured separately, contain a separate set of user/org and message data, etc.
 - Title: Analytics
-  Text: Segment, GCP
+  Text: |-
+    Want to know how your users are collaborating on your product? Great! There are two ways you can do that.
+
+    - If you're using [Segment](https://www.segment.io) for your analytics, you can give us a Segment key and we will create a Segment source for all of your users' events connected to that key. You can then plug that into any Segment destination you wish. This is the [event schema]()
+
+    - If you're using GCP or AWS, we can dump all the events, daily, into a table in BigQuery or RDS. [Contact us](mailto:partner-support@cord.com) to set it up.
 - Title: Broadcast module
-  Text: Onboarding
+  Text: Want to write threads programmatically into Cord's sidebar for your users
+    to see? That API is coming - [Contact us](mailto:partner-support@cord.com) to
+    sign up to try it out.
 - Title: Support module
-  Text: Support
+  Text: "We can create an @vendor alias (e.g, @Hubspot) that users can mention in
+    the sidebar to send your success/support team messages from Cord. These messages
+    can include annotations with screenshots and help you understand what your users
+    need. \n\nYou can receive these messages in e-mail, in a Slack channel, or we
+    can connect it to your Zendesk/Intercom ticketing system.\n\n[Contact us](mailto:partner-support@cord.com)
+    to set it up for you."
   Code: |-
     import jwt from 'jsonwebtoken';
 
@@ -85,8 +97,8 @@ Sections:
       algorithm: 'HS512',
     });
 - Title: Accessing message content
-  Text: 'This is how we could use tables in the API docs below is an example of how
-    this would behave. '
+  Text: 'You can download conversations happening on your application in Cord or access
+    them programmatically, for back up, analysis or other product ideas. '
   Table Columns:
   - Column Title: Field
     Rows:
@@ -115,6 +127,15 @@ Sections:
     - optional
     - optional
     - optional
+- Title: Events, webhooks and callbacks
+  Text: "There are several callbacks we're making available so you can trigger logic
+    based on things that a user does in Cord. For example, when a user invites someone
+    new to collaborate, you can provision a new seat for them on your app. Or, when
+    a user creates a task, closes the sidebar, or navigates to a thread in their inbox,
+    our code can call your app so it loads the correct state.  \n\nThese APIs are
+    in beta - we don't want to publicly document them yet because they are still changing.
+    But [contact us](mailto:partner-support@cord.com) if you want to try these out."
+  Code: 
 layout: guide
 ---
 
