@@ -19,6 +19,46 @@ Introduction Text: Adding collaboration into your product is just a couple of li
   look and feel. This guide will help you explore the different ways you can make
   your users happier.
 Sections:
+- Title: Fitting Cord to your product
+  Text: "The first step of adding Cord is setting up *Thread Contexts* and *Fitting
+    the Sidebar*. \n\n## Thread Contexts\n\nChats your users have in your product
+    live in threads. *Thread Contexts* define which threads live in a page. For example,
+    a single Google Doc is a context for all the comments on that Google Doc. You
+    wouldn't want to see comments on \"Wedding party invite list\" appearing on \"Meemaw's
+    apple pie recipe\", and vice versa.\n\nBy default, Cord will assume every URL
+    is a *thread context*, so that all comments on `hubspot.com/contacts/90120` are
+    separate from the ones on `hubspot.com/deals/77711`. But, this might not be what
+    **you** want. \n\nFor example if your app uses GET parameters to define what page
+    is shown, you'd maybe like `mysaas.to/recipes?id=4` to have different threads
+    than `mysaas.to/recipes?id=99`. But equally, you do want the same threads for
+    `mysaas.to/recipes?id=99` and `mysaas.to/recipes?id=99&measures=imperial` - these
+    are the same recipe, just with a different view.\n\nIn another example, maybe
+    you use a single-page app (SPA), and there are many different views your user
+    can see under `mysaas.to/recipes` - URLs don't say what the thread context is
+    at all! \n\n**All of these work out of the box with Cord**. We have a mapping
+    engine that takes either a URL schema (containing rules like `mysaas.to/:section?id=:pageID`)
+    or DOM elements and events in your SPA, and know which threads to display. To
+    configure these, for now you get in touch with our Cord specialists who will configure
+    this for your app. Simply [Contact us](mailto:partner-support@cord.com) when you
+    get started embedding Cord.\n\nConfiguring thread contexts will soon be something
+    you can see, control and play with inside the [Developer Console](https://console.cord.com/).
+    In the meantime, enjoy the free service and let us worry about that for you. \n\n##
+    Fitting the sidebar\n\nIf you've used the Cord chrome extension or have seen collaboration
+    built into other products, you'll notice when the Cord collaboration sidebar opens,
+    it \"squeezes\" the main page in a responsive way, and doesn't overlay on the
+    page like some support chat solutions.\n\nThis is important because your users
+    want to collaborate *while* using your product, not instead of using it, with
+    collaboration hiding the very page they want to work on. \n\nCord does this by
+    automatically applying some CSS rules (like changing the `width` attributes of
+    certain elements). Most of the time, this works out of the box, but sometimes
+    it fails, making the product look ugly. We don't like ugly. So we make sure to
+    add a few rules in our engine for your domain configuration to make sure Cord
+    is snug-as-a-bug on the right hand side of your page. Just [shoot us an email](mailto:partner-support@cord.com)
+    when you get started with Cord and our specialists will get your product supported
+    in no time. \n\nThis option, too, will soon be something you can see, control
+    and play with inside the [Developer Console](https://console.cord.com/). In the
+    meantime, enjoy the free service and let us worry about that for you. "
+  Code: 
 - Title: Colors and styles
   Text: "- You can customise the sidebar colors in the [Developer Console](https://console.cord.com/).
     \n\n- Alternatively, if you're embedding a [custom launcher button](), you can
