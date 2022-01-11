@@ -1,0 +1,12 @@
+I"J<ul>
+  <li>
+    <p>You can customise the sidebar colors in the <a href="https://console.cord.com/">Developer Console</a>.</p>
+  </li>
+  <li>
+    <p>Alternatively, if you’re embedding a <a href="">custom launcher button</a>, you can style it via HTML attributes.</p>
+  </li>
+  <li>
+    <p>React components that can be styled with any CSS you like, and further out-of-the-box customisation options are coming soon. <a href="mailto:support@cord.com">E-mail us</a> about what you’d like to customise - we accept pictures, Figma links, CSS styles or text descriptions.</p>
+  </li>
+</ul>
+:ET
