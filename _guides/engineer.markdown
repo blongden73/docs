@@ -1,13 +1,7 @@
 ---
 title: Engineering | Practice
 date: 2021-11-12 10:10:00 Z
-Introduction Text: 'Cord is a platform for Collaboration, but unlike traditional collaboration
-  products Cord operates without boundries, Cord works everywhere. And with this comes
-  unique challenges in terms of design. In this section we’ll show you the considerations
-  which have gone into designing and making the best collaboration experience for
-  your users, and all our users. '
 Colours: Green
-Overview Description: Pricing lorem ipsum dolor est something small
 Icon: <svg width="382" height="383" viewBox="0 0 382 383" fill="none" xmlns="http://www.w3.org/2000/svg"><path
   stroke="#fff" d="M.5 1.5h381v381H.5z"/><path fill-rule="evenodd" clip-rule="evenodd"
   d="M0 127.546V1.593h127.727v37.254h-63.14c3.468 9.986 8.536 20.2 15.628 29.529 15.833
@@ -19,45 +13,30 @@ Icon: <svg width="382" height="383" viewBox="0 0 382 383" fill="none" xmlns="htt
   0-73.663-17.943-89.496-38.77-16.509-21.717-22.052-48.227-21.969-65.511l-37.254-.179Z"
   fill="#fff"/><circle opacity=".5" cx="189.817" cy="193.774" r="165.073" stroke="#fff"/><path
   opacity=".5" d="M1.348 381.795 380.702 2.347M1.094 1.09l379.93 379.93" stroke="#fff"/></svg>
+Overview Description: Pricing lorem ipsum dolor est something small
+Introduction Text: Adding collaboration into your product is just a couple of lines
+  of Javascript. If you like, there's a lot more you can do to fine-tune the experience,
+  look and feel. This guide will help you explore the different ways you can make
+  your users happier.
 Sections:
-- Title: Testing Section Title
+- Title: Colors and styles
+  Text: "- You can customise the sidebar colors in the [Developer Console](https://console.cord.com/).
+    \n\n- Alternatively, if you're embedding a [custom launcher button](), you can
+    style it via HTML attributes.\n\n- React components that can be styled with any
+    CSS you like, and further out-of-the-box customisation options are coming soon.
+    [E-mail us](mailto:support@cord.com) about what you'd like to customise - we accept
+    pictures, Figma links, CSS styles or text descriptions."
+- Title: API keys
   Text: |-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Need a staging API key and a separate live key? You can create up to 10 keys in your [Developer Console](https://console.cord.com/) to separate logging, messages, etc. (Let [us know] (mailto:support@cord.com) if you need more).
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-    <div class="video-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/0QmW7qvPucc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-- Title: Testing second section on the page
-  Text: |-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-- Title: Images
-  Text: |-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-    ![Chat.jpg](/docs/uploads/Chat.jpg)
-- Title: List test
-  Text: |-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-    * This is a list item
-
-    * Another list item
-
-    * and another one
-- Title: Code block
-  Text: 'If we add an extra field to this section called Code, we can see that this
-    will give us a code block on the page. '
+    The keys are completely separate and can be configured separately, contain a separate set of user/org and message data, etc.
+- Title: Analytics
+  Text: Segment, GCP
+- Title: Broadcast module
+  Text: Onboarding
+- Title: Support module
+  Text: Support
   Code: |-
     import jwt from 'jsonwebtoken';
 
@@ -65,7 +44,7 @@ Sections:
       expiresIn: '1 min',
       algorithm: 'HS512',
     });
-- Title: Table block
+- Title: Accessing message content
   Text: 'This is how we could use tables in the API docs below is an example of how
     this would behave. '
   Table Columns:
