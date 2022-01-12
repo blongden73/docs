@@ -1,0 +1,4 @@
+I"Q<p>There are several callbacks we’re making available so you can trigger logic based on things that a user does in Cord. For example, when a user invites someone new to collaborate, you can provision a new seat for them on your app. Or, when a user creates a task, closes the sidebar, or navigates to a thread in their inbox, our code can call your app so it loads the correct state.</p>
+
+<p>These APIs are in beta - we don’t want to publicly document them yet because they are still changing. But <a href="mailto:partner-support@cord.com">contact us</a> if you want to try these out.</p>
+:ET

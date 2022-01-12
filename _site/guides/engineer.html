@@ -178,7 +178,7 @@
   </div>
 </section>
 
-  <section id="colors-and-styles" class="guides__container">
+  <section id="fitting-cord-to-your-product" class="guides__container">
     <div class="flex guides--content">
       <div class="flex__leftCol">
         
@@ -193,6 +193,8 @@
                 <ul class="section__menu-sub">
                   
                   
+                    <li><a href="#fitting-cord-to-your-product">Fitting Cord to your product</a></li>
+                  
                     <li><a href="#colors-and-styles">Colors and styles</a></li>
                   
                     <li><a href="#api-keys">API keys</a></li>
@@ -204,6 +206,8 @@
                     <li><a href="#support-module">Support module</a></li>
                   
                     <li><a href="#accessing-message-content">Accessing message content</a></li>
+                  
+                    <li><a href="#events,-webhooks-and-callbacks">Events, webhooks and callbacks</a></li>
                   
                 </ul>
               
@@ -239,6 +243,55 @@
       <div class="flex__mainCol">
         
           <div class="guides__title-wrapper">
+            <h2>Fitting Cord to your product</h2>
+            <span data-uri="/docs/guides/engineer.html#fitting-cord-to-your-product" class="guides__title-icon js-copy-clipboard">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21h6V5H11v6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 11H5v16h16V11Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            </span>
+          </div>
+          <p>The first step of adding Cord is setting up <em>Thread Contexts</em> and <em>Fitting the Sidebar</em>.</p>
+
+<h2 id="thread-contexts">Thread Contexts</h2>
+
+<p>Chats your users have in your product live in threads. <em>Thread Contexts</em> define which threads live in a page. For example, a single Google Doc is a context for all the comments on that Google Doc. You wouldn’t want to see comments on “Wedding party invite list” appearing on “Meemaw’s apple pie recipe”, and vice versa.</p>
+
+<p>By default, Cord will assume every URL is a <em>thread context</em>, so that all comments on <code class="language-plaintext highlighter-rouge">hubspot.com/contacts/90120</code> are separate from the ones on <code class="language-plaintext highlighter-rouge">hubspot.com/deals/77711</code>. But, this might not be what <strong>you</strong> want.</p>
+
+<p>For example if your app uses GET parameters to define what page is shown, you’d maybe like <code class="language-plaintext highlighter-rouge">mysaas.to/recipes?id=4</code> to have different threads than <code class="language-plaintext highlighter-rouge">mysaas.to/recipes?id=99</code>. But equally, you do want the same threads for <code class="language-plaintext highlighter-rouge">mysaas.to/recipes?id=99</code> and <code class="language-plaintext highlighter-rouge">mysaas.to/recipes?id=99&amp;measures=imperial</code> - these are the same recipe, just with a different view.</p>
+
+<p>In another example, maybe you use a single-page app (SPA), and there are many different views your user can see under <code class="language-plaintext highlighter-rouge">mysaas.to/recipes</code> - URLs don’t say what the thread context is at all!</p>
+
+<p><strong>All of these work out of the box with Cord</strong>. We have a mapping engine that takes either a URL schema (containing rules like <code class="language-plaintext highlighter-rouge">mysaas.to/:section?id=:pageID</code>) or DOM elements and events in your SPA, and know which threads to display. To configure these, for now you get in touch with our Cord specialists who will configure this for your app. Simply <a href="mailto:partner-support@cord.com">Contact us</a> when you get started embedding Cord.</p>
+
+<p>Configuring thread contexts will soon be something you can see, control and play with inside the <a href="https://console.cord.com/">Developer Console</a>. In the meantime, enjoy the free service and let us worry about that for you.</p>
+
+<h2 id="fitting-the-sidebar">Fitting the sidebar</h2>
+
+<p>If you’ve used the Cord chrome extension or have seen collaboration built into other products, you’ll notice when the Cord collaboration sidebar opens, it “squeezes” the main page in a responsive way, and doesn’t overlay on the page like some support chat solutions.</p>
+
+<p>This is important because your users want to collaborate <em>while</em> using your product, not instead of using it, with collaboration hiding the very page they want to work on.</p>
+
+<p>Cord does this by automatically applying some CSS rules (like changing the <code class="language-plaintext highlighter-rouge">width</code> attributes of certain elements). Most of the time, this works out of the box, but sometimes it fails, making the product look ugly. We don’t like ugly. So we make sure to add a few rules in our engine for your domain configuration to make sure Cord is snug-as-a-bug on the right hand side of your page. Just <a href="mailto:partner-support@cord.com">shoot us an email</a> when you get started with Cord and our specialists will get your product supported in no time.</p>
+
+<p>This option, too, will soon be something you can see, control and play with inside the <a href="https://console.cord.com/">Developer Console</a>. In the meantime, enjoy the free service and let us worry about that for you.</p>
+
+        
+        
+        
+      </div>
+      <div class="flex__rightCol">
+      </div>
+    </div>
+  </section>
+
+  <section id="colors-and-styles" class="guides__container">
+    <div class="flex guides--content">
+      <div class="flex__leftCol">
+        
+      </div>
+      <div class="flex__mainCol">
+        
+          <div class="guides__title-wrapper">
             <h2>Colors and styles</h2>
             <span data-uri="/docs/guides/engineer.html#colors-and-styles" class="guides__title-icon js-copy-clipboard">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21h6V5H11v6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 11H5v16h16V11Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -253,7 +306,7 @@
     <p>Alternatively, if you’re embedding a <a href="">custom launcher button</a>, you can style it via HTML attributes.</p>
   </li>
   <li>
-    <p>React components that can be styled with any CSS you like, and further out-of-the-box customisation options are coming soon. <a href="mailto:support@cord.com">E-mail us</a> about what you’d like to customise - we accept pictures, Figma links, CSS styles or text descriptions.</p>
+    <p>React components that can be styled with any CSS you like, and further out-of-the-box customisation options are coming soon. <a href="mailto:partner-support@cord.com">E-mail us</a> about what you’d like to customise - we accept pictures, Figma links, CSS styles or text descriptions.</p>
   </li>
 </ul>
 
@@ -280,7 +333,7 @@
 
             </span>
           </div>
-          <p>Need a staging API key and a separate live key? You can create up to 10 keys in your <a href="https://console.cord.com/">Developer Console</a> to separate logging, messages, etc. (Let [us know] (mailto:support@cord.com) if you need more).</p>
+          <p>Need a staging API key and a separate live key? You can create up to 10 keys in your <a href="https://console.cord.com/">Developer Console</a> to separate logging, messages, etc. (Let <a href="mailto:partner-support@cord.com">us know</a> if you need more).</p>
 
 <p>The keys are completely separate and can be configured separately, contain a separate set of user/org and message data, etc.</p>
 
@@ -307,7 +360,16 @@
 
             </span>
           </div>
-          <p>Segment, GCP</p>
+          <p>Want to know how your users are collaborating on your product? Great! There are two ways you can do that.</p>
+
+<ul>
+  <li>
+    <p>If you’re using <a href="https://www.segment.io">Segment</a> for your analytics, you can give us a Segment key and we will create a Segment source for all of your users’ events connected to that key. You can then plug that into any Segment destination you wish. This is the <a href="">event schema</a></p>
+  </li>
+  <li>
+    <p>If you’re using GCP or AWS, we can dump all the events, daily, into a table in BigQuery or RDS. <a href="mailto:partner-support@cord.com">Contact us</a> to set it up.</p>
+  </li>
+</ul>
 
         
         
@@ -332,7 +394,7 @@
 
             </span>
           </div>
-          <p>Onboarding</p>
+          <p>Want to write threads programmatically into Cord’s sidebar for your users to see? That API is coming - <a href="mailto:partner-support@cord.com">Contact us</a> to sign up to try it out.</p>
 
         
         
@@ -357,7 +419,11 @@
 
             </span>
           </div>
-          <p>Support</p>
+          <p>We can create an @vendor alias (e.g, @Hubspot) that users can mention in the sidebar to send your success/support team messages from Cord. These messages can include annotations with screenshots and help you understand what your users need.</p>
+
+<p>You can receive these messages in e-mail, in a Slack channel, or we can connect it to your Zendesk/Intercom ticketing system.</p>
+
+<p><a href="mailto:partner-support@cord.com">Contact us</a> to set it up for you.</p>
 
         
         
@@ -389,7 +455,7 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
 
             </span>
           </div>
-          <p>This is how we could use tables in the API docs below is an example of how this would behave.</p>
+          <p>You can download conversations happening on your application in Cord or access them programmatically, for back up, analysis or other product ideas.</p>
 
         
         
@@ -455,6 +521,33 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
               </div>
             
           </div>
+        
+      </div>
+      <div class="flex__rightCol">
+      </div>
+    </div>
+  </section>
+
+  <section id="events,-webhooks-and-callbacks" class="guides__container">
+    <div class="flex guides--content">
+      <div class="flex__leftCol">
+        
+      </div>
+      <div class="flex__mainCol">
+        
+          <div class="guides__title-wrapper">
+            <h2>Events, webhooks and callbacks</h2>
+            <span data-uri="/docs/guides/engineer.html#events,-webhooks-and-callbacks" class="guides__title-icon js-copy-clipboard">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21h6V5H11v6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 11H5v16h16V11Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            </span>
+          </div>
+          <p>There are several callbacks we’re making available so you can trigger logic based on things that a user does in Cord. For example, when a user invites someone new to collaborate, you can provision a new seat for them on your app. Or, when a user creates a task, closes the sidebar, or navigates to a thread in their inbox, our code can call your app so it loads the correct state.</p>
+
+<p>These APIs are in beta - we don’t want to publicly document them yet because they are still changing. But <a href="mailto:partner-support@cord.com">contact us</a> if you want to try these out.</p>
+
+        
+        
         
       </div>
       <div class="flex__rightCol">

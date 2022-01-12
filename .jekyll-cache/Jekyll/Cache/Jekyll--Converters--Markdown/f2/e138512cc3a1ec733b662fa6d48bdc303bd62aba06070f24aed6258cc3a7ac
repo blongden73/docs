@@ -1,0 +1,11 @@
+I"�<p>Want to know how your users are collaborating on your product? Great! There are two ways you can do that.</p>
+
+<ul>
+  <li>
+    <p>If you’re using <a href="https://www.segment.io">Segment</a> for your analytics, you can give us a Segment key and we will create a Segment source for all of your users’ events connected to that key. You can then plug that into any Segment destination you wish. This is the <a href="">event schema</a></p>
+  </li>
+  <li>
+    <p>If you’re using GCP or AWS, we can dump all the events, daily, into a table in BigQuery or RDS. <a href="mailto:partner-support@cord.com">Contact us</a> to set it up.</p>
+  </li>
+</ul>
+:ET
