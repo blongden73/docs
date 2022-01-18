@@ -252,12 +252,12 @@ header {
   width: 100%;
 
   @include mq($from: tablet) {
-    width: calc(60%);
+    width: calc(55%);
   }
 
   @include mq($from: desktop) {
     padding: unset;
-    width: calc(60% - 120px);
+    width: calc(55% - 120px);
   }
   img {
     height: auto;
@@ -314,11 +314,13 @@ header {
   width: 100%;
 
   @include mq($from: tablet) {
+    margin:0 2%;
     padding: unset;
     width: calc(40%);
   }
 
   @include mq($from: desktop) {
+    margin:0 2%;
     padding: unset;
     width: calc(40% - 120px);
   }

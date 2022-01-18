@@ -75,6 +75,8 @@ layout: default
             {% endfor %}
           </div>
         {% endif %}
+      </div>
+      <div class="flex__rightCol">
         {% if section.Code %}
           {% assign code = section.Code %}
           {% for el in code %}
@@ -85,8 +87,6 @@ layout: default
             {% endif %}
           {% endfor %}
         {% endif %}
-      </div>
-      <div class="flex__rightCol">
       </div>
     </div>
   </section>
