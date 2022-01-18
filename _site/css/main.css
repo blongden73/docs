@@ -152,6 +152,10 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 @keyframes dash { to { stroke-dashoffset: 0; } }
 
+@media all and (min-width: 75em) { .layout--api .guides__container { margin: 0; padding-top: 0; top: 0; } }
+
+@media all and (min-width: 75em) { .layout--api .guides--content .flex__rightCol { background-color: #F8F7F2; margin: 0 0 0 2%; width: calc(43% - 120px); padding-left: 2%; padding-right: 2%; } }
+
 .flex__rightCol { box-sizing: border-box; padding: 0 calc(8px * 2); width: 100%; }
 
 @media all and (min-width: 48em) { .flex__rightCol { margin: 0 2%; padding: unset; width: calc(40%); } }
@@ -266,7 +270,7 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .code--block { font-size: 16px; }
 
-.code--block code { border-radius: 4px; background-color: #F7F7F7; }
+.code--block code { border-radius: 4px; background-color: #e4e4e4; }
 
 .table { flex-wrap: nowrap; margin-bottom: calc(8px*4); }
 

@@ -92,7 +92,7 @@ layout: default
   </section>
 {% endfor %}
 
-{% assign onwardList = site.guides | where: 'type', page.type %}
+{% assign onwardList = site.api | where: 'type', page.type %}
 {% assign onwardPage = onwardList | reverse %}
 
 {% if onwardPage.size > 1 %}
