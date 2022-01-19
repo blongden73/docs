@@ -167,31 +167,6 @@ Sections:
     **HTTP Request**
 
     `GET https://api.cord.com/v1/users`
-  Table Columns:
-  - Column Title: 
-    Rows:
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-  - Column Title: 
-    Rows:
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-  - Column Title: 
-    Rows:
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
   Code:
   - Text: 'Example request to gets the list of users:'
     Code: |-
@@ -213,6 +188,22 @@ Sections:
           "email": "bending@planetexpress.nny"
         }
       ]
+- Title: Organizations
+  Text: |-
+    ## Create an organization
+
+    **HTTP Request**
+
+    `POST https://api.cord.com/v1/organizations`
+
+    **Request Body**
+  Code:
+  - Text: 
+    Code: 
+  - Text: 
+    Code: 
+  Table Columns:
+    Key 1: 
 layout: api
 ---
 
