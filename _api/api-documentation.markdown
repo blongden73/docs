@@ -197,13 +197,44 @@ Sections:
     `POST https://api.cord.com/v1/organizations`
 
     **Request Body**
-  Code:
-  - Text: 
-    Code: 
-  - Text: 
-    Code: 
   Table Columns:
-    Key 1: 
+  - Column Title: Field
+    Rows:
+    - id
+    - name
+    - status
+    - members
+  - Column Title: Type
+    Rows:
+    - string
+    - string
+    - string
+    - string[]
+  - Column Title: Description
+    Rows:
+    - required. Partner-specific unique organization ID
+    - required. Organization name
+    - optional. `active` OR `deleted`
+    - optional. List of partner-specific IDs of the users who are members of this
+      organization. These are the IDs you gave for these users when you created them
+      in the Create Users call above.
+  Code:
+  - Text: "Example request to create an organization:\n\n"
+    Code: |-
+      curl "https://api.cord.com/v1/organizations" \
+        -X POST \
+        -H "Authorization: Bearer <ACCESS_TOKEN>" \
+        -H "Content-Type: application/json" \
+        -d '{
+          "id": "10",
+          "name": "Planet Express",
+          "members": ["4", "42"]
+        }'
+  - Text: "If successful, the response will be:\n\n"
+    Code: |-
+      {
+        "success": true
+      }
 layout: api
 ---
 
