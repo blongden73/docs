@@ -235,6 +235,47 @@ Sections:
       {
         "success": true
       }
+- Title: Create or update an organization
+  Text: "Use `HTTP POST` to update an existing organization or create a new one:\n\n-
+    If the organization does not exist in the Cord backend (based on its ID), it will
+    be created; some fields are required.\n- If the organization exists, it will be
+    updated: all fields are optional, and only the fields provided will be updated.
+    \n- If the request is updating the members list, the list is treated as exhaustive:
+    all member user IDs must be included, and previous members who are not in the
+    list will be removed.\n\n**HTTP Request**\n\n`PUT https://api.cord.com/v1/organizations/<ID>`\n\n**Request
+    Body**"
+  Table Columns:
+  - Column Title: Field
+    Rows:
+    - name
+    - status
+    - members
+  - Column Title: Type
+    Rows:
+    - string
+    - string
+    - string[]
+  - Column Title: Description
+    Rows:
+    - Required on create. Organization name
+    - Optional. `active` OR `deleted`
+    - Optional. List of partner-specific IDs of the users who are members of this
+      organization
+  Code:
+  - Text: 'Example request to update and organization''s status to deleted:'
+    Code: |
+      curl "https://api.cord.com/v1/organizations/456" \
+        -X PUT \
+        -H "Authorization: Bearer <ACCESS_TOKEN>" \
+        -H "Content-Type: application/json" \
+        -d '{
+          "status": "deleted",
+        }'
+  - Text: 'If successful, the response will be:'
+    Code: |-
+      {
+        "success": true
+      }
 layout: api
 ---
 
