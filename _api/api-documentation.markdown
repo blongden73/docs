@@ -353,6 +353,69 @@ Sections:
         "name": "Planet Express",
         "members": ["4", "42"]
       }
+- Title: Batch
+  Text: |-
+    Use this for cases where you need to take actions on several organisations or users at once. The action taken for each entity is "create or update": If an existing user or organisation with that ID exists, it will be updated with the provided data.
+
+    **HTTP Request**
+
+    `POST https://api.cord.com/v1/batch`
+
+    **Request Body**
+  Table Columns:
+  - Column Title: Field
+    Rows:
+    - users
+    - organizations
+  - Column Title: Type
+    Rows:
+    - user[]
+    - organization[]
+  - Column Title: Description
+    Rows:
+    - 'optional. List of user objects. Every object must include the `id` field. If
+      the user already exists, all other fields are optional and only updated when
+      present. If the user does not already exist, fields are required as described
+      above in the "Create a user" API.
+
+'
+    - optional List of organization objects. Every object must include the `id` field.
+      If the organization already exists, all other fields are optional and only updated
+      when present. If the organization does not already exist, fields are required
+      as described above in the "Create an organization" API.
+  Code:
+  - Text: 'Example request that operates on several users and organizations:'
+    Code: |-
+      curl "https://api.cord.com/v1/batch" \
+        -X POST \
+        -H "Authorization: Bearer <ACCESS_TOKEN>" \
+        -H "Content-Type: application/json" \
+        -d '{
+          "organizations": [
+            {
+              "id": "10",
+              "name": "Planet Express",
+              "members": ["4", "42"]
+            }
+          ],
+          "users": [
+            {
+              "id": "4",
+              "name": "Hubert Farnsworth",
+              "email": "hubert@planetexpress.nny"
+            },
+            {
+              "id": "42",
+              "name": "Leela Turanga",
+              "email": "leela@planetexpress.nny"
+            }
+          ]
+        }'
+  - Text: 'If successful, the response is:'
+    Code: |-
+      {
+        "success": true
+      }
 layout: api
 ---
 
