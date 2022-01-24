@@ -1,5 +1,5 @@
 ---
-title: Cord API | Documentation
+title: Documentation | Cord API
 date: 2021-11-23 15:35:00 Z
 Colours: Purple
 Introduction Text: "### Starting to use the Cord API\n\n### The first steps in adding
