@@ -1,5 +1,5 @@
 ---
-title: Cord API | Embedding
+title: Embedding | Cord API
 date: 2022-01-21 13:01:00 Z
 Sections:
 - Title: Embedding Cord
