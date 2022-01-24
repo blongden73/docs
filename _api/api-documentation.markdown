@@ -162,7 +162,7 @@ Sections:
       }
 - Title: List users
   Text: |-
-    List all users created in your application.
+    List all users created with this *App ID*.
 
     **HTTP Request**
 
@@ -230,7 +230,7 @@ Sections:
           "name": "Planet Express",
           "members": ["4", "42"]
         }'
-  - Text: "If successful, the response will be:\n\n"
+  - Text: "If successful, the response is:\n\n"
     Code: |-
       {
         "success": true
@@ -271,16 +271,16 @@ Sections:
         -d '{
           "status": "deleted",
         }'
-  - Text: 'If successful, the response will be:'
+  - Text: 'If successful, the response is:'
     Code: |-
       {
         "success": true
       }
 - Title: Update organization members
-  Text: "This endpoint allows adding and/or removing specific members from an organization.
-    \n\nRequests to add a user that is already a member of that organisation, or remove
-    a user that is not a member, will have no effect (but will not return an error).
-    \n\n**Note: It is an error to add and remove the same user in a single request**\n\n**HTTP
+  Text: "Use `HTTP POST` to add and/or remove members from an organization. \n\nRequests
+    to add a user that is already a member of that organisation, or remove a user
+    that is not a member, will have no effect (but will not return an error). \n\n**Note:
+    It is an error to add and remove the same user in a single request**\n\n**HTTP
     Request**\n\n`POST https://api.cord.com/v1/organizations/<ID>/members`\n\n**Request
     Body**"
   Table Columns:
@@ -309,10 +309,49 @@ Sections:
           "add": ["4"],
           "remove": ["42"]
         }'
-  - Text: 'If successful, the response will be:'
+  - Text: 'If successful, the response is:'
     Code: |-
       {
         "success": true
+      }
+- Title: List organizations
+  Text: |-
+    Returns all organizations created with this *App ID*
+
+    **HTTP Request**
+
+    `GET https://api.cord.com/v1/organizations`
+  Code:
+  - Text: 'Example request to gets the list of organizations:'
+    Code: |-
+      curl "https://api.cord.com/v1/organizations" \
+        -H "Authorization: Bearer <ACCESS_TOKEN>"
+  - Text: 'Example response:'
+    Code: |-
+      [
+        {
+          "id": "10",
+          "name": "Planet Express"
+        }
+      ]
+- Title: Get organization details
+  Text: |-
+    Returns all the info about a specific organization.
+
+    **HTTP Request**
+
+    `GET https://api.cord.com/v1/organizations/<ID>`
+  Code:
+  - Text: 'Example request to get details for a organization:'
+    Code: |-
+      curl "https://api.cord.com/v1/organizations/10" \
+        -H "Authorization: Bearer <ACCESS_TOKEN>"
+  - Text: 'If the organization exists, the response is:'
+    Code: |-
+      {
+        "id": "10",
+        "name": "Planet Express",
+        "members": ["4", "42"]
       }
 layout: api
 ---
