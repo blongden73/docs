@@ -276,6 +276,44 @@ Sections:
       {
         "success": true
       }
+- Title: Update organization members
+  Text: "This endpoint allows adding and/or removing specific members from an organization.
+    \n\nRequests to add a user that is already a member of that organisation, or remove
+    a user that is not a member, will have no effect (but will not return an error).
+    \n\n**Note: It is an error to add and remove the same user in a single request**\n\n**HTTP
+    Request**\n\n`POST https://api.cord.com/v1/organizations/<ID>/members`\n\n**Request
+    Body**"
+  Table Columns:
+  - Column Title: Field
+    Rows:
+    - add
+    - remove
+  - Column Title: Type
+    Rows:
+    - string[]
+    - string[]
+  - Column Title: Description
+    Rows:
+    - optional. List of partner-specific IDs of the users who should be added as members
+      to this organization
+    - optional. List of partner-specific IDs of the users who should be removed as
+      members from this organization
+  Code:
+  - Text: Example request to add one member and remove another
+    Code: |-
+      curl "https://api.cord.com/v1/organizations/456/members" \
+        -X POST \
+        -H "Authorization: Bearer <ACCESS_TOKEN>" \
+        -H "Content-Type: application/json" \
+        -d '{
+          "add": ["4"],
+          "remove": ["42"]
+        }'
+  - Text: 'If successful, the response will be:'
+    Code: |-
+      {
+        "success": true
+      }
 layout: api
 ---
 
