@@ -30,7 +30,7 @@ Sections:
     - string
   - Column Title: Description
     Rows:
-    - required. || The *Signed Token* generated as described above.
+    - required.|| The *Signed Token* generated as described above.
   Code:
   - Text: '1. Generate a *Signed Token*:'
     Code: |-
@@ -424,4 +424,3 @@ Sections:
       }
 layout: api
 ---
-
