@@ -212,12 +212,18 @@ Sections:
     - string[]
   - Column Title: Description
     Rows:
-    - required. Partner-specific unique organization ID
-    - required. Organization name
-    - optional. `active` OR `deleted`
-    - optional. List of partner-specific IDs of the users who are members of this
+    - required
+    - required
+    - optional
+    - optional
+  - Column Title: Notes
+    Rows:
+    - Partner-specific unique organization ID
+    - Organization name
+    - active OR deleted
+    - List of partner-specific IDs of the users who are members of this
       organization. These are the IDs you gave for these users when you created them
-      in the Create Users call above.
+      in the Create Users call above.  
   Code:
   - Text: "Example request to create an organization:\n\n"
     Code: |-
@@ -418,4 +424,3 @@ Sections:
       }
 layout: api
 ---
-

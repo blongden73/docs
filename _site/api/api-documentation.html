@@ -723,13 +723,26 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
               <div class="col">
                 <span class="column-header">Description</span>
                 
-                  <span class="row  color--required "><span>required. Partner-specific unique organization ID</span></span>
+                  <span class="row  color--required "><span>required</span></span>
                 
-                  <span class="row  color--required "><span>required. Organization name</span></span>
+                  <span class="row  color--required "><span>required</span></span>
                 
-                  <span class="row color--optional"><span>optional. `active` OR `deleted`</span></span>
+                  <span class="row color--optional"><span>optional</span></span>
                 
-                  <span class="row color--optional"><span>optional. List of partner-specific IDs of the users who are members of this organization. These are the IDs you gave for these users when you created them in the Create Users call above.</span></span>
+                  <span class="row color--optional"><span>optional</span></span>
+                
+              </div>
+            
+              <div class="col">
+                <span class="column-header">Notes</span>
+                
+                  <span class="row "><span>Partner-specific unique organization ID</span></span>
+                
+                  <span class="row "><span>Organization name</span></span>
+                
+                  <span class="row "><span>active OR deleted</span></span>
+                
+                  <span class="row "><span>List of partner-specific IDs of the users who are members of this organization. These are the IDs you gave for these users when you created them in the Create Users call above.</span></span>
                 
               </div>
             
