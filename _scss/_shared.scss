@@ -120,6 +120,7 @@ code {
   font-family: 'FavoritWeb';
   font-weight: 100;
   padding: calc(#{$spacer /2}) calc(#{$spacer}) calc(#{$spacer} /2);
+  word-break: break-all;
 }
 
 .secondary {
