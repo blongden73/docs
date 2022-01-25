@@ -1,0 +1,18 @@
+I"
+<p>Cord is added to a page with a <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> tag, and then initialized with a <em>Session Token</em>.</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;script src="https://app.cord.com/embed/latest.js"&gt;&lt;/script&gt;</code></p>
+
+<p>To initialize Cord on the page, call <code class="language-plaintext highlighter-rouge">window.cord.init({ session_token: "..." })</code>.</p>
+
+<p>The <em>Session Token</em> is a JWT that:</p>
+
+<ul>
+  <li>Must be generated server-side</li>
+  <li>Must contain your <em>App ID</em>, as well as the viewer-specific <code class="language-plaintext highlighter-rouge">user_id</code> and <code class="language-plaintext highlighter-rouge">organization_id</code> fields</li>
+  <li>Must be signed with the same <em>Secret</em> used to obtain <em>Access Token</em>s, using the HS512 (HMAC using SHA-512 hash) algorithm.</li>
+  <li>Must be set to a short expiration (1 minute). A longer expiration isn’t needed - it will only be used during the library initialization phase to transfer the user session information to the Cord components.</li>
+</ul>
+
+<p>To remove the Cord instance from the page, call <code class="language-plaintext highlighter-rouge">window.cord.destroy()</code>.</p>
+:ET

@@ -316,6 +316,26 @@ header {
       top: 0;
     }
   }
+  .guides--content .flex__mainCol{
+    ol {
+      margin-left: 0;
+      font-size: 12px;
+
+      li {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    ul {
+      margin-left: 0;
+      font-size: 12px;
+
+      li {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+  }
   .guides--content .flex__rightCol {
     @include mq($from: desktop) {
       //add new grey to the colours?
@@ -492,12 +512,12 @@ header {
   }
 
   .flex__mainCol {
-    ul {
+    ul, ol {
       li {
         align-items: flex-start;
         display: flex;
         margin-bottom: $spacer;
-        padding-left: calc(#{$spacer} * 4);
+        padding-left: calc(#{$spacer} * 2);
 
         &:before {
           background-color: $greylight;

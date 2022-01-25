@@ -1,0 +1,6 @@
+I"Õ<p>Returns all organizations created with this <em>App ID</em></p>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">GET https://api.cord.com/v1/organizations</code></p>
+:ET

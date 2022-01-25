@@ -1,0 +1,12 @@
+I"Y<p>Use <code class="language-plaintext highlighter-rouge">HTTP POST</code> to add and/or remove members from an organization.</p>
+
+<p>Requests to add a user that is already a member of that organisation, or remove a user that is not a member, will have no effect (but will not return an error).</p>
+
+<p><strong>Note: It is an error to add and remove the same user in a single request</strong></p>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">POST https://api.cord.com/v1/organizations/&lt;ID&gt;/members</code></p>
+
+<p><strong>Request Body</strong></p>
+:ET

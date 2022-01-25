@@ -1,4 +1,4 @@
-I"<p>This endpoint creates or updates a user:</p>
+I"B<p>Create or update uses the <code class="language-plaintext highlighter-rouge">PUT</code> HTTP method.</p>
 
 <ul>
   <li>

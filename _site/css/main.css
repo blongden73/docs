@@ -154,6 +154,14 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 @media all and (min-width: 75em) { .layout--api .guides__container { margin: 0; padding-top: 0; top: 0; } }
 
+.layout--api .guides--content .flex__mainCol ol { margin-left: 0; font-size: 12px; }
+
+.layout--api .guides--content .flex__mainCol ol li { font-size: 20px; margin-bottom: 20px; }
+
+.layout--api .guides--content .flex__mainCol ul { margin-left: 0; font-size: 12px; }
+
+.layout--api .guides--content .flex__mainCol ul li { font-size: 16px; margin-bottom: 20px; }
+
 @media all and (min-width: 75em) { .layout--api .guides--content .flex__rightCol { background-color: #F8F7F2; margin: 0 0 0 2%; width: calc(43% - 120px); padding-left: 2%; padding-right: 2%; } }
 
 .flex__rightCol { box-sizing: border-box; padding: 0 calc(8px * 2); width: 100%; }
@@ -214,11 +222,11 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .guides__container:nth-child(7) { margin-top: 0; }
 
-.guides__container .flex__mainCol ul li { align-items: flex-start; display: flex; margin-bottom: 8px; padding-left: calc(8px * 4); }
+.guides__container .flex__mainCol ul li, .guides__container .flex__mainCol ol li { align-items: flex-start; display: flex; margin-bottom: 8px; padding-left: calc(8px * 2); }
 
-.guides__container .flex__mainCol ul li:before { background-color: #DADCE0; border-radius: 50%; content: ''; display: block; flex-shrink: 0; height: 14px; margin-right: 8px; margin-top: 4px; width: 14px; }
+.guides__container .flex__mainCol ul li:before, .guides__container .flex__mainCol ol li:before { background-color: #DADCE0; border-radius: 50%; content: ''; display: block; flex-shrink: 0; height: 14px; margin-right: 8px; margin-top: 4px; width: 14px; }
 
-.guides__container .flex__mainCol ul li p { margin: 0; }
+.guides__container .flex__mainCol ul li p, .guides__container .flex__mainCol ol li p { margin: 0; }
 
 .page--checklist { border-top: 1px solid #DADCE0; border-bottom: 1px solid #DADCE0; padding-top: calc(8px * 2); }
 

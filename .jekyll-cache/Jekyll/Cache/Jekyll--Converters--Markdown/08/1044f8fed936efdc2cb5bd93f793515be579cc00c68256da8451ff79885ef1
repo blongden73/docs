@@ -1,0 +1,14 @@
+I"<p>Use <code class="language-plaintext highlighter-rouge">HTTP POST</code> to update an existing organization or create a new one:</p>
+
+<ul>
+  <li>If the organization does not exist in the Cord backend (based on its ID), it will be created; some fields are required.</li>
+  <li>If the organization exists, it will be updated: all fields are optional, and only the fields provided will be updated.</li>
+  <li>If the request is updating the members list, the list is treated as exhaustive: all member user IDs must be included, and previous members who are not in the list will be removed.</li>
+</ul>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">PUT https://api.cord.com/v1/organizations/&lt;ID&gt;</code></p>
+
+<p><strong>Request Body</strong></p>
+:ET

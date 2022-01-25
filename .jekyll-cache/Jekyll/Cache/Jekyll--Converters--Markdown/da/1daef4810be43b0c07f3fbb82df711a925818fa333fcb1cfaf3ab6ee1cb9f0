@@ -1,0 +1,15 @@
+I"R<h2 id="create-a-user"><strong>Create a user</strong></h2>
+
+<p>Next, pre-register all users and organisations on our API. This ensures a fast and seamless user experience, where the Cord sidebar appears immediately and the user is already “logged in” to the chat, with:</p>
+
+<ul>
+  <li>All their details (name, profile picture)</li>
+  <li>The other people in their organization that they can @mention.</li>
+</ul>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">POST https://api.cord.com/v1/users</code></p>
+
+<p><strong>Request Body</strong></p>
+:ET

@@ -1,8 +1,0 @@
-I"¾<h3 id="welcome-to-the-cord-api">Welcome to the Cord API!</h3>
-
-<h3 id="this-document-describes-integration-apis-and-flows-available-to-partners-who-wish-to-embed-the-cord-experience-directly-into-their-application">This document describes integration APIs and flows available to partners who wish to embed the Cord experience directly into their application</h3>
-
-<h3 id="use-the-cord-api-to-pre-populate-the-identities-of-your-teams-and-users-this-ensures-a-fast-and-seamless-user-experience-where-the-cord-sidebar-appears-immediately-and-the-user-is-already-logged-in-this-architecture-ensures-that-when-a-user-is-requesting-a-page-cord-already-has-all-their-details-name-profile-picture-as-well-as-the-other-people-in-their-organization">Use the Cord API to pre-populate the identities of your teams and users. This ensures a fast and seamless user experience, where the Cord sidebar appears immediately and the user is already logged in. This architecture ensures that when a user is requesting a page, Cord already has all their details (name, profile picture) as well as the other people in their organization.</h3>
-
-<h3 id="get-started-with-cord"><a href="https://cord.com/">Get started with Cord</a></h3>
-:ET

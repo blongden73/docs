@@ -1,0 +1,8 @@
+I"�<p>Use this for cases where you need to take actions on several organisations or users at once. The action taken for each entity is “create or update”: If an existing user or organisation with that ID exists, it will be updated with the provided data.</p>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">POST https://api.cord.com/v1/batch</code></p>
+
+<p><strong>Request Body</strong></p>
+:ET

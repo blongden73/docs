@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Cord | Cord Api | Documentation</title>
+  <title>Cord | Documentation | Cord API</title>
   <meta name="description" content="Cord Guides for Collaboration">
   <link rel="stylesheet" href="/docs//assets/uikit.css">
   <link rel="stylesheet" href="/docs/css/main.css">
@@ -22,7 +22,7 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="msapplication-TileColor" content="#2c449c">
   <meta name="theme-color" content="#ffffff">
-  <meta property="og:title" content="Cord | Cord Api | Documentation" />
+  <meta property="og:title" content="Cord | Documentation | Cord API" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://localhost:4000/api/api-documentation.html" />
   <meta property="og:image" content="" />
@@ -157,8 +157,8 @@
     <div class="flex__mainCol">
       <div class="guide__inner-content">
       
-      <h1>Cord Api </h1>
-      <h1 class="secondary"> Documentation</h1>
+      <h1>Documentation </h1>
+      <h1 class="secondary"> Cord API</h1>
       </div>
     </div>
     <div class="flex__rightCol">
@@ -168,37 +168,39 @@
     </div>
   </div>
 </section>
+<!-- <section>
+  <div class="flex guides--content">
+    <div class="flex__leftCol"></div>
+    <div class="flex__mainCol">
+      <h3><h3 id="starting-to-use-the-cord-api">Starting to use the Cord API</h3>
+
+<h3 id="the-first-steps-in-adding-collaboration-into-your-product-are">The first steps in adding collaboration into your product are:</h3>
+
+<ol>
+  <li>Call our API to register users, and the organisations they belong to.</li>
+  <li>Embed the Cord client-side javascript in your pages. When embedding, you tell the script who is currently logged-in.</li>
+  <li>(Optional) Control the look &amp; feel of Cord.</li>
+</ol>
+
+<h3 id="get-started-with-cord"><a href="https://cord.com/">Get started with Cord</a></h3>
+</h3>
+    </div>
+    <div class="flex__rightCol"></div>
+  </div>
+</section> -->
 <section id="guideIntro" class="guide--introduction">
   <div class="flex guides--content">
-    <div class="flex__leftCol">
-      <div class="section__menu-anchor"></div>
-      <ul class="section__menu">
-        
-          
-          <li  class="active" >
-            <a href="/docs/api/api-documentation.html">Cord Api </a>
-            
-              <ul class="section__menu-sub">
-                
-                
-                  <li><a href="#authentication">Authentication</a></li>
-                
-                  <li><a href="#users">Users</a></li>
-                
-                  <li><a href="#create-or-update-a-user">Create or update a user</a></li>
-                
-              </ul>
-            
-          </li>
-        
-      </ul>
-    </div>
+    <div class="flex__leftCol"></div>
     <div class="flex__mainCol">
-      <h3><h3 id="welcome-to-the-cord-api">Welcome to the Cord API!</h3>
+      <h3><h3 id="starting-to-use-the-cord-api">Starting to use the Cord API</h3>
 
-<h3 id="this-document-describes-integration-apis-and-flows-available-to-partners-who-wish-to-embed-the-cord-experience-directly-into-their-application">This document describes integration APIs and flows available to partners who wish to embed the Cord experience directly into their application</h3>
+<h3 id="the-first-steps-in-adding-collaboration-into-your-product-are">The first steps in adding collaboration into your product are:</h3>
 
-<h3 id="use-the-cord-api-to-pre-populate-the-identities-of-your-teams-and-users-this-ensures-a-fast-and-seamless-user-experience-where-the-cord-sidebar-appears-immediately-and-the-user-is-already-logged-in-this-architecture-ensures-that-when-a-user-is-requesting-a-page-cord-already-has-all-their-details-name-profile-picture-as-well-as-the-other-people-in-their-organization">Use the Cord API to pre-populate the identities of your teams and users. This ensures a fast and seamless user experience, where the Cord sidebar appears immediately and the user is already logged in. This architecture ensures that when a user is requesting a page, Cord already has all their details (name, profile picture) as well as the other people in their organization.</h3>
+<ol>
+  <li>Call our API to register users, and the organisations they belong to.</li>
+  <li>Embed the Cord client-side javascript in your pages. When embedding, you tell the script who is currently logged-in.</li>
+  <li>(Optional) Control the look &amp; feel of Cord.</li>
+</ol>
 
 <h3 id="get-started-with-cord"><a href="https://cord.com/">Get started with Cord</a></h3>
 </h3>
@@ -209,7 +211,52 @@
 
   <section id="authentication" class="guides__container">
     <div class="flex guides--content">
-      <div class="flex__leftCol"></div>
+      <div class="flex__leftCol">
+        
+        <div class="section__menu-anchor"></div>
+        <ul class="section__menu">
+          <li><a href="/docs/">Overview</a></li>
+          
+            
+            <li  class="active" >
+              <a href="/docs/api/api-documentation.html">Documentation </a>
+              
+                <ul class="section__menu-sub">
+                  
+                  
+                    <li><a href="#authentication">Authentication</a></li>
+                  
+                    <li><a href="#users">Users</a></li>
+                  
+                    <li><a href="#create-or-update-a-user">Create or update a user</a></li>
+                  
+                    <li><a href="#list-users">List users</a></li>
+                  
+                    <li><a href="#organizations">Organizations</a></li>
+                  
+                    <li><a href="#create-or-update-an-organization">Create or update an organization</a></li>
+                  
+                    <li><a href="#update-organization-members">Update organization members</a></li>
+                  
+                    <li><a href="#list-organizations">List organizations</a></li>
+                  
+                    <li><a href="#get-organization-details">Get organization details</a></li>
+                  
+                    <li><a href="#batch">Batch</a></li>
+                  
+                </ul>
+              
+            </li>
+          
+            
+            <li >
+              <a href="/docs/embedding/">Embedding </a>
+              
+            </li>
+          
+        </ul>
+        
+      </div>
       <div class="flex__mainCol">
         
           <div class="guides__title-wrapper">
@@ -219,13 +266,15 @@
 
             </span>
           </div>
-          <p>Each integration partner has an <strong>application ID</strong> and an associated <strong>shared secret</strong>, which can be obtained through the developer dashboard and stored securely on the server, <strong>never exposed client side</strong>.</p>
+          <p>You have an <strong>App ID</strong> and a <strong>Secret</strong>, which you can get in your <a href="https://console.cord.com">Cord Console</a>.</p>
 
-<p>All API requests must include a valid <strong>access token</strong> as in the request headers: <code class="language-plaintext highlighter-rouge">Authorization: Bearer &lt;ACCESS_TOKEN&gt;</code>.</p>
+<p><strong>Never expose your App ID and Secret on the client side!</strong>.</p>
 
-<p>To obtain an access token, the application ID and shared secret are combined to generate a <strong>signed app token</strong>, which is then exchanged for the access token using the <code class="language-plaintext highlighter-rouge">/v1/authorize</code> API. Access tokens have a limited lifespan (expiration is provided in the API response, normally 24 hours).</p>
+<p>All API requests must include a valid <em>Access Token</em> in the HTTP Request headers: <code class="language-plaintext highlighter-rouge">Authorization: Bearer &lt;ACCESS_TOKEN&gt;</code>.</p>
 
-<p>The signed app token is a JWT that must be generated server-side, with a short expiration (1 minute), containing the application ID in the payload <code class="language-plaintext highlighter-rouge">app_id</code> field, signed with the shared secret using the <code class="language-plaintext highlighter-rouge">HS512</code> (HMAC using SHA-512 hash) algorithm.</p>
+<p>To obtain an <em>Access Token</em>, the <em>App ID</em> and <em>Secret</em> are used to generate a <em>Signed Token</em>, which is then exchanged for the <em>Access Token</em> using the <code class="language-plaintext highlighter-rouge">/v1/authorize</code> endpoint. <em>Access Token</em>s have a limited lifespan. Their expiration is provided in the API response, and is normally 24 hours.</p>
+
+<p>The <em>Signed Token</em> is a JWT that must be generated server-side, with a short expiration (1 minute), containing the <em>App ID</em> in the payload <code class="language-plaintext highlighter-rouge">app_id</code> field, and signed with the <em>Secret</em> using the <code class="language-plaintext highlighter-rouge">HS512</code> (HMAC using SHA-512 hash) algorithm.</p>
 
 <p><strong>HTTP Request</strong></p>
 
@@ -255,7 +304,7 @@
               <div class="col">
                 <span class="column-header">Description</span>
                 
-                  <span class="row  color--required "><span>required</span></span>
+                  <span class="row  color--required "><span>**required**. The *Signed Token* generated as described above.</span></span>
                 
               </div>
             
@@ -267,18 +316,18 @@
           
           
             
-              <p>1. Generate a signed app token:</p>
+              <p>1. Generate a *Signed Token*:</p>
               
               <pre class="code--block"><code class="language-js">import jwt from 'jsonwebtoken';
 
-const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
+const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
   expiresIn: '1 min',
   algorithm: 'HS512',
 });</code></pre>
             
           
             
-              <p>2. Exchange the signed app token for an access token:</p>
+              <p>2. Exchange the *Signed Token* for an *Access Token*:</p>
               
               <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/authorize" \
   -X POST \
@@ -302,7 +351,9 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
 
   <section id="users" class="guides__container">
     <div class="flex guides--content">
-      <div class="flex__leftCol"></div>
+      <div class="flex__leftCol">
+        
+      </div>
       <div class="flex__mainCol">
         
           <div class="guides__title-wrapper">
@@ -313,6 +364,13 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
             </span>
           </div>
           <h2 id="create-a-user"><strong>Create a user</strong></h2>
+
+<p>Next, pre-register all users and organisations on our API. This ensures a fast and seamless user experience, where the Cord sidebar appears immediately and the user is already “logged in” to the chat, with:</p>
+
+<ul>
+  <li>All their details (name, profile picture)</li>
+  <li>The other people in their organization that they can @mention.</li>
+</ul>
 
 <p><strong>HTTP Request</strong></p>
 
@@ -420,7 +478,9 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
 
   <section id="create-or-update-a-user" class="guides__container">
     <div class="flex guides--content">
-      <div class="flex__leftCol"></div>
+      <div class="flex__leftCol">
+        
+      </div>
       <div class="flex__mainCol">
         
           <div class="guides__title-wrapper">
@@ -430,7 +490,7 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
 
             </span>
           </div>
-          <p>This endpoint creates or updates a user:</p>
+          <p>Create or update uses the <code class="language-plaintext highlighter-rouge">PUT</code> HTTP method.</p>
 
 <ul>
   <li>
@@ -524,7 +584,563 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
             
           
             
-              <p>If successful, the response will be:</p>
+              <p>If successful, the response is:</p>
+              
+              <pre class="code--block"><code class="language-js">{
+  "success": true
+}</code></pre>
+            
+          
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="list-users" class="guides__container">
+    <div class="flex guides--content">
+      <div class="flex__leftCol">
+        
+      </div>
+      <div class="flex__mainCol">
+        
+          <div class="guides__title-wrapper">
+            <h2>List users</h2>
+            <span data-uri="/docs/api/api-documentation.html#list-users" class="guides__title-icon js-copy-clipboard">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21h6V5H11v6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 11H5v16h16V11Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            </span>
+          </div>
+          <p>List all users created with this <em>App ID</em>.</p>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">GET https://api.cord.com/v1/users</code></p>
+
+        
+        
+      </div>
+      <div class="flex__rightCol">
+        
+          
+          
+            
+              <p>Example request to gets the list of users:</p>
+              
+              <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/users" \
+  -H "Authorization: Bearer <ACCESS_TOKEN>"</code></pre>
+            
+          
+            
+              <p>Example response:</p>
+              
+              <pre class="code--block"><code class="language-js">[
+  {
+    "id": "3001",
+    "name": "Philip J Fry",
+    "email": "delivery@planetexpress.nny",
+    "first_name": "Philip",
+    "last_name": "Fry"
+  },
+  {
+    "id": "123",
+    "name": "Bender Bending Rodriguez",
+    "email": "bending@planetexpress.nny"
+  }
+]</code></pre>
+            
+          
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="organizations" class="guides__container">
+    <div class="flex guides--content">
+      <div class="flex__leftCol">
+        
+      </div>
+      <div class="flex__mainCol">
+        
+          <div class="guides__title-wrapper">
+            <h2>Organizations</h2>
+            <span data-uri="/docs/api/api-documentation.html#organizations" class="guides__title-icon js-copy-clipboard">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21h6V5H11v6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 11H5v16h16V11Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            </span>
+          </div>
+          <h2 id="create-an-organization">Create an organization</h2>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">POST https://api.cord.com/v1/organizations</code></p>
+
+<p><strong>Request Body</strong></p>
+
+        
+        
+          
+          <div class="flex table">
+            
+              <div class="col">
+                <span class="column-header">Field</span>
+                
+                  <span class="row "><span>id</span></span>
+                
+                  <span class="row "><span>name</span></span>
+                
+                  <span class="row "><span>status</span></span>
+                
+                  <span class="row "><span>members</span></span>
+                
+              </div>
+            
+              <div class="col">
+                <span class="column-header">Type</span>
+                
+                  <span class="row "><span>string</span></span>
+                
+                  <span class="row "><span>string</span></span>
+                
+                  <span class="row "><span>string</span></span>
+                
+                  <span class="row "><span>string[]</span></span>
+                
+              </div>
+            
+              <div class="col">
+                <span class="column-header">Description</span>
+                
+                  <span class="row  color--required "><span>required. Partner-specific unique organization ID</span></span>
+                
+                  <span class="row  color--required "><span>required. Organization name</span></span>
+                
+                  <span class="row color--optional"><span>optional. `active` OR `deleted`</span></span>
+                
+                  <span class="row color--optional"><span>optional. List of partner-specific IDs of the users who are members of this organization. These are the IDs you gave for these users when you created them in the Create Users call above.</span></span>
+                
+              </div>
+            
+          </div>
+        
+      </div>
+      <div class="flex__rightCol">
+        
+          
+          
+            
+              <p>Example request to create an organization:
+
+</p>
+              
+              <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/organizations" \
+  -X POST \
+  -H "Authorization: Bearer <ACCESS_TOKEN>" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "id": "10",
+    "name": "Planet Express",
+    "members": ["4", "42"]
+  }'</code></pre>
+            
+          
+            
+              <p>If successful, the response is:
+
+</p>
+              
+              <pre class="code--block"><code class="language-js">{
+  "success": true
+}</code></pre>
+            
+          
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="create-or-update-an-organization" class="guides__container">
+    <div class="flex guides--content">
+      <div class="flex__leftCol">
+        
+      </div>
+      <div class="flex__mainCol">
+        
+          <div class="guides__title-wrapper">
+            <h2>Create or update an organization</h2>
+            <span data-uri="/docs/api/api-documentation.html#create-or-update-an-organization" class="guides__title-icon js-copy-clipboard">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21h6V5H11v6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 11H5v16h16V11Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            </span>
+          </div>
+          <p>Use <code class="language-plaintext highlighter-rouge">HTTP POST</code> to update an existing organization or create a new one:</p>
+
+<ul>
+  <li>If the organization does not exist in the Cord backend (based on its ID), it will be created; some fields are required.</li>
+  <li>If the organization exists, it will be updated: all fields are optional, and only the fields provided will be updated.</li>
+  <li>If the request is updating the members list, the list is treated as exhaustive: all member user IDs must be included, and previous members who are not in the list will be removed.</li>
+</ul>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">PUT https://api.cord.com/v1/organizations/&lt;ID&gt;</code></p>
+
+<p><strong>Request Body</strong></p>
+
+        
+        
+          
+          <div class="flex table">
+            
+              <div class="col">
+                <span class="column-header">Field</span>
+                
+                  <span class="row "><span>name</span></span>
+                
+                  <span class="row "><span>status</span></span>
+                
+                  <span class="row "><span>members</span></span>
+                
+              </div>
+            
+              <div class="col">
+                <span class="column-header">Type</span>
+                
+                  <span class="row "><span>string</span></span>
+                
+                  <span class="row "><span>string</span></span>
+                
+                  <span class="row "><span>string[]</span></span>
+                
+              </div>
+            
+              <div class="col">
+                <span class="column-header">Description</span>
+                
+                  <span class="row color--required-on-create "><span>Required on create. Organization name</span></span>
+                
+                  <span class="row "><span>Optional. `active` OR `deleted`</span></span>
+                
+                  <span class="row "><span>Optional. List of partner-specific IDs of the users who are members of this organization</span></span>
+                
+              </div>
+            
+          </div>
+        
+      </div>
+      <div class="flex__rightCol">
+        
+          
+          
+            
+              <p>Example request to update and organization's status to deleted:</p>
+              
+              <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/organizations/456" \
+  -X PUT \
+  -H "Authorization: Bearer <ACCESS_TOKEN>" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "status": "deleted",
+  }'
+</code></pre>
+            
+          
+            
+              <p>If successful, the response is:</p>
+              
+              <pre class="code--block"><code class="language-js">{
+  "success": true
+}</code></pre>
+            
+          
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="update-organization-members" class="guides__container">
+    <div class="flex guides--content">
+      <div class="flex__leftCol">
+        
+      </div>
+      <div class="flex__mainCol">
+        
+          <div class="guides__title-wrapper">
+            <h2>Update organization members</h2>
+            <span data-uri="/docs/api/api-documentation.html#update-organization-members" class="guides__title-icon js-copy-clipboard">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21h6V5H11v6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 11H5v16h16V11Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            </span>
+          </div>
+          <p>Use <code class="language-plaintext highlighter-rouge">HTTP POST</code> to add and/or remove members from an organization.</p>
+
+<p>Requests to add a user that is already a member of that organisation, or remove a user that is not a member, will have no effect (but will not return an error).</p>
+
+<p><strong>Note: It is an error to add and remove the same user in a single request</strong></p>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">POST https://api.cord.com/v1/organizations/&lt;ID&gt;/members</code></p>
+
+<p><strong>Request Body</strong></p>
+
+        
+        
+          
+          <div class="flex table">
+            
+              <div class="col">
+                <span class="column-header">Field</span>
+                
+                  <span class="row "><span>add</span></span>
+                
+                  <span class="row "><span>remove</span></span>
+                
+              </div>
+            
+              <div class="col">
+                <span class="column-header">Type</span>
+                
+                  <span class="row "><span>string[]</span></span>
+                
+                  <span class="row "><span>string[]</span></span>
+                
+              </div>
+            
+              <div class="col">
+                <span class="column-header">Description</span>
+                
+                  <span class="row color--optional"><span>optional. List of partner-specific IDs of the users who should be added as members to this organization</span></span>
+                
+                  <span class="row color--optional"><span>optional. List of partner-specific IDs of the users who should be removed as members from this organization</span></span>
+                
+              </div>
+            
+          </div>
+        
+      </div>
+      <div class="flex__rightCol">
+        
+          
+          
+            
+              <p>Example request to add one member and remove another</p>
+              
+              <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/organizations/456/members" \
+  -X POST \
+  -H "Authorization: Bearer <ACCESS_TOKEN>" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "add": ["4"],
+    "remove": ["42"]
+  }'</code></pre>
+            
+          
+            
+              <p>If successful, the response is:</p>
+              
+              <pre class="code--block"><code class="language-js">{
+  "success": true
+}</code></pre>
+            
+          
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="list-organizations" class="guides__container">
+    <div class="flex guides--content">
+      <div class="flex__leftCol">
+        
+      </div>
+      <div class="flex__mainCol">
+        
+          <div class="guides__title-wrapper">
+            <h2>List organizations</h2>
+            <span data-uri="/docs/api/api-documentation.html#list-organizations" class="guides__title-icon js-copy-clipboard">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21h6V5H11v6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 11H5v16h16V11Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            </span>
+          </div>
+          <p>Returns all organizations created with this <em>App ID</em></p>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">GET https://api.cord.com/v1/organizations</code></p>
+
+        
+        
+      </div>
+      <div class="flex__rightCol">
+        
+          
+          
+            
+              <p>Example request to gets the list of organizations:</p>
+              
+              <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/organizations" \
+  -H "Authorization: Bearer <ACCESS_TOKEN>"</code></pre>
+            
+          
+            
+              <p>Example response:</p>
+              
+              <pre class="code--block"><code class="language-js">[
+  {
+    "id": "10",
+    "name": "Planet Express"
+  }
+]</code></pre>
+            
+          
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="get-organization-details" class="guides__container">
+    <div class="flex guides--content">
+      <div class="flex__leftCol">
+        
+      </div>
+      <div class="flex__mainCol">
+        
+          <div class="guides__title-wrapper">
+            <h2>Get organization details</h2>
+            <span data-uri="/docs/api/api-documentation.html#get-organization-details" class="guides__title-icon js-copy-clipboard">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21h6V5H11v6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 11H5v16h16V11Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            </span>
+          </div>
+          <p>Returns all the info about a specific organization.</p>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">GET https://api.cord.com/v1/organizations/&lt;ID&gt;</code></p>
+
+        
+        
+      </div>
+      <div class="flex__rightCol">
+        
+          
+          
+            
+              <p>Example request to get details for a organization:</p>
+              
+              <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/organizations/10" \
+  -H "Authorization: Bearer <ACCESS_TOKEN>"</code></pre>
+            
+          
+            
+              <p>If the organization exists, the response is:</p>
+              
+              <pre class="code--block"><code class="language-js">{
+  "id": "10",
+  "name": "Planet Express",
+  "members": ["4", "42"]
+}</code></pre>
+            
+          
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="batch" class="guides__container">
+    <div class="flex guides--content">
+      <div class="flex__leftCol">
+        
+      </div>
+      <div class="flex__mainCol">
+        
+          <div class="guides__title-wrapper">
+            <h2>Batch</h2>
+            <span data-uri="/docs/api/api-documentation.html#batch" class="guides__title-icon js-copy-clipboard">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21h6V5H11v6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 11H5v16h16V11Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            </span>
+          </div>
+          <p>Use this for cases where you need to take actions on several organisations or users at once. The action taken for each entity is “create or update”: If an existing user or organisation with that ID exists, it will be updated with the provided data.</p>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">POST https://api.cord.com/v1/batch</code></p>
+
+<p><strong>Request Body</strong></p>
+
+        
+        
+          
+          <div class="flex table">
+            
+              <div class="col">
+                <span class="column-header">Field</span>
+                
+                  <span class="row "><span>users</span></span>
+                
+                  <span class="row "><span>organizations</span></span>
+                
+              </div>
+            
+              <div class="col">
+                <span class="column-header">Type</span>
+                
+                  <span class="row "><span>user[]</span></span>
+                
+                  <span class="row "><span>organization[]</span></span>
+                
+              </div>
+            
+              <div class="col">
+                <span class="column-header">Description</span>
+                
+                  <span class="row  color--required "><span>optional. List of user objects. Every object must include the `id` field. If the user already exists, all other fields are optional and only updated when present. If the user does not already exist, fields are required as described above in the "Create a user" API.
+</span></span>
+                
+                  <span class="row  color--required "><span>optional List of organization objects. Every object must include the `id` field. If the organization already exists, all other fields are optional and only updated when present. If the organization does not already exist, fields are required as described above in the "Create an organization" API.</span></span>
+                
+              </div>
+            
+          </div>
+        
+      </div>
+      <div class="flex__rightCol">
+        
+          
+          
+            
+              <p>Example request that operates on several users and organizations:</p>
+              
+              <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/batch" \
+  -X POST \
+  -H "Authorization: Bearer <ACCESS_TOKEN>" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "organizations": [
+      {
+        "id": "10",
+        "name": "Planet Express",
+        "members": ["4", "42"]
+      }
+    ],
+    "users": [
+      {
+        "id": "4",
+        "name": "Hubert Farnsworth",
+        "email": "hubert@planetexpress.nny"
+      },
+      {
+        "id": "42",
+        "name": "Leela Turanga",
+        "email": "leela@planetexpress.nny"
+      }
+    ]
+  }'</code></pre>
+            
+          
+            
+              <p>If successful, the response is:</p>
               
               <pre class="code--block"><code class="language-js">{
   "success": true
@@ -540,6 +1156,29 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SHARED_SECRET>', {
 
 
 
+
+  
+
+  
+  
+
+  
+
+  <div class="flex onward__journeys-wrapper">
+    <div class="flex__leftCol"></div>
+    <div class="flex__mainCol">
+      <div class="onward__journeys-flex">
+        
+        
+          <div class="flex--next">
+            <h2><a href="/docs/embedding/" class="next" title="Embedding | Cord API">Next up <span class="next--Purple">Embedding Cord API</span></a></h2>
+            <h2 class="onward__journeys-arrow">→</h2>
+          </div>
+        
+      </div>
+    </div>
+    <div class="flex__rightCol"></div>
+  </div>
 
 
 

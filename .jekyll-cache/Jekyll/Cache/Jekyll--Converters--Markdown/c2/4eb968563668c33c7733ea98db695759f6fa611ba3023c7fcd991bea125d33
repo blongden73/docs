@@ -1,0 +1,8 @@
+I"õ<h2 id="create-an-organization">Create an organization</h2>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">POST https://api.cord.com/v1/organizations</code></p>
+
+<p><strong>Request Body</strong></p>
+:ET

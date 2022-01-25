@@ -1,0 +1,6 @@
+I"Ø<p>Returns all the info about a specific organization.</p>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">GET https://api.cord.com/v1/organizations/&lt;ID&gt;</code></p>
+:ET

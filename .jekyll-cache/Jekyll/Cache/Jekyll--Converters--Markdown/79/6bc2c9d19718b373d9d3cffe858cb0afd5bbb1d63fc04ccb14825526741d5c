@@ -1,0 +1,12 @@
+I"G<h3 id="starting-to-use-the-cord-api">Starting to use the Cord API</h3>
+
+<h3 id="the-first-steps-in-adding-collaboration-into-your-product-are">The first steps in adding collaboration into your product are:</h3>
+
+<ol>
+  <li>Call our API to register users, and the organisations they belong to.</li>
+  <li>Embed the Cord client-side javascript in your pages. When embedding, you tell the script who is currently logged-in.</li>
+  <li>(Optional) Control the look &amp; feel of Cord.</li>
+</ol>
+
+<h3 id="get-started-with-cord"><a href="https://cord.com/">Get started with Cord</a></h3>
+:ET

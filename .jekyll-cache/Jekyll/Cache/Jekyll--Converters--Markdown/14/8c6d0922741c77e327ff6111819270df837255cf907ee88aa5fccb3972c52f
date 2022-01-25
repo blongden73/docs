@@ -1,0 +1,16 @@
+I"s<p>You have an <strong>App ID</strong> and a <strong>Secret</strong>, which you can get in your <a href="https://console.cord.com">Cord Console</a>.</p>
+
+<p><strong>Never expose your App ID and Secret on the client side!</strong>.</p>
+
+<p>All API requests must include a valid <em>Access Token</em> in the HTTP Request headers: <code class="language-plaintext highlighter-rouge">Authorization: Bearer &lt;ACCESS_TOKEN&gt;</code>.</p>
+
+<p>To obtain an <em>Access Token</em>, the <em>App ID</em> and <em>Secret</em> are used to generate a <em>Signed Token</em>, which is then exchanged for the <em>Access Token</em> using the <code class="language-plaintext highlighter-rouge">/v1/authorize</code> endpoint. <em>Access Token</em>s have a limited lifespan. Their expiration is provided in the API response, and is normally 24 hours.</p>
+
+<p>The <em>Signed Token</em> is a JWT that must be generated server-side, with a short expiration (1 minute), containing the <em>App ID</em> in the payload <code class="language-plaintext highlighter-rouge">app_id</code> field, and signed with the <em>Secret</em> using the <code class="language-plaintext highlighter-rouge">HS512</code> (HMAC using SHA-512 hash) algorithm.</p>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">POST https://api.cord.com/v1/authorize</code></p>
+
+<p><strong>Request Body</strong></p>
+:ET
