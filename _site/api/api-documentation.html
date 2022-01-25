@@ -316,7 +316,10 @@
           
           
             
-              <p>1. Generate a *Signed Token*:</p>
+              <p><ol>
+  <li>Generate a <em>Signed Token</em>:</li>
+</ol>
+</p>
               
               <pre class="code--block"><code class="language-js">import jwt from 'jsonwebtoken';
 
@@ -327,7 +330,10 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
             
           
             
-              <p>2. Exchange the *Signed Token* for an *Access Token*:</p>
+              <p><ol>
+  <li>Exchange the <em>Signed Token</em> for an <em>Access Token</em>:</li>
+</ol>
+</p>
               
               <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/authorize" \
   -X POST \
@@ -336,7 +342,8 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
             
           
             
-              <p>If successful, the response will be:</p>
+              <p><p>If successful, the response will be:</p>
+</p>
               
               <pre class="code--block"><code class="language-js">{
   "access_token": "eyJzZX...",
@@ -448,7 +455,8 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
           
           
             
-              <p>Example request that creates a user:</p>
+              <p><p>Example request that creates a user:</p>
+</p>
               
               <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/users" \
   -X POST \
@@ -464,7 +472,8 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
             
           
             
-              <p>If successful, the response will be:</p>
+              <p><p>If successful, the response will be:</p>
+</p>
               
               <pre class="code--block"><code class="language-js">{
   "success": true
@@ -571,7 +580,8 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
           
           
             
-              <p>Example request that updates a user's name and profile picture:</p>
+              <p><p>Example request that updates a user’s name and profile picture:</p>
+</p>
               
               <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/users/123" \
   -X PUT \
@@ -584,7 +594,8 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
             
           
             
-              <p>If successful, the response is:</p>
+              <p><p>If successful, the response is:</p>
+</p>
               
               <pre class="code--block"><code class="language-js">{
   "success": true
@@ -624,14 +635,16 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
           
           
             
-              <p>Example request to gets the list of users:</p>
+              <p><p>Example request to gets the list of users:</p>
+</p>
               
               <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/users" \
   -H "Authorization: Bearer <ACCESS_TOKEN>"</code></pre>
             
           
             
-              <p>Example response:</p>
+              <p><p>Example response:</p>
+</p>
               
               <pre class="code--block"><code class="language-js">[
   {
@@ -728,7 +741,7 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
           
           
             
-              <p>Example request to create an organization:
+              <p><p>Example request to create an organization:</p>
 
 </p>
               
@@ -744,7 +757,7 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
             
           
             
-              <p>If successful, the response is:
+              <p><p>If successful, the response is:</p>
 
 </p>
               
@@ -832,7 +845,8 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
           
           
             
-              <p>Example request to update and organization's status to deleted:</p>
+              <p><p>Example request to update and organization’s status to deleted:</p>
+</p>
               
               <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/organizations/456" \
   -X PUT \
@@ -845,7 +859,8 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
             
           
             
-              <p>If successful, the response is:</p>
+              <p><p>If successful, the response is:</p>
+</p>
               
               <pre class="code--block"><code class="language-js">{
   "success": true
@@ -923,7 +938,8 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
           
           
             
-              <p>Example request to add one member and remove another</p>
+              <p><p>Example request to add one member and remove another</p>
+</p>
               
               <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/organizations/456/members" \
   -X POST \
@@ -936,7 +952,8 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
             
           
             
-              <p>If successful, the response is:</p>
+              <p><p>If successful, the response is:</p>
+</p>
               
               <pre class="code--block"><code class="language-js">{
   "success": true
@@ -976,14 +993,16 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
           
           
             
-              <p>Example request to gets the list of organizations:</p>
+              <p><p>Example request to gets the list of organizations:</p>
+</p>
               
               <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/organizations" \
   -H "Authorization: Bearer <ACCESS_TOKEN>"</code></pre>
             
           
             
-              <p>Example response:</p>
+              <p><p>Example response:</p>
+</p>
               
               <pre class="code--block"><code class="language-js">[
   {
@@ -1026,14 +1045,16 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
           
           
             
-              <p>Example request to get details for a organization:</p>
+              <p><p>Example request to get details for a organization:</p>
+</p>
               
               <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/organizations/10" \
   -H "Authorization: Bearer <ACCESS_TOKEN>"</code></pre>
             
           
             
-              <p>If the organization exists, the response is:</p>
+              <p><p>If the organization exists, the response is:</p>
+</p>
               
               <pre class="code--block"><code class="language-js">{
   "id": "10",
@@ -1110,7 +1131,8 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
           
           
             
-              <p>Example request that operates on several users and organizations:</p>
+              <p><p>Example request that operates on several users and organizations:</p>
+</p>
               
               <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/batch" \
   -X POST \
@@ -1140,7 +1162,8 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
             
           
             
-              <p>If successful, the response is:</p>
+              <p><p>If successful, the response is:</p>
+</p>
               
               <pre class="code--block"><code class="language-js">{
   "success": true

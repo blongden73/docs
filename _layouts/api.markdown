@@ -93,7 +93,7 @@ layout: default
           {% assign code = section.Code %}
           {% for el in code %}
             {% if el.Text %}
-              <p>{{el.Text}}</p>
+              <p>{{el.Text | markdownify}}</p>
               {{else}}
               <pre class="code--block"><code class="language-js">{{el.Code}}</code></pre>
             {% endif %}
