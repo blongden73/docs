@@ -215,9 +215,9 @@ Sections:
     - required|| Partner-specific unique organization ID
     - required|| Organization name
     - optional|| `active` OR `deleted`
-    - optional||List of partner-specific IDs of the users who are members of this organization.
-      These are the IDs you gave for these users when you created them in the Create
-      Users call above.
+    - optional||List of partner-specific IDs of the users who are members of this
+      organization. These are the IDs you gave for these users when you created them
+      in the Create Users call above.
   Code:
   - Text: "Example request to create an organization:\n\n"
     Code: |-
@@ -294,8 +294,8 @@ Sections:
     - string[]
   - Column Title: Description
     Rows:
-    - optional|| List of partner-specific IDs of the users who should be added as members
-      to this organization
+    - optional|| List of partner-specific IDs of the users who should be added as
+      members to this organization
     - optional|| List of partner-specific IDs of the users who should be removed as
       members from this organization
   Code:
@@ -373,16 +373,16 @@ Sections:
     - organization[]
   - Column Title: Description
     Rows:
-    - 'optional|| List of user objects. Every object must include the `id` field. If
-      the user already exists, all other fields are optional and only updated when
+    - 'optional|| List of user objects. Every object must include the `id` field.
+      If the user already exists, all other fields are optional and only updated when
       present. If the user does not already exist, fields are required as described
       above in the "Create a user" API.
 
 '
-    - optional|| List of organization objects. Every object must include the `id` field.
-      If the organization already exists, all other fields are optional and only updated
-      when present. If the organization does not already exist, fields are required
-      as described above in the "Create an organization" API.
+    - optional|| List of organization objects. Every object must include the `id`
+      field. If the organization already exists, all other fields are optional and
+      only updated when present. If the organization does not already exist, fields
+      are required as described above in the "Create an organization" API.
   Code:
   - Text: 'Example request that operates on several users and organizations:'
     Code: |-
