@@ -81,7 +81,20 @@ layout: default
               <div class="col">
                 <span class="column-header">{{column.['Column Title']}}</span>
                 {% for row in column.Rows %}
-                  <span class="row {% if row contains 'on create' %}color--required-on-create {% elsif row contains 'required' %} color--required {% elsif row contains 'optional' %}color--optional{% endif %}"><span>{{row}}</span></span>
+                  <span class="row {% if row contains 'on create' %}color--required-on-create {% elsif row contains 'required' %} color--required {% elsif row contains 'optional' %}color--optional{% endif %}">
+                    {% if row contains '||' %}
+                      {% assign rowSplit = row | split: '||' %}
+                      {% for splitted in rowSplit %}
+                        {% if forloop.index == 1%}
+                          <span>{{splitted}}</span>
+                          {% else %}
+                          {{splitted}}
+                        {% endif %}
+                      {% endfor %}
+                      {% else %}
+                      <span>{{row}}</span>
+                    {% endif %}
+                  </span>
                 {% endfor %}
               </div>
             {% endfor %}
