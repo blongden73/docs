@@ -16,7 +16,7 @@ Sections:
     obtain an *Access Token*, the *App ID* and *Secret* are used to generate a *Signed
     Token*, which is then exchanged for the *Access Token* using the `/v1/authorize`
     endpoint. *Access Token*s have a limited lifespan. Their expiration is provided
-    in the API response, and is normally 24 hours.\n\n![sync_orgs.svg](/uploads/sync_orgs.svg)\n\nThe
+    in the API response, and is normally 24 hours.\n\n![sync_orgs.svg](/docs/uploads/sync_orgs.svg)\n\nThe
     *Signed Token* is a JWT that must be generated server-side, with a short expiration
     (1 minute), containing the *App ID* in the payload `app_id` field, and signed
     with the *Secret* using the `HS512` (HMAC using SHA-512 hash) algorithm.\n\n**HTTP
