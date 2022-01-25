@@ -221,9 +221,9 @@ Sections:
     - Partner-specific unique organization ID
     - Organization name
     - active OR deleted
-    - List of partner-specific IDs of the users who are members of this
-      organization. These are the IDs you gave for these users when you created them
-      in the Create Users call above.  
+    - List of partner-specific IDs of the users who are members of this organization.
+      These are the IDs you gave for these users when you created them in the Create
+      Users call above.
   Code:
   - Text: "Example request to create an organization:\n\n"
     Code: |-
@@ -424,3 +424,4 @@ Sections:
       }
 layout: api
 ---
+
