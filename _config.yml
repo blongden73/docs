@@ -24,32 +24,32 @@ defaults:
 - scope:
     path: guides
   values:
-    Colours:
-    Icon:
-    Overview Description:
-    Introduction Text:
+    Colours: 
+    Icon: 
+    Overview Description: 
+    Introduction Text: 
     Sections:
-    - Title:
-      Text:
+    - Title: 
+      Text: 
     layout: guide
 - scope:
     path: api
   values:
-    Colours:
-    Introduction Text:
+    Colours: 
+    Introduction Text: 
     Sections:
-    - Title:
-      Text:
+    - Title: 
+      Text: 
       Table Columns:
-      - Column Title:
-        Rows:
-      - Column Title:
-        Rows:
-      - Column Title:
-        Rows:
+      - Column Title: 
+        Rows: 
+      - Column Title: 
+        Rows: 
+      - Column Title: 
+        Rows: 
       Code:
-      - Text:
-        Code:
+      - Text: 
+        Code: 
     layout: api
 email: your-email@example.com
 description: Write an awesome description for your new site here. You can edit this
