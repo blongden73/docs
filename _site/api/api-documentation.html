@@ -287,7 +287,7 @@
           
           <div class="flex table">
             
-              <div class="col">
+              <div class="col field">
                 <span class="column-header">Field</span>
                 
                   <span class="row ">
@@ -298,7 +298,7 @@
                 
               </div>
             
-              <div class="col">
+              <div class="col type">
                 <span class="column-header">Type</span>
                 
                   <span class="row ">
@@ -309,7 +309,7 @@
                 
               </div>
             
-              <div class="col">
+              <div class="col description">
                 <span class="column-header">Description</span>
                 
                   <span class="row  color--required ">
@@ -321,7 +321,7 @@
                           
                       
                         
-                           The *Signed Token* generated as described above.
+                          <span class="note"> The *Signed Token* generated as described above.</span>
                         
                       
                       
@@ -411,7 +411,7 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
           
           <div class="flex table">
             
-              <div class="col">
+              <div class="col field">
                 <span class="column-header">Field</span>
                 
                   <span class="row ">
@@ -458,7 +458,7 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
                 
               </div>
             
-              <div class="col">
+              <div class="col type">
                 <span class="column-header">Type</span>
                 
                   <span class="row ">
@@ -505,7 +505,7 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
                 
               </div>
             
-              <div class="col">
+              <div class="col description">
                 <span class="column-header">Description</span>
                 
                   <span class="row  color--required ">
@@ -626,7 +626,7 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
           
           <div class="flex table">
             
-              <div class="col">
+              <div class="col field">
                 <span class="column-header">Field</span>
                 
                   <span class="row ">
@@ -667,7 +667,7 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
                 
               </div>
             
-              <div class="col">
+              <div class="col type">
                 <span class="column-header">Type</span>
                 
                   <span class="row ">
@@ -708,7 +708,7 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
                 
               </div>
             
-              <div class="col">
+              <div class="col description">
                 <span class="column-header">Description</span>
                 
                   <span class="row color--required-on-create ">
@@ -871,7 +871,7 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
           
           <div class="flex table">
             
-              <div class="col">
+              <div class="col field">
                 <span class="column-header">Field</span>
                 
                   <span class="row ">
@@ -900,7 +900,7 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
                 
               </div>
             
-              <div class="col">
+              <div class="col type">
                 <span class="column-header">Type</span>
                 
                   <span class="row ">
@@ -929,60 +929,67 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
                 
               </div>
             
-              <div class="col">
+              <div class="col description">
                 <span class="column-header">Description</span>
                 
                   <span class="row  color--required ">
                     
-                      <span>required</span>
-                    
+                      
+                      
+                        
+                          <span>required</span>
+                          
+                      
+                        
+                          <span class="note"> Partner-specific unique organization ID</span>
+                        
+                      
+                      
                   </span>
                 
                   <span class="row  color--required ">
                     
-                      <span>required</span>
-                    
+                      
+                      
+                        
+                          <span>required</span>
+                          
+                      
+                        
+                          <span class="note"> Organization name</span>
+                        
+                      
+                      
                   </span>
                 
                   <span class="row color--optional">
                     
-                      <span>optional</span>
-                    
+                      
+                      
+                        
+                          <span>optional</span>
+                          
+                      
+                        
+                          <span class="note"> `active` OR `deleted`</span>
+                        
+                      
+                      
                   </span>
                 
                   <span class="row color--optional">
                     
-                      <span>optional</span>
-                    
-                  </span>
-                
-              </div>
-            
-              <div class="col">
-                <span class="column-header">Notes</span>
-                
-                  <span class="row ">
-                    
-                      <span>Partner-specific unique organization ID</span>
-                    
-                  </span>
-                
-                  <span class="row ">
-                    
-                      <span>Organization name</span>
-                    
-                  </span>
-                
-                  <span class="row ">
-                    
-                      <span>active OR deleted</span>
-                    
-                  </span>
-                
-                  <span class="row ">
-                    
-                      <span>List of partner-specific IDs of the users who are members of this organization. These are the IDs you gave for these users when you created them in the Create Users call above.</span>
-                    
+                      
+                      
+                        
+                          <span>optional</span>
+                          
+                      
+                        
+                          <span class="note">List of partner-specific IDs of the users who are members of this organization. These are the IDs you gave for these users when you created them in the Create Users call above.</span>
+                        
+                      
+                      
                   </span>
                 
               </div>
@@ -1058,7 +1065,7 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
           
           <div class="flex table">
             
-              <div class="col">
+              <div class="col field">
                 <span class="column-header">Field</span>
                 
                   <span class="row ">
@@ -1081,7 +1088,7 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
                 
               </div>
             
-              <div class="col">
+              <div class="col type">
                 <span class="column-header">Type</span>
                 
                   <span class="row ">
@@ -1104,25 +1111,52 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
                 
               </div>
             
-              <div class="col">
+              <div class="col description">
                 <span class="column-header">Description</span>
                 
                   <span class="row color--required-on-create ">
                     
-                      <span>Required on create. Organization name</span>
-                    
+                      
+                      
+                        
+                          <span>Required on create</span>
+                          
+                      
+                        
+                          <span class="note"> Organization name</span>
+                        
+                      
+                      
                   </span>
                 
                   <span class="row ">
                     
-                      <span>Optional. `active` OR `deleted`</span>
-                    
+                      
+                      
+                        
+                          <span>Optional</span>
+                          
+                      
+                        
+                          <span class="note"> `active` OR `deleted`</span>
+                        
+                      
+                      
                   </span>
                 
                   <span class="row ">
                     
-                      <span>Optional. List of partner-specific IDs of the users who are members of this organization</span>
-                    
+                      
+                      
+                        
+                          <span>Optional</span>
+                          
+                      
+                        
+                          <span class="note"> List of partner-specific IDs of the users who are members of this organization</span>
+                        
+                      
+                      
                   </span>
                 
               </div>
@@ -1193,7 +1227,7 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
           
           <div class="flex table">
             
-              <div class="col">
+              <div class="col field">
                 <span class="column-header">Field</span>
                 
                   <span class="row ">
@@ -1210,7 +1244,7 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
                 
               </div>
             
-              <div class="col">
+              <div class="col type">
                 <span class="column-header">Type</span>
                 
                   <span class="row ">
@@ -1227,19 +1261,37 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
                 
               </div>
             
-              <div class="col">
+              <div class="col description">
                 <span class="column-header">Description</span>
                 
                   <span class="row color--optional">
                     
-                      <span>optional. List of partner-specific IDs of the users who should be added as members to this organization</span>
-                    
+                      
+                      
+                        
+                          <span>optional</span>
+                          
+                      
+                        
+                          <span class="note"> List of partner-specific IDs of the users who should be added as members to this organization</span>
+                        
+                      
+                      
                   </span>
                 
                   <span class="row color--optional">
                     
-                      <span>optional. List of partner-specific IDs of the users who should be removed as members from this organization</span>
-                    
+                      
+                      
+                        
+                          <span>optional</span>
+                          
+                      
+                        
+                          <span class="note"> List of partner-specific IDs of the users who should be removed as members from this organization</span>
+                        
+                      
+                      
                   </span>
                 
               </div>
@@ -1409,7 +1461,7 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
           
           <div class="flex table">
             
-              <div class="col">
+              <div class="col field">
                 <span class="column-header">Field</span>
                 
                   <span class="row ">
@@ -1426,7 +1478,7 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
                 
               </div>
             
-              <div class="col">
+              <div class="col type">
                 <span class="column-header">Type</span>
                 
                   <span class="row ">
@@ -1443,20 +1495,38 @@ const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
                 
               </div>
             
-              <div class="col">
+              <div class="col description">
                 <span class="column-header">Description</span>
                 
                   <span class="row  color--required ">
                     
-                      <span>optional. List of user objects. Every object must include the `id` field. If the user already exists, all other fields are optional and only updated when present. If the user does not already exist, fields are required as described above in the "Create a user" API.
+                      
+                      
+                        
+                          <span>optional</span>
+                          
+                      
+                        
+                          <span class="note"> List of user objects. Every object must include the `id` field. If the user already exists, all other fields are optional and only updated when present. If the user does not already exist, fields are required as described above in the "Create a user" API.
 </span>
-                    
+                        
+                      
+                      
                   </span>
                 
                   <span class="row  color--required ">
                     
-                      <span>optional List of organization objects. Every object must include the `id` field. If the organization already exists, all other fields are optional and only updated when present. If the organization does not already exist, fields are required as described above in the "Create an organization" API.</span>
-                    
+                      
+                      
+                        
+                          <span>optional</span>
+                          
+                      
+                        
+                          <span class="note"> List of organization objects. Every object must include the `id` field. If the organization already exists, all other fields are optional and only updated when present. If the organization does not already exist, fields are required as described above in the "Create an organization" API.</span>
+                        
+                      
+                      
                   </span>
                 
               </div>

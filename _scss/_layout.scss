@@ -726,8 +726,12 @@ header {
 
   .col {
     border-right: 1px solid $greylight;
-    flex: 1;
+    flex: 0;
     flex-shrink: 1;
+
+    &.description {
+      flex: 1;
+    }
 
     &:first-child {
       & > span {
@@ -754,7 +758,12 @@ header {
       span {
         background-color: $greylight;
         border-radius: 4px;
+        line-height: 1.6;
         padding: calc(#{$spacer}/2);
+
+        &.note {
+          background-color: transparent !important;
+        }
       }
 
       &.color--required {

@@ -78,7 +78,7 @@ layout: default
           {% assign table = section.['Table Columns'] %}
           <div class="flex table">
             {% for column in table %}
-              <div class="col">
+              <div class="col {{column.['Column Title'] | downcase | slugify }}">
                 <span class="column-header">{{column.['Column Title']}}</span>
                 {% for row in column.Rows %}
                   <span class="row {% if row contains 'on create' %}color--required-on-create {% elsif row contains 'required' %} color--required {% elsif row contains 'optional' %}color--optional{% endif %}">
@@ -88,7 +88,7 @@ layout: default
                         {% if forloop.index == 1%}
                           <span>{{splitted}}</span>
                           {% else %}
-                          {{splitted}}
+                          <span class="note">{{splitted}}</span>
                         {% endif %}
                       {% endfor %}
                       {% else %}

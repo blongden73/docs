@@ -212,16 +212,10 @@ Sections:
     - string[]
   - Column Title: Description
     Rows:
-    - required
-    - required
-    - optional
-    - optional
-  - Column Title: Notes
-    Rows:
-    - Partner-specific unique organization ID
-    - Organization name
-    - active OR deleted
-    - List of partner-specific IDs of the users who are members of this organization.
+    - required|| Partner-specific unique organization ID
+    - required|| Organization name
+    - optional|| `active` OR `deleted`
+    - optional||List of partner-specific IDs of the users who are members of this organization.
       These are the IDs you gave for these users when you created them in the Create
       Users call above.
   Code:
@@ -263,9 +257,9 @@ Sections:
     - string[]
   - Column Title: Description
     Rows:
-    - Required on create. Organization name
-    - Optional. `active` OR `deleted`
-    - Optional. List of partner-specific IDs of the users who are members of this
+    - Required on create|| Organization name
+    - Optional|| `active` OR `deleted`
+    - Optional|| List of partner-specific IDs of the users who are members of this
       organization
   Code:
   - Text: 'Example request to update and organization''s status to deleted:'
@@ -300,9 +294,9 @@ Sections:
     - string[]
   - Column Title: Description
     Rows:
-    - optional. List of partner-specific IDs of the users who should be added as members
+    - optional|| List of partner-specific IDs of the users who should be added as members
       to this organization
-    - optional. List of partner-specific IDs of the users who should be removed as
+    - optional|| List of partner-specific IDs of the users who should be removed as
       members from this organization
   Code:
   - Text: Example request to add one member and remove another
@@ -379,13 +373,13 @@ Sections:
     - organization[]
   - Column Title: Description
     Rows:
-    - 'optional. List of user objects. Every object must include the `id` field. If
+    - 'optional|| List of user objects. Every object must include the `id` field. If
       the user already exists, all other fields are optional and only updated when
       present. If the user does not already exist, fields are required as described
       above in the "Create a user" API.
 
 '
-    - optional List of organization objects. Every object must include the `id` field.
+    - optional|| List of organization objects. Every object must include the `id` field.
       If the organization already exists, all other fields are optional and only updated
       when present. If the organization does not already exist, fields are required
       as described above in the "Create an organization" API.

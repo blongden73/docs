@@ -292,7 +292,9 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .table > * { font-size: 16px; font-family: 'FavoritWeb'; font-weight: 100; }
 
-.table .col { border-right: 1px solid #DADCE0; flex: 1; flex-shrink: 1; }
+.table .col { border-right: 1px solid #DADCE0; flex: 0; flex-shrink: 1; }
+
+.table .col.description { flex: 1; }
 
 .table .col:first-child > span { padding-left: 0; }
 
@@ -302,7 +304,9 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .table .col > span { display: block; padding: 8px; }
 
-.table .col .row span { background-color: #DADCE0; border-radius: 4px; padding: calc(8px/2); }
+.table .col .row span { background-color: #DADCE0; border-radius: 4px; line-height: 1.6; padding: calc(8px/2); }
+
+.table .col .row span.note { background-color: transparent !important; }
 
 .table .col .row.color--required span { background-color: #EB5757; }
 
