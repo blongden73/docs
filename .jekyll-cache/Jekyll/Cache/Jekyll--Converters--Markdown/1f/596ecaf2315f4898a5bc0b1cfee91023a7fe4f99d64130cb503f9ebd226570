@@ -1,0 +1,8 @@
+I"Ý<p>If you would like to have an <code class="language-plaintext highlighter-rouge">integrity</code> hash defined on the <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> tag, you can poll the <code class="language-plaintext highlighter-rouge">embed</code> API endpoint to obtain the most recent, version-specific URL for the library, along with its <code class="language-plaintext highlighter-rouge">integrity</code> value.</p>
+
+<p>This API should ideally be polled daily. This ensures we can move quickly to deprecate old APIs and deliver new features and bug fixes.</p>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">GET https://api.cord.com/v1/embed</code></p>
+:ET

@@ -212,6 +212,14 @@
                   
                     <li><a href="#embedding-cord">Embedding Cord</a></li>
                   
+                    <li><a href="#events">Events</a></li>
+                  
+                    <li><a href="#custom-page-titles">Custom Page Titles</a></li>
+                  
+                    <li><a href="#improving-annotations-precision">Improving annotations precision</a></li>
+                  
+                    <li><a href="#script-integrity-hash">Script Integrity Hash</a></li>
+                  
                 </ul>
               
             </li>
@@ -247,26 +255,118 @@
 
         
         
+      </div>
+      <div class="flex__rightCol">
+        
+          
+          
+            
+              <p><ol>
+  <li>Generate the user session token on the server side:</li>
+</ol>
+</p>
+              
+              <pre class="code--block"><code class="language-js">import jwt from &#39;jsonwebtoken&#39;;
+
+const session_token = jwt.sign(
+  {
+    app_id: &#39;&lt;APP_ID&gt;&#39;,
+    user_id: &#39;&lt;USER_ID&gt;&#39;,
+    organization_id: &#39;&lt;ORGANIZATION_ID&gt;&#39;,
+  },
+  &#39;&lt;SECRET&gt;&#39;,
+  {
+    expiresIn: &#39;1 min&#39;,
+    algorithm: &#39;HS512&#39;,
+  },
+);</code></pre>
+            
+          
+            
+              <p><ol>
+  <li>Embed and initialize the Cord library on the client side:</li>
+</ol>
+</p>
+              
+              <pre class="code--block"><code class="language-js">&lt;script src=&quot;https://app.cord.com/embed/latest.js&quot;&gt;&lt;/script&gt;
+&lt;script
+  window.cord.init({
+    session_token: &#39;&lt;SESSION_TOKEN&gt;&#39;,
+  });
+&lt;/script&gt;</code></pre>
+            
+          
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="events" class="guides__container">
+    <div class="flex guides--content">
+      <div class="flex__leftCol">
+        
+      </div>
+      <div class="flex__mainCol">
+        
+          <div class="guides__title-wrapper">
+            <h2>Events</h2>
+            <span data-uri="/docs/embedding/#events" class="guides__title-icon js-copy-clipboard">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21h6V5H11v6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 11H5v16h16V11Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            </span>
+          </div>
+          <p>Cord dispatches standard DOM events on the document element for various lifecycle stages or user actions.</p>
+
+<p>For example, you might adjust your website layout based on changes in the sidebar, such as the sidebar opening, closing, or resizing.</p>
+
+<p>Some events contain additional information in the <code class="language-plaintext highlighter-rouge">event.detail</code> property.</p>
+
+        
+        
           
           <div class="flex table">
             
-              <div class="col field">
-                <span class="column-header">Field</span>
+              <div class="col event-name">
+                <span class="column-header">Event name</span>
                 
                   <span class="row ">
                     
-                      <span>signed_app_token</span>
+                      <span>cord:sidebar.open</span>
+                    
+                  </span>
+                
+                  <span class="row ">
+                    
+                      <span>cord:sidebar.close</span>
+                    
+                  </span>
+                
+                  <span class="row ">
+                    
+                      <span>cord:sidebar.resize</span>
                     
                   </span>
                 
               </div>
             
-              <div class="col type">
-                <span class="column-header">Type</span>
+              <div class="col event-detail">
+                <span class="column-header">Event detail</span>
                 
                   <span class="row ">
                     
-                      <span>string</span>
+                      <span>{ width: number }</span>
+                    
+                  </span>
+                
+                  <span class="row ">
+                    
+                      <span>undefined</span>
+                    
+                  </span>
+                
+                  <span class="row ">
+                    
+                      <span>{ width: number }	</span>
                     
                   </span>
                 
@@ -275,19 +375,22 @@
               <div class="col description">
                 <span class="column-header">Description</span>
                 
-                  <span class="row  color--required ">
+                  <span class="row ">
                     
-                      
-                      
-                        
-                          <span>required</span>
-                          
-                      
-                        
-                          <span class="note"> The *Signed Token* generated as described above.</span>
-                        
-                      
-                      
+                      <span>The sidebar is now open with a specific width.</span>
+                    
+                  </span>
+                
+                  <span class="row ">
+                    
+                      <span>The sidebar is now closed.</span>
+                    
+                  </span>
+                
+                  <span class="row ">
+                    
+                      <span>The sidebar has been resized to adapt to browser width.</span>
+                    
                   </span>
                 
               </div>
@@ -300,39 +403,139 @@
           
           
             
-              <p><ol>
-  <li>Generate a <em>Signed Token</em>:</li>
-</ol>
-</p>
-              
-              <pre class="code--block"><code class="language-js">import jwt from 'jsonwebtoken';
+          
+        
+      </div>
+    </div>
+  </section>
 
-const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
-  expiresIn: '1 min',
-  algorithm: 'HS512',
-});</code></pre>
-            
+  <section id="custom-page-titles" class="guides__container">
+    <div class="flex guides--content">
+      <div class="flex__leftCol">
+        
+      </div>
+      <div class="flex__mainCol">
+        
+          <div class="guides__title-wrapper">
+            <h2>Custom Page Titles</h2>
+            <span data-uri="/docs/embedding/#custom-page-titles" class="guides__title-icon js-copy-clipboard">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21h6V5H11v6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 11H5v16h16V11Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            </span>
+          </div>
+          <p>By default, when showing the context of a conversation (in the inbox, email notifications, etc) we use the <code class="language-plaintext highlighter-rouge">document.title</code> of the page the conversation is happening on.</p>
+
+<p>If you’d like to have custom, Cord-specific page titles, you can add a <meta /> tag in the document <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code>.</p>
+
+        
+        
+      </div>
+      <div class="flex__rightCol">
+        
+          
           
             
-              <p><ol>
-  <li>Exchange the <em>Signed Token</em> for an <em>Access Token</em>:</li>
-</ol>
+          
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="improving-annotations-precision" class="guides__container">
+    <div class="flex guides--content">
+      <div class="flex__leftCol">
+        
+      </div>
+      <div class="flex__mainCol">
+        
+          <div class="guides__title-wrapper">
+            <h2>Improving annotations precision</h2>
+            <span data-uri="/docs/embedding/#improving-annotations-precision" class="guides__title-icon js-copy-clipboard">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21h6V5H11v6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 11H5v16h16V11Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            </span>
+          </div>
+          <p>When users place an annotation on the page, Cord computes a selector which will be used to attach the pointer to the right element. This works well, but does not cover all scenarios.</p>
+
+<p>To make annotations more robust on your pages, you can add a <code class="language-plaintext highlighter-rouge">cord-target</code> data attribute to the HTML tag that represents each individual element of interest.</p>
+
+<p>Having a unique value will ensure the annotation will always point to the correct element.</p>
+
+        
+        
+      </div>
+      <div class="flex__rightCol">
+        
+          
+          
+            
+              <p><p> </p>
 </p>
               
-              <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/authorize" \
-  -X POST \
-  -H "Content-Type: application/json" \
-  -d '{ "signed_app_token": "<SIGNED_APP_TOKEN>" }'</code></pre>
+              <pre class="code--block"><code class="language-js">&lt;div data-cord-target=&quot;unique value&quot; /&gt;</code></pre>
+            
+          
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="script-integrity-hash" class="guides__container">
+    <div class="flex guides--content">
+      <div class="flex__leftCol">
+        
+      </div>
+      <div class="flex__mainCol">
+        
+          <div class="guides__title-wrapper">
+            <h2>Script Integrity Hash</h2>
+            <span data-uri="/docs/embedding/#script-integrity-hash" class="guides__title-icon js-copy-clipboard">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21h6V5H11v6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 11H5v16h16V11Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            </span>
+          </div>
+          <p>If you would like to have an <code class="language-plaintext highlighter-rouge">integrity</code> hash defined on the <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> tag, you can poll the <code class="language-plaintext highlighter-rouge">embed</code> API endpoint to obtain the most recent, version-specific URL for the library, along with its <code class="language-plaintext highlighter-rouge">integrity</code> value.</p>
+
+<p>This API should ideally be polled daily. This ensures we can move quickly to deprecate old APIs and deliver new features and bug fixes.</p>
+
+<p><strong>HTTP Request</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">GET https://api.cord.com/v1/embed</code></p>
+
+        
+        
+      </div>
+      <div class="flex__rightCol">
+        
+          
+          
+            
+              <p><p>To get the latest library version URL and integrity hash:</p>
+</p>
+              
+              <pre class="code--block"><code class="language-js">curl &quot;https://api.cord.com/v1/embed&quot;
+</code></pre>
             
           
             
-              <p><p>If successful, the response will be:</p>
+              <p><p>Example response:</p>
 </p>
               
               <pre class="code--block"><code class="language-js">{
-  "access_token": "eyJzZX...",
-  "expires": "2021-06-29T14:54:17.050Z" // ISO timestamp
+  &quot;version&quot;: &quot;1.42.0&quot;,
+  &quot;script_url&quot;: &quot;https://app.cord.com/embed/6524bf41eac2493756a666ec692a64de.js&quot;,
+  &quot;script_integrity&quot;: &quot;sha384-t/K96C2LsTqZG3dkFox5quuZfeOrvfQy4OcH6ZxzpzSSi+Msx5v7cPmuJ9cHjPGN&quot;
 }</code></pre>
+            
+          
+            
+              <p><p>Then, use these values when embedding the script tag:</p>
+</p>
+              
+              <pre class="code--block"><code class="language-js">&lt;script&gt;
+  src=&quot;https://app.cord.com/embed/6524bf41eac2493756a666ec692a64de.js&quot;
+  integrity=&quot;sha384-t/K96C2LsTqZG3dkFox5quuZfeOrvfQy4OcH6ZxzpzSSi+Msx5v7cPmuJ9cHjPGN&quot;
+  crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</code></pre>
             
           
         

@@ -1,0 +1,4 @@
+I"Ÿ<p>By default, when showing the context of a conversation (in the inbox, email notifications, etc) we use the <code class="language-plaintext highlighter-rouge">document.title</code> of the page the conversation is happening on.</p>
+
+<p>If youâ€™d like to have custom, Cord-specific page titles, you can add a <meta /> tag in the document <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code>.</p>
+:ET

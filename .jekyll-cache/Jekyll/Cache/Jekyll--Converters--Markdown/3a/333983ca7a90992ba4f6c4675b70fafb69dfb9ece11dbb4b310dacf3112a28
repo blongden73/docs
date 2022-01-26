@@ -1,0 +1,6 @@
+I"Š<p>Cord dispatches standard DOM events on the document element for various lifecycle stages or user actions.</p>
+
+<p>For example, you might adjust your website layout based on changes in the sidebar, such as the sidebar opening, closing, or resizing.</p>
+
+<p>Some events contain additional information in the <code class="language-plaintext highlighter-rouge">event.detail</code> property.</p>
+:ET

@@ -108,7 +108,7 @@ layout: default
             {% if el.Text %}
               <p>{{el.Text | markdownify}}</p>
               {{else}}
-              <pre class="code--block"><code class="language-js">{{el.Code}}</code></pre>
+              <pre class="code--block"><code class="language-js">{{el.Code | escape }}</code></pre>
             {% endif %}
           {% endfor %}
         {% endif %}
