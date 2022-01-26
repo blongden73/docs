@@ -1,7 +1,7 @@
 ---
 title: Embedding | Cord API
 date: 2022-01-21 13:01:00 Z
-permalink: "/embedding/"
+permalink: "/api/embedding/"
 Colours: Purple
 Sections:
 - Title: Embedding Cord
