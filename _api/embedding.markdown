@@ -24,33 +24,47 @@ Sections:
   - Column Title: Field
     Rows:
     - signed_app_token
-  - Column Title: Type
-    Rows:
-    - string
-  - Column Title: Description
-    Rows:
-    - required|| The *Signed Token* generated as described above.
   Code:
-  - Text: '1. Generate a *Signed Token*:'
+  - Text: '1. Generate the user session token on the server side:
+
+'
     Code: |-
       import jwt from 'jsonwebtoken';
 
-      const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
-        expiresIn: '1 min',
-        algorithm: 'HS512',
-      });
-  - Text: '2. Exchange the *Signed Token* for an *Access Token*:'
+      const session_token = jwt.sign(
+        {
+          app_id: '<APP_ID>',
+          user_id: '<USER_ID>',
+          organization_id: '<ORGANIZATION_ID>',
+        },
+        '<SECRET>',
+        {
+          expiresIn: '1 min',
+          algorithm: 'HS512',
+        },
+      );
+  - Text: '2. Embed and initialize the Cord library on the client side:'
     Code: |-
-      curl "https://api.cord.com/v1/authorize" \
-        -X POST \
-        -H "Content-Type: application/json" \
-        -d '{ "signed_app_token": "<SIGNED_APP_TOKEN>" }'
-  - Text: 'If successful, the response will be:'
-    Code: |-
-      {
-        "access_token": "eyJzZX...",
-        "expires": "2021-06-29T14:54:17.050Z" // ISO timestamp
-      }
+      <script src="https://app.cord.com/embed/latest.js"></script>
+      <script>
+        window.cord.init({
+          session_token: '<SESSION_TOKEN>',
+        });
+      </script>
+- Title: Events
+  Text: |-
+    Cord dispatches standard DOM events on the document element for various lifecycle stages or user actions.
+
+    For example, you might adjust your website layout based on changes in the sidebar, such as the sidebar opening, closing, or resizing.
+
+    Some events contain additional information in the `event.detail` property.
+  Table Columns:
+  - Column Title: 
+    Rows:
+    - 
+  Code:
+  - Text: 
+    Code: 
 layout: api
 ---
 
