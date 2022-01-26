@@ -1,6 +1,7 @@
 ---
 title: Collaboration | Api
 date: 2022-01-26 14:11:00 Z
+permalink: "/api/"
 layout: home
 Page Banner Image: "/uploads/docs_home_image.png"
 Page Banner Colour: "#F4FFA0"
