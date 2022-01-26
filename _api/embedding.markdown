@@ -124,8 +124,7 @@ Sections:
       script
         src="https://app.cord.com/embed/6524bf41eac2493756a666ec692a64de.js"
         integrity="sha384-t/K96C2LsTqZG3dkFox5quuZfeOrvfQy4OcH6ZxzpzSSi+Msx5v7cPmuJ9cHjPGN"
-        crossorigin="anonymous"
-      ></script
+        crossorigin="anonymous">/script>
 layout: api
 ---
 
