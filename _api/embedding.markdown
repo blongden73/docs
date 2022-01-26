@@ -41,8 +41,8 @@ Sections:
       );
   - Text: '2. Embed and initialize the Cord library on the client side:'
     Code: |-
-      <script src="https://app.cord.com/embed/latest.js"></script>
-      <script>
+      `<script src="https://app.cord.com/embed/latest.js"></script>
+      <script>`
         window.cord.init({
           session_token: '<SESSION_TOKEN>',
         });
