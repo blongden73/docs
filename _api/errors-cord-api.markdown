@@ -1,7 +1,7 @@
 ---
 title: Errors | Cord Api
 date: 2022-01-26 15:23:00 Z
-permalink: "/errors-cord-api/"
+permalink: "/api/errors-cord-api/"
 Colours: Purple
 Sections:
 - Title: Error Messages
