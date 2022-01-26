@@ -59,9 +59,21 @@ Sections:
 
     Some events contain additional information in the `event.detail` property.
   Table Columns:
-  - Column Title: 
+  - Column Title: Event name
     Rows:
-    - 
+    - cord:sidebar.open
+    - cord:sidebar.close
+    - cord:sidebar.resize
+  - Column Title: Event detail
+    Rows:
+    - "{ width: number }"
+    - undefined
+    - "{ width: number }\t"
+  - Column Title: Description
+    Rows:
+    - The sidebar is now open with a specific width.
+    - The sidebar is now closed.
+    - The sidebar has been resized to adapt to browser width.
   Code:
   - Text: 
     Code: 
