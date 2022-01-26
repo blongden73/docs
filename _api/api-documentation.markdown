@@ -61,8 +61,8 @@ Sections:
         "expires": "2021-06-29T14:54:17.050Z" // ISO timestamp
       }
 - Title: Users
-  Text: "## **Create a user**\n\nNext, pre-register all users and organisations on
-    our API. This ensures a fast and seamless user experience, where the Cord sidebar
+  Text: "## Create a user\n\nNext, pre-register all users and organisations on our
+    API. This ensures a fast and seamless user experience, where the Cord sidebar
     appears immediately and the user is already \"logged in\" to the chat, with:\n\n-
     All their details (name, profile picture) \n- The other people in their organization
     that they can @mention.\n\n**HTTP Request**\n\n`POST https://api.cord.com/v1/users`\n\n**Request
