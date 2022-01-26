@@ -2,7 +2,7 @@
 title: Collaboration | Api
 date: 2022-01-26 14:11:00 Z
 permalink: "/api/"
-Page Banner Image: "/uploads/api_image.png"
+Page Banner Image: "/uploads/api_image-0c136e.png"
 Page Banner Colour: "#7371EE"
 List:
 - item: Understand you audience
