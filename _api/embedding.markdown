@@ -55,7 +55,7 @@ Sections:
 
     Some events contain additional information in the `event.detail` property.
   Code:
-  - Text:
+  - Text: 
     Code: |-
       document.addEventListener('cord:sidebar.open', (e) => {
         console.log('cord sidebar is open, width: ' + e.detail.width);
@@ -82,7 +82,7 @@ Sections:
 
     If you'd like to have custom, Cord-specific page titles, you can add a <meta> tag in the document `<head>`.
   Code:
-  - Text:
+  - Text: 
     Code: <meta property="cord:title" content="Picnic Location - Poll Results" />
   Info Text: If your app is an SPA with client-side routing, make sure you keep this
     <meta> tag's content value up-to-date with the relevant title of the page the
@@ -95,9 +95,9 @@ Sections:
 
     Having a unique value will ensure the annotation will always point to the correct element.
   Code:
-  - Text:  
+  - Text: " "
     Code: <div data-cord-target="unique value" />
-  Info Text:
+  Info Text: 
 - Title: Script Integrity Hash
   Text: |-
     If you would like to have an `integrity` hash defined on the `<script>` tag, you can poll the `embed` API endpoint to obtain the most recent, version-specific URL for the library, along with its `integrity` value.
@@ -127,3 +127,4 @@ Sections:
         crossorigin="anonymous"></script>
 layout: api
 ---
+
