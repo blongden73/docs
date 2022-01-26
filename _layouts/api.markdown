@@ -46,7 +46,7 @@ layout: default
         {% if forloop.index == 1%}
         <div class="section__menu-anchor"></div>
         <ul class="section__menu">
-          <li><a href="/docs/">Overview</a></li>
+          <li><a href="/docs/api/">Overview</a></li>
           {% for guide in guides %}
             {% assign guideTitle = guide.title | split: '|' %}
             <li {% if guide.title == page.title %} class="active" {% endif %}>

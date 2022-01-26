@@ -62,7 +62,7 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .header--logo svg:nth-child(even), .footer--logo svg:nth-child(even) { margin-top: 2px; }
 
-.layout--api .header--logo a:nth-child(even) svg, .layout--api .footer--logo a:nth-child(even) svg { margin-bottom: 2px; }
+.layout--api .header--logo a:nth-child(even) svg, .layout--apihome .header--logo a:nth-child(even) svg, .layout--api .footer--logo a:nth-child(even) svg, .layout--apihome .footer--logo a:nth-child(even) svg { margin-bottom: 2px; }
 
 .header--nav { height: 100%; }
 
@@ -184,7 +184,7 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .page--title { background-color: #F7F7F7; padding: calc(8px * 3) 0; }
 
-.page--guides { cursor: pointer; padding: calc(8px * 3) 0; position: relative; transition: padding ease-in-out 0.3s; transition-delay: 0.2s; }
+.page--guides { border-bottom: 1px solid #000; cursor: pointer; padding: calc(8px * 3) 0; position: relative; transition: padding ease-in-out 0.3s; transition-delay: 0.2s; }
 
 .layout--guide .page--guides:hover, .layout--api .page--guides:hover { padding: calc(8px * 3) 0; }
 
@@ -355,3 +355,5 @@ footer { background-color: #191A1E; padding: calc(8px * 2) 0; }
 .footer--wrapper svg { height: auto; width: 100%; }
 
 .footer--wrapper svg path { fill: #fff; }
+
+/*# sourceMappingURL=main.css.map */

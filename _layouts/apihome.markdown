@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign guides = site.guides %}
+{% assign guides = site.api %}
 <section id="pageBanner">
   <div class="flex page--banner" style="background-color:{{page.['Page Banner Colour']}}">
     <div class="flex__leftCol"></div>
@@ -27,7 +27,7 @@ layout: default
   <div class="flex">
     <div class="flex__leftCol">
       <ul class="section__menu">
-        <li class="active"><a href="/docs/">Overview</a></li>
+        <li class="active"><a href="/docs/api/">Overview</a></li>
         {% for guide in guides %}
           {% assign guideTitle = guide.title | split: '|' %}
           <li><a href="/docs{{guide.url}}">{{guideTitle[0]}}</a></li>
@@ -36,12 +36,6 @@ layout: default
     </div>
     <div class="flex__mainCol overview--introduction">
       {{page.content | markdownify}}
-      {% assign checklist = page.List %}
-      <ul class="page--checklist">
-        {% for item in checklist %}
-          <li><span class="page__checklist-number">{{forloop.index}}</span><span class="page__checklist-title">{{item.item}}</span></li>
-        {% endfor %}
-      </ul>
     </div>
     <div class="flex__rightCol"></div>
   </div>

@@ -36,7 +36,7 @@ header {
     }
   }
 
-  .layout--api & {
+  .layout--api &, .layout--apihome & {
     a {
       &:nth-child(even) {
         svg {
@@ -412,6 +412,7 @@ header {
 }
 
 .page--guides {
+  border-bottom: 1px solid #000; 
   cursor: pointer;
   padding: calc(#{$spacer} * 3) 0;
   position: relative;
@@ -761,7 +762,7 @@ header {
         border-radius: 4px;
         line-height: 1.6;
         padding: calc(#{$spacer}/2);
-        
+
         &:not(.note){
           white-space: nowrap;
         }
