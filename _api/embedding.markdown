@@ -67,9 +67,9 @@ Sections:
     - "{ width: number }\t"
   - Column Title: Description
     Rows:
-    - "||The sidebar is now open with a specific width."
-    - "||The sidebar is now closed."
-    - "||The sidebar has been resized to adapt to browser width."
+    - The sidebar is now open with a specific width.
+    - The sidebar is now closed.
+    - The sidebar has been resized to adapt to browser width.
   Code:
   - Text: 
     Code: 
