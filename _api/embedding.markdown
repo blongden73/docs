@@ -20,10 +20,6 @@ Sections:
     - Must be set to a short expiration (1 minute). A longer expiration isn't needed - it will only be used during the library initialization phase to transfer the user session information to the Cord components.
 
     To remove the Cord instance from the page, call `window.cord.destroy()`.
-  Table Columns:
-  - Column Title: Field
-    Rows:
-    - signed_app_token
   Code:
   - Text: '1. Generate the user session token on the server side:
 
