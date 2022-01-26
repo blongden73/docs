@@ -711,6 +711,7 @@ header {
 .table {
   flex-wrap: nowrap;
   margin-bottom: calc(#{$spacer}*4);
+  overflow: scroll;
 
   @include mq($until: tablet) {
     flex-direction: row;
@@ -760,6 +761,10 @@ header {
         border-radius: 4px;
         line-height: 1.6;
         padding: calc(#{$spacer}/2);
+        
+        &:not(.note){
+          white-space: nowrap;
+        }
 
         &.note {
           background-color: transparent !important;

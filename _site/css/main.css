@@ -286,7 +286,7 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .code--block code { border-radius: 4px; background-color: #e4e4e4; }
 
-.table { flex-wrap: nowrap; margin-bottom: calc(8px*4); }
+.table { flex-wrap: nowrap; margin-bottom: calc(8px*4); overflow: scroll; }
 
 @media all and (max-width: 47.99em) { .table { flex-direction: row; overflow: scroll; padding-bottom: calc(8px*3); } }
 
@@ -305,6 +305,8 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 .table .col > span { display: block; padding: 8px; }
 
 .table .col .row span { background-color: #DADCE0; border-radius: 4px; line-height: 1.6; padding: calc(8px/2); }
+
+.table .col .row span:not(.note) { white-space: nowrap; }
 
 .table .col .row span.note { background-color: transparent !important; }
 
@@ -353,5 +355,3 @@ footer { background-color: #191A1E; padding: calc(8px * 2) 0; }
 .footer--wrapper svg { height: auto; width: 100%; }
 
 .footer--wrapper svg path { fill: #fff; }
-
-/*# sourceMappingURL=main.css.map */
