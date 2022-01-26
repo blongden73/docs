@@ -1,6 +1,14 @@
 ---
 title: Collaboration | Guides
+<<<<<<< HEAD
 permalink: "/guides-overview/"
+=======
+<<<<<<<< HEAD:guides-overview.markdown
+permalink: docs/guides-overview/
+========
+permalink: "/guides-overview/"
+>>>>>>>> 416a23bb77f3b4d956293fe40476474918a21783:guides-home.markdown
+>>>>>>> 416a23bb77f3b4d956293fe40476474918a21783
 Page Banner Image: "/uploads/docs_home_image.png"
 Page Banner Colour: "#F4FFA0"
 List:
