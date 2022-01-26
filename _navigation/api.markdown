@@ -1,6 +1,6 @@
 ---
 title: Api Docs
 date: 2021-11-16 11:56:00 Z
-Link: "/docs/api/api-documentation"
+Link: "/docs/api/"
 ---
 
