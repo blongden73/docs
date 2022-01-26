@@ -126,7 +126,6 @@ Sections:
         integrity="sha384-t/K96C2LsTqZG3dkFox5quuZfeOrvfQy4OcH6ZxzpzSSi+Msx5v7cPmuJ9cHjPGN"
         crossorigin="anonymous"
       ></script
-  Info Text: 
 layout: api
 ---
 
