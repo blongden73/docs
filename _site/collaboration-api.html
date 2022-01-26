@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cord | Collaboration | Api</title>
+  <meta name="description" content="Cord Guides for Collaboration">
+  <link rel="stylesheet" href="/docs//assets/uikit.css">
+  <link rel="stylesheet" href="/docs/css/main.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+  <link rel="canonical" href="http://localhost:4000/collaboration-api.html">
+  <link rel="alternate" type="application/rss+xml" title="Cord Docs" href="http://localhost:4000/feed.xml">
+  <link rel="apple-touch-icon" sizes="152x152" href="/docs//assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/docs//assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/docs//assets/favicon-16x16.png">
+  <link rel="manifest" href="/docs//assets/site.webmanifest">
+  <link rel="mask-icon" href="/docs//assets/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-TileColor" content="#2c449c">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Cord | Collaboration | Api" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost:4000/collaboration-api.html" />
+  <meta property="og:image" content="" />
+</head>
+
+
+  <body class="layout--home">
+    <div class="bg"></div>
+
+    <header >
+  <div class="header--wrapper">
+    <div class="header--logo">
+      <a data-tooltip="Cord Home" class="tooltip-hover" href="https://cord.com/">
+      <svg width="90" height="28" viewBox="0 0 90 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" fill-opacity=".01" d="M0 0h90v28H0z"/><path fill-rule="evenodd" clip-rule="evenodd" d="m11.819 12.844 2.083 2.074c2.184-2.184 3.993-4.496 5.093-6.53 1.406-2.603 1.533-4.508.374-5.662-1.158-1.154-3.07-1.027-5.687.372-2.041 1.103-4.344 2.905-6.53 5.082l.008.007c-2.637 2.629-4.615 5.638-5.55 8.48-1.063 3.17-.726 5.834.935 7.489 1.028 1.022 2.432 1.542 4.122 1.54 1.16-.018 2.31-.22 3.408-.6 2.86-.936 5.874-2.9 8.524-5.516l-2.08-2.074c-2.323 2.31-4.935 4.021-7.355 4.817-2.052.67-3.698.585-4.524-.234-.826-.82-.91-2.462-.234-4.505.8-2.409 2.518-5.014 4.838-7.324l-.008-.008C11 8.495 12.863 6.976 14.529 5.994c1.402-.831 2.266-1.07 2.67-1.107-.04.402-.276 1.256-1.109 2.66a28.576 28.576 0 0 1-4.271 5.297Z" fill="#272727"/><path d="M32.502 26.143a12.324 12.324 0 1 1 12.32-12.322 12.334 12.334 0 0 1-12.32 12.322Zm0-21.698a9.378 9.378 0 1 0 9.376 9.376 9.385 9.385 0 0 0-9.376-9.376Z" fill="#272727"/><path fill-rule="evenodd" clip-rule="evenodd" d="M52.024 14.372h6.21v-.01a6.223 6.223 0 0 0 0-12.444H47.218v23.805h2.944v-9.064l12.552 9.063 1.743-2.373-12.433-8.977Zm-1.862-2.957h8.063a3.277 3.277 0 1 0 0-6.553h-8.063v6.553Z" fill="#272727"/><path d="M77.3 25.724H66.846V1.92h10.452a11.904 11.904 0 1 1 0 23.805ZM69.81 22.8h7.49a8.97 8.97 0 0 0 3.476-17.295 8.969 8.969 0 0 0-3.477-.64h-7.49v17.935Z" fill="#272727"/></svg>
+      </a>
+      
+      <a data-tooltip="Guides" class="tooltip-hover" href="/docs/">
+      <svg width="82" height="29" viewBox="0 0 82 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m8.721 20.979-2.115-1.95 2.115 1.95Zm-1.338.018-2.13-1.964 2.197-2.051 6.092 5.588-6.094 5.555-2.197-2.052 2.211-2.028H0v-7.287h.002V0h8.392c6.557 0 10.94 4.45 10.94 11.925 0 4.488-1.58 7.861-4.262 9.84l-2.102-2.1c2.143-1.458 3.306-4.088 3.306-7.774 0-5.911-2.99-9.105-8.222-9.105H3.06v13.972h.005v4.239h4.318Zm3.776 2.5-3.703 3.376-.85-.794.85.794 3.704-3.375Z" fill="#71BC8F"/><path d="M30.814 24.332c6.251 0 10.873-4.488 10.873-11.97 0-7.48-4.622-11.97-10.873-11.97-6.25 0-10.84 4.49-10.84 11.97 0 7.482 4.59 11.97 10.84 11.97Zm-.166-2.726c-4.456 0-7.68-3.458-7.68-9.244 0-5.785 3.224-9.243 7.68-9.243h.332c4.456 0 7.714 3.458 7.714 9.244 0 5.785-3.258 9.243-7.714 9.243h-.332ZM53.587 24.332c5.02 0 8.877-2.992 9.176-7.58h-2.992c-.333 2.793-2.527 4.854-6.018 4.854h-.333c-4.987 0-7.714-4.123-7.714-9.244 0-5.12 2.727-9.243 7.714-9.243h.333c3.491 0 5.685 2.061 6.018 4.854h2.992c-.299-4.588-4.156-7.58-9.176-7.58-6.75 0-10.873 5.153-10.873 11.97 0 6.816 4.123 11.97 10.873 11.97ZM72.346 24.332c5.12 0 8.445-2.527 8.445-6.616 0-3.691-2.26-5.753-6.217-6.55l-3.724-.732c-2.095-.432-3.425-1.53-3.425-3.425 0-2.228 2.028-3.89 5.054-3.89h.332c2.96 0 5.154 1.729 5.354 4.522h2.992C80.991 3.185 77.733.392 72.645.392c-5.02 0-8.212 2.993-8.212 6.65 0 3.591 2.127 5.62 5.785 6.385l3.724.764c2.594.532 3.857 1.663 3.857 3.658 0 2.095-1.762 3.757-5.02 3.757h-.333c-3.624 0-6.185-1.762-6.185-5.02H63.27c.1 5.053 3.557 7.747 9.077 7.747Z" fill="#71BC8F"/></svg>
+      </a>
+      
+    </div>
+  </div>
+  
+  <nav class="header--nav">
+    <ul>
+      
+        <li >
+          <a class="window__link" href="/docs/"></a>
+          <span>Api Docs </span>
+          
+        </li>
+      
+        <li  class="submenu--item" >
+          
+          <span>More <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m.798 0 2.968 2.968.577.624.571-.61L7.882 0l.798.798-4.326 4.354L0 .798.798 0Z" fill="#272727"/></svg>
+ </span>
+          
+          
+            <ul class="header__nav-sub">
+              
+              <li><a target="_blank" href="https://cord.com/about">About</a></li>
+              
+              <li><a target="_blank" href="https://cord.com/features">Features</a></li>
+              
+              <li><a target="_blank" href="https://cord.com/pricing">Pricing</a></li>
+              
+            </ul>
+          
+        </li>
+      
+        <li >
+          <a class="window__link" href=""></a>
+          <span>Login </span>
+          
+        </li>
+      
+      <li class="veggie--burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </li>
+    </ul>
+  </nav>
+</header>
+<div class="mobile--nav">
+  <ul>
+    
+      <li >
+        <a class="window__link" href="/docs/"></a>
+        <span>Api Docs </span>
+        
+      </li>
+    
+      <li  class="submenu--item" >
+        
+        <span>More <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m.798 0 2.968 2.968.577.624.571-.61L7.882 0l.798.798-4.326 4.354L0 .798.798 0Z" fill="#272727"/></svg>
+ </span>
+        
+        
+          <ul class="header__nav-sub">
+            
+            <li><a target="_blank" href="https://cord.com/about">About</a></li>
+            
+            <li><a target="_blank" href="https://cord.com/features">Features</a></li>
+            
+            <li><a target="_blank" href="https://cord.com/pricing">Pricing</a></li>
+            
+          </ul>
+        
+      </li>
+    
+      <li >
+        <a class="window__link" href=""></a>
+        <span>Login </span>
+        
+      </li>
+    
+  </ul>
+</div>
+<div class="toast">Link copied to pasteboard!</div>
+
+
+        
+<section id="pageBanner">
+  <div class="flex page--banner" style="background-color:#F4FFA0">
+    <div class="flex__leftCol"></div>
+    <div class="flex__mainCol">
+      <img src="/docs//uploads/docs_home_image.png">
+    </div>
+    <div class="flex__rightCol"></div>
+  </div>
+</section>
+<section id="pageTitle">
+  <div class="flex page--title">
+    <div class="flex__leftCol"></div>
+    <div class="flex__mainCol">
+      
+      <h1>Collaboration </h1>
+      <h1 class="secondary"> Api</h1>
+    </div>
+    <div class="flex__rightCol"></div>
+  </div>
+</section>
+<section id="pageDescription">
+  <div class="flex">
+    <div class="flex__leftCol">
+      <ul class="section__menu">
+        <li class="active"><a href="/docs/">Overview</a></li>
+        
+          
+          <li><a href="/docs/guides/engineer.html">Engineering </a></li>
+        
+          
+          <li><a href="/docs/guides/business-essentials.html">Business </a></li>
+        
+          
+          <li><a href="/docs/guides/design-specification.html">Design </a></li>
+        
+          
+          <li><a href="/docs/guides/product-considerations.html">Product </a></li>
+        
+          
+          <li><a href="/docs/guides/marketing.html">Marketing </a></li>
+        
+      </ul>
+    </div>
+    <div class="flex__mainCol overview--introduction">
+      <p>We love working together in products like Figma and Notion, and believe the rest of the internet should feel like that: connected, collaborative, multiplayer. Single-player is so 2020.
+Leading companies like Typeform have trusted us to bring intuitive collaboration to 100,000s of their users. Top investors behind Notion, Slack, Figma, Canva, and Stripe also trust us to lead the way, and are investing in us to finally make this a reality.</p>
+
+<h2 id="-collaboration-starter-checklist">→ Collaboration starter checklist</h2>
+
+      
+      <ul class="page--checklist">
+        
+          <li><span class="page__checklist-number">1</span><span class="page__checklist-title">Understand you audience</span></li>
+        
+          <li><span class="page__checklist-number">2</span><span class="page__checklist-title">Whats your use case?</span></li>
+        
+          <li><span class="page__checklist-number">3</span><span class="page__checklist-title">Think about the full journey</span></li>
+        
+          <li><span class="page__checklist-number">4</span><span class="page__checklist-title">What’s your identity model?</span></li>
+        
+          <li><span class="page__checklist-number">5</span><span class="page__checklist-title">Gather your stakeholders</span></li>
+        
+      </ul>
+    </div>
+    <div class="flex__rightCol"></div>
+  </div>
+</section>
+
+  <section id="pageGuides">
+    <div class="flex page--guides guide--Green">
+      <a class="guide__link window__link" href="/docs/guides/engineer.html"></a>
+      <div class="flex__leftCol"></div>
+      <div class="flex__mainCol">
+        <div class="guide__inner-content">
+        
+        <h1>Engineering </h1>
+        <h1 class="secondary"> Practice</h1>
+        <p>Pricing lorem ipsum dolor est something small</p>
+        <button class="button">
+  Read More
+</button>
+
+        </div>
+      </div>
+      <div class="flex__rightCol">
+        <span class="js-guide-icons">
+          <svg width="382" height="383" viewBox="0 0 382 383" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" d="M.5 1.5h381v381H.5z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 127.546V1.593h127.727v37.254h-63.14c3.468 9.986 8.536 20.2 15.628 29.529 15.833 20.827 42.834 38.769 89.496 38.769 57.885 0 96.028 23.057 119.154 53.478 22.45 29.532 29.679 64.52 29.565 88.236l-37.253-.179c.083-17.284-5.46-43.794-21.969-65.511-15.833-20.827-42.834-38.77-89.496-38.77-57.885 0-96.028-23.056-119.154-53.478-5.227-6.875-9.628-14.046-13.304-21.301v57.926H0Zm62.868 8.169c-.114 23.716 7.116 58.704 29.566 88.236 23.126 30.421 61.269 53.478 119.154 53.478 46.662 0 73.663 17.942 89.496 38.769 6.952 9.145 11.959 19.14 15.421 28.938h-62.934v37.254h127.728V256.436h-37.254v58.518c-3.676-7.255-8.078-14.426-13.304-21.301-23.126-30.422-61.269-53.478-119.154-53.478-46.662 0-73.663-17.943-89.496-38.77-16.509-21.717-22.052-48.227-21.969-65.511l-37.254-.179Z" fill="#fff"/><circle opacity=".5" cx="189.817" cy="193.774" r="165.073" stroke="#fff"/><path opacity=".5" d="M1.348 381.795 380.702 2.347M1.094 1.09l379.93 379.93" stroke="#fff"/></svg>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section id="pageGuides">
+    <div class="flex page--guides guide--Purple">
+      <a class="guide__link window__link" href="/docs/guides/business-essentials.html"></a>
+      <div class="flex__leftCol"></div>
+      <div class="flex__mainCol">
+        <div class="guide__inner-content">
+        
+        <h1>Business </h1>
+        <h1 class="secondary"> Essentials</h1>
+        <p>Pricing lorem ipsum dolor est something small</p>
+        <button class="button">
+  Read More
+</button>
+
+        </div>
+      </div>
+      <div class="flex__rightCol">
+        <span class="js-guide-icons">
+          <svg width="361" height="361" viewBox="0 0 361 361" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" d="M1.5 1.5h358.999v358.999H1.5z"/><path opacity=".5" d="M335.148 182.69c0 86.068-69.583 155.838-155.415 155.838-85.833 0-155.416-69.77-155.416-155.838S93.9 26.853 179.733 26.853c85.832 0 155.415 69.77 155.415 155.837Z" stroke="#fff"/><path opacity=".5" transform="rotate(-44.955 435.005 177.782)" stroke="#fff" d="M0-.5h506.358"/><path opacity=".5" transform="rotate(45 -.864 2.76)" stroke="#fff" d="M0-.5h506.358"/><mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="1" width="360" height="360"><path fill="#C4C4C4" d="M1 1h360v359.999H1z"/></mask><g mask="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M242.941 1h118.7V121.373h-35.109V60.099L265.71 120.92l-43.155 123.342-122.424 26.726-74.052 90.302h-49.458L80.922 239.247l114.975-25.1 39.321-112.385 65.653-65.653h-57.93V1.001Z" fill="#fff"/></g></svg>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section id="pageGuides">
+    <div class="flex page--guides guide--Red">
+      <a class="guide__link window__link" href="/docs/guides/design-specification.html"></a>
+      <div class="flex__leftCol"></div>
+      <div class="flex__mainCol">
+        <div class="guide__inner-content">
+        
+        <h1>Design </h1>
+        <h1 class="secondary"> Specification</h1>
+        <p>Pricing lorem ipsum dolor est something small</p>
+        <button class="button">
+  Read More
+</button>
+
+        </div>
+      </div>
+      <div class="flex__rightCol">
+        <span class="js-guide-icons">
+          <svg width="361" height="361" viewBox="0 0 361 361" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" d="M1.5 1.5h359v359H1.5z"/><path opacity=".5" d="M335.421 182.673c0 85.901-69.636 155.537-155.537 155.537-85.9 0-155.537-69.636-155.537-155.537 0-85.9 69.636-155.537 155.537-155.537 85.901 0 155.537 69.636 155.537 155.537ZM1.205 358.974 359.533 1.203M2.051 1.065 360.1 359.114" stroke="#fff"/><path fill-rule="evenodd" clip-rule="evenodd" d="M316.54 342.892c18.995-11.405 32.125-26.428 38.807-44.488 6.62-17.89 6.292-37.073 1.456-55.928-9.329-36.376-36.132-74.501-70.941-108.758 17.613-29.115 24.084-55.262 17.465-77.146-8.003-26.463-32.277-38.594-56.511-41.702-24.477-3.14-53.058 1.946-79.129 13.543a173.28 173.28 0 0 0-19.095 9.952C100.422 15.477 49.147 1 1.852 1v35.108c36.327 0 76.51 10.062 115.603 26.728-6.539 6.68-12.477 14.048-17.589 22.099-34.321 54.06-25.744 121.997 3.838 175.878-13.676 10.048-28.406 20.727-44.338 32.276l-.002.001c-7.309 5.299-14.87 10.781-22.7 16.469v-68.931H1.556V361h118.699v-35.108H73.972l5.66-4.098.002-.002c15.407-11.154 29.837-21.601 43.391-31.549 44.103 56.705 118.752 93.475 192.889 53.007l.317-.172.309-.186ZM269.722 66.735c2.263 7.484 1.489 21.201-10.439 42.844-21.957-18.46-46.561-35.849-72.631-51.076 19.892-8 40.016-10.82 55.698-8.81 17.162 2.202 25.009 9.228 27.372 17.042Zm-30.074 72.217c-26.239-22.463-56.436-43.056-88.088-59.818-8.649 7.128-16.189 15.38-22.054 24.618-24.615 38.771-20.647 90.992 2.626 135.889 47.095-35.695 80.114-64.646 107.516-100.689Zm25.814 24.013c-29.867 38.489-65.909 69.739-114.259 106.319 38.1 48.602 94.664 71.985 147.57 43.324 13.062-7.917 20.18-17.015 23.648-26.387 3.557-9.615 3.906-21.252.374-35.023-6.754-26.337-26.973-57.416-57.333-88.233Z" fill="#fff"/></svg>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section id="pageGuides">
+    <div class="flex page--guides guide--Orange">
+      <a class="guide__link window__link" href="/docs/guides/product-considerations.html"></a>
+      <div class="flex__leftCol"></div>
+      <div class="flex__mainCol">
+        <div class="guide__inner-content">
+        
+        <h1>Product </h1>
+        <h1 class="secondary"> Considerations</h1>
+        <p>Pricing lorem ipsum dolor est something small</p>
+        <button class="button">
+  Read More
+</button>
+
+        </div>
+      </div>
+      <div class="flex__rightCol">
+        <span class="js-guide-icons">
+          <svg width="361" height="361" viewBox="0 0 361 361" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#fff" d="M1.5 1.5h359v359H1.5z"/><path opacity=".5" d="M335.421 182.671c0 85.901-69.636 155.537-155.537 155.537-85.901 0-155.537-69.636-155.537-155.537 0-85.9 69.636-155.537 155.537-155.537 85.901 0 155.537 69.636 155.537 155.537ZM1.204 358.974 359.533 1.203M2.053 1.065l358.049 358.05" stroke="#fff"/><mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="1" width="360" height="360"><path fill="#C4C4C4" d="M1 1h360v360H1z"/></mask><g mask="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M69.975 87.42c45.027-53.399 123.447-67.613 185.089-30.306 68.238 41.299 90.076 130.096 48.777 198.334-41.298 68.238-130.096 90.076-198.334 48.777l-18.402 30.407c85.031 51.462 195.68 24.249 247.143-60.782 51.462-85.031 24.249-195.68-60.782-247.143C193.505-21.686 90.89-.508 36.142 72.9V1.838H.902V122.66h119.144v-35.24H69.975Z" fill="#fff"/></g></svg>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section id="pageGuides">
+    <div class="flex page--guides guide--Purple">
+      <a class="guide__link window__link" href="/docs/guides/marketing.html"></a>
+      <div class="flex__leftCol"></div>
+      <div class="flex__mainCol">
+        <div class="guide__inner-content">
+        
+        <h1>Marketing </h1>
+        <h1 class="secondary"> Handbook</h1>
+        <p>Pricing lorem ipsum dolor est something small</p>
+        <button class="button">
+  Read More
+</button>
+
+        </div>
+      </div>
+      <div class="flex__rightCol">
+        <span class="js-guide-icons">
+          
+        </span>
+      </div>
+    </div>
+  </section>
+
+
+
+    <footer>
+  <div class="footer--wrapper">
+    <div class="flex">
+      <div class="footer__col-third">
+        <svg width="90" height="28" viewBox="0 0 90 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" fill-opacity=".01" d="M0 0h90v28H0z"/><path fill-rule="evenodd" clip-rule="evenodd" d="m11.819 12.844 2.083 2.074c2.184-2.184 3.993-4.496 5.093-6.53 1.406-2.603 1.533-4.508.374-5.662-1.158-1.154-3.07-1.027-5.687.372-2.041 1.103-4.344 2.905-6.53 5.082l.008.007c-2.637 2.629-4.615 5.638-5.55 8.479-1.063 3.171-.726 5.835.935 7.49 1.028 1.022 2.432 1.542 4.122 1.54 1.16-.018 2.31-.22 3.408-.6 2.86-.936 5.874-2.9 8.524-5.516l-2.08-2.074c-2.323 2.31-4.935 4.021-7.355 4.817-2.052.67-3.698.585-4.524-.234-.826-.82-.91-2.462-.234-4.505.8-2.409 2.518-5.014 4.838-7.324l-.008-.008C11 8.495 12.863 6.976 14.529 5.993c1.402-.83 2.266-1.07 2.67-1.107-.04.403-.276 1.257-1.109 2.662a28.575 28.575 0 0 1-4.271 5.296Z" fill="#272727"/><path d="M32.502 26.143a12.323 12.323 0 1 1 12.32-12.323 12.335 12.335 0 0 1-12.32 12.323Zm0-21.698a9.378 9.378 0 1 0 9.376 9.375 9.385 9.385 0 0 0-9.376-9.376Z" fill="#272727"/><path fill-rule="evenodd" clip-rule="evenodd" d="M52.024 14.371h6.21v-.009a6.224 6.224 0 0 0 0-12.444H47.218v23.805h2.944v-9.064l12.552 9.063 1.743-2.373-12.433-8.978Zm-1.862-2.956h8.063a3.277 3.277 0 0 0 0-6.553h-8.063v6.553Z" fill="#272727"/><path d="M77.3 25.724H66.846V1.92h10.452a11.904 11.904 0 1 1 0 23.805ZM69.81 22.8h7.49a8.97 8.97 0 0 0 3.476-17.295 8.969 8.969 0 0 0-3.477-.64h-7.49v17.935Z" fill="#272727"/></svg>
+      </div>
+      <div class="flex footer__col-twoThirds">
+        <div class="footer__col-quarter">
+          <p>Company</p>
+          <ul>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Jobs</li>
+          </ul>
+        </div>
+        <div class="footer__col-quarter">
+          <p>Product</p>
+          <ul>
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>For Teams</li>
+          </ul>
+        </div>
+        <div class="footer__col-quarter">
+          <p>Privacy</p>
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+          </ul>
+        </div>
+        <div class="footer__col-quarter">
+          <p>Contact</p>
+          <ul>
+            <li>Twitter</li>
+            <li>Linkedin</li>
+            <li><a href="mailto:info@cord.com">info@cord.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+<script src="/docs/assets/main.js"></script>
+
+
+  </body>
+
+</html>

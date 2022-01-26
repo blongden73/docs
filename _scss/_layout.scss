@@ -82,6 +82,11 @@ header {
         background-color: $green;
       }
 
+      //temp
+      &:nth-child(3) {
+        background-color: $green;
+      }
+
       &.veggie--burger {
         display: flex;
 
@@ -412,7 +417,7 @@ header {
 }
 
 .page--guides {
-  border-bottom: 1px solid #000; 
+  border-bottom: 1px solid #000;
   cursor: pointer;
   padding: calc(#{$spacer} * 3) 0;
   position: relative;

@@ -27,7 +27,7 @@ layout: default
   <div class="flex">
     <div class="flex__leftCol">
       <ul class="section__menu">
-        <li class="active"><a href="/docs/api/">Overview</a></li>
+        <li class="active"><a href="/docs/">Overview</a></li>
         {% for guide in guides %}
           {% assign guideTitle = guide.title | split: '|' %}
           <li><a href="/docs{{guide.url}}">{{guideTitle[0]}}</a></li>

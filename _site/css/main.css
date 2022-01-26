@@ -78,6 +78,8 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .header--nav ul li:nth-child(5) { background-color: #71BC8F; }
 
+.header--nav ul li:nth-child(3) { background-color: #71BC8F; }
+
 .header--nav ul li.veggie--burger { display: flex; }
 
 @media all and (min-width: 48em) { .header--nav ul li.veggie--burger { display: none; } }
