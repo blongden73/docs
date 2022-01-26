@@ -3,11 +3,18 @@ title: Documentation | Cord API
 date: 2021-11-23 15:35:00 Z
 permalink: "/api/api-documentation/"
 Colours: Purple
-Introduction Text: "### Starting to use the Cord API\n\n### The first steps in adding
-  collaboration into your product are:\n\n1. Call our API to register users, and the
-  organisations they belong to. \n2. Embed the Cord client-side javascript in your
-  pages. When embedding, you tell the script who is currently logged-in.\n3. (Optional)
-  Control the look & feel of Cord.\n\n### [Get started with Cord](https://cord.com/)"
+Introduction Text: |-
+  ### Starting to use the Cord API
+
+  ### The first steps in adding collaboration into your product are:
+
+  1. Call our API to register users, and the organisations they belong to.
+
+  2. Embed the Cord client-side javascript in your pages. When embedding, you tell the script who is currently logged-in.
+
+  3. (Optional) Control the look & feel of Cord.
+
+  [Get started with Cord](https://cord.com/)
 Sections:
 - Title: Authentication
   Text: "You have an **App ID** and a **Secret**, which you can get in your [Cord
