@@ -73,6 +73,17 @@ Sections:
   Code:
   - Text: 
     Code: 
+- Title: Custom Page Titles
+  Text: |-
+    By default, when showing the context of a conversation (in the inbox, email notifications, etc) we use the `document.title` of the page the conversation is happening on.
+
+    If you'd like to have custom, Cord-specific page titles, you can add a <meta> tag in the document `<head>`.
+  Code:
+  - Text: 
+    Code: <meta property="cord:title" content="Picnic Location - Poll Results" />
+  Info Text: If your app is an SPA with client-side routing, make sure you keep this
+    <meta> tag's content value up-to-date with the relevant title of the page the
+    user is on.
 layout: api
 ---
 
