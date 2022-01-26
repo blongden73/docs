@@ -2,15 +2,15 @@
 title: Collaboration | Api
 date: 2022-01-26 14:11:00 Z
 permalink: "/api/"
-layout: home
 Page Banner Image: "/uploads/docs_home_image.png"
-Page Banner Colour: "#F4FFA0"
+Page Banner Colour: "#7371EE"
 List:
 - item: Understand you audience
 - item: Whats your use case?
 - item: Think about the full journey
 - item: What’s your identity model?
 - item: Gather your stakeholders
+layout: home
 ---
 
 We love working together in products like Figma and Notion, and believe the rest of the internet should feel like that: connected, collaborative, multiplayer. Single-player is so 2020.
