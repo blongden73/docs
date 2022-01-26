@@ -1,7 +1,6 @@
 ---
 title: Cord | Api
 date: 2022-01-26 14:11:00 Z
-permalink: "/docs/"
 Page Banner Image: "/uploads/Explore.png"
 Page Banner Colour: "#7371EE"
 Colours: Purple
