@@ -1,6 +1,6 @@
 ---
 title: Collaboration | Guides
-permalink: "/guides/guides.markdown"
+permalink: "/guides-overview/"
 Page Banner Image: "/uploads/docs_home_image.png"
 Page Banner Colour: "#F4FFA0"
 List:
