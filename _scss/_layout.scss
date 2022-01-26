@@ -533,6 +533,12 @@ header {
           display: contents;
         }
 
+        .layout--guide & {
+          & > * {
+            display: inline;
+          }
+        }
+
         &:before {
           background-color: $greylight;
           border-radius: 50%;
