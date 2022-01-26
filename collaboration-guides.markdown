@@ -1,6 +1,7 @@
 ---
 title: Collaboration | Guides
 date: 2022-01-26 14:11:00 Z
+permalink: "/docs/collaboration-guides/"
 Page Banner Image: "/uploads/docs_home_image.png"
 Page Banner Colour: "#F4FFA0"
 List:
