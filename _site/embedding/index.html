@@ -247,8 +247,94 @@
 
         
         
+          
+          <div class="flex table">
+            
+              <div class="col field">
+                <span class="column-header">Field</span>
+                
+                  <span class="row ">
+                    
+                      <span>signed_app_token</span>
+                    
+                  </span>
+                
+              </div>
+            
+              <div class="col type">
+                <span class="column-header">Type</span>
+                
+                  <span class="row ">
+                    
+                      <span>string</span>
+                    
+                  </span>
+                
+              </div>
+            
+              <div class="col description">
+                <span class="column-header">Description</span>
+                
+                  <span class="row  color--required ">
+                    
+                      
+                      
+                        
+                          <span>required</span>
+                          
+                      
+                        
+                          <span class="note"> The *Signed Token* generated as described above.</span>
+                        
+                      
+                      
+                  </span>
+                
+              </div>
+            
+          </div>
+        
       </div>
       <div class="flex__rightCol">
+        
+          
+          
+            
+              <p><ol>
+  <li>Generate a <em>Signed Token</em>:</li>
+</ol>
+</p>
+              
+              <pre class="code--block"><code class="language-js">import jwt from 'jsonwebtoken';
+
+const signed_app_token = jwt.sign({ app_id: '<APP_ID>' }, '<SECRET>', {
+  expiresIn: '1 min',
+  algorithm: 'HS512',
+});</code></pre>
+            
+          
+            
+              <p><ol>
+  <li>Exchange the <em>Signed Token</em> for an <em>Access Token</em>:</li>
+</ol>
+</p>
+              
+              <pre class="code--block"><code class="language-js">curl "https://api.cord.com/v1/authorize" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -d '{ "signed_app_token": "<SIGNED_APP_TOKEN>" }'</code></pre>
+            
+          
+            
+              <p><p>If successful, the response will be:</p>
+</p>
+              
+              <pre class="code--block"><code class="language-js">{
+  "access_token": "eyJzZX...",
+  "expires": "2021-06-29T14:54:17.050Z" // ISO timestamp
+}</code></pre>
+            
+          
         
       </div>
     </div>

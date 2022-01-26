@@ -32,7 +32,7 @@ p a { border-bottom: 1px solid #F7F7F7; color: #7371EE; transition: all ease-in-
 
 p a:hover { border-bottom: 1px solid #DADCE0; }
 
-code { background-color: #F7F7F7; border-radius: 4px; font-family: 'FavoritWeb'; font-weight: 100; padding: calc(4px) calc(8px) calc(8px /2); }
+code { background-color: #F7F7F7; border-radius: 4px; font-family: 'FavoritWeb'; font-weight: 100; padding: calc(4px) calc(8px) calc(8px /2); word-break: break-all; }
 
 .secondary { color: #797979; }
 
