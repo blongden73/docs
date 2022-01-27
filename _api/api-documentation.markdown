@@ -20,11 +20,11 @@ Sections:
   Text: "You have an **App ID** and a **Secret**, which you can get in your [Cord
     Console](https://console.cord.com). \n\n**Never expose your App ID and Secret
     on the client side!**.\n\nAll API requests must include a valid *Access Token*
-    in the HTTP Request headers: `Authorization: Bearer <ACCESS_TOKEN>`.\n\n![flow_secret.svg](/docs/uploads/sync_orgs-1a961e.svg)\n\nTo
+    in the HTTP Request headers: `Authorization: Bearer <ACCESS_TOKEN>`.\n\n![flow_secret.svg](/docs/uploads/flow_secret_updated.svg)\n\nTo
     obtain an *Access Token*, the *App ID* and *Secret* are used to generate a *Signed
     Token*, which is then exchanged for the *Access Token* using the `/v1/authorize`
     endpoint. *Access Token*s have a limited lifespan. Their expiration is provided
-    in the API response, and is normally 24 hours.\n\n![sync_orgs.svg](/docs/uploads/sync_orgs.svg)\n\nThe
+    in the API response, and is normally 24 hours.\n\n![sync_orgs.svg](/docs/uploads/sync_orgs-1a961e.svg)\n\nThe
     *Signed Token* is a JWT that must be generated server-side, with a short expiration
     (1 minute), containing the *App ID* in the payload `app_id` field, and signed
     with the *Secret* using the `HS512` (HMAC using SHA-512 hash) algorithm.\n\n**HTTP
