@@ -2,6 +2,7 @@
 title: Embedding | Cord API
 date: 2022-01-21 13:01:00 Z
 permalink: "/api/embedding/"
+position: 1
 Colours: Purple
 Sections:
 - Title: Embedding Cord

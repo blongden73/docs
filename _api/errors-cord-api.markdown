@@ -2,6 +2,7 @@
 title: Errors | Cord Api
 date: 2022-01-26 15:23:00 Z
 permalink: "/api/errors-cord-api/"
+position: 2
 Colours: Purple
 Sections:
 - Title: Error Messages
