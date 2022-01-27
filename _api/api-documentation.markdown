@@ -20,7 +20,7 @@ Sections:
   Text: "You have an **App ID** and a **Secret**, which you can get in your [Cord
     Console](https://console.cord.com). \n\n**Never expose your App ID and Secret
     on the client side!**.\n\nAll API requests must include a valid *Access Token*
-    in the HTTP Request headers: `Authorization: Bearer <ACCESS_TOKEN>`.\n\n![flow_secret.svg](/docs/uploads/flow_secret_updated.svg)\n\nTo
+    in the HTTP Request headers: `Authorization: Bearer <ACCESS_TOKEN>`.\n\n![flow_secret.svg](/docs/uploads/sync_orgs-1a961e.svg)\n\nTo
     obtain an *Access Token*, the *App ID* and *Secret* are used to generate a *Signed
     Token*, which is then exchanged for the *Access Token* using the `/v1/authorize`
     endpoint. *Access Token*s have a limited lifespan. Their expiration is provided
@@ -61,8 +61,8 @@ Sections:
         "expires": "2021-06-29T14:54:17.050Z" // ISO timestamp
       }
 - Title: Users
-  Text: "## **Create a user**\n\nNext, pre-register all users and organisations on
-    our API. This ensures a fast and seamless user experience, where the Cord sidebar
+  Text: "## Create a user\n\nNext, pre-register all users and organisations on our
+    API. This ensures a fast and seamless user experience, where the Cord sidebar
     appears immediately and the user is already \"logged in\" to the chat, with:\n\n-
     All their details (name, profile picture) \n- The other people in their organization
     that they can @mention.\n\n**HTTP Request**\n\n`POST https://api.cord.com/v1/users`\n\n**Request
