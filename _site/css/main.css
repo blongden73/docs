@@ -312,11 +312,11 @@ header { align-items: center; border-bottom: 1px solid #191A1E; background-color
 
 .table .col .row span.note { background-color: transparent !important; }
 
-.table .col .row.color--required span { background-color: #EB5757; }
+.table .col .row.color--required span { background-color: #FDEFEF; }
 
 .table .col .row.color--required-on-create span { background-color: #EF927B; }
 
-.table .col .row.color--optional span { background-color: #71BC8F; }
+.table .col .row.color--optional span { background-color: #C8EDD7; }
 
 .onward__journeys-wrapper { background-color: #F7F7F7; padding: calc(8px * 6) 0 calc(8px * 2); }
 

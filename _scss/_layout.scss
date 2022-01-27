@@ -780,7 +780,7 @@ header {
 
       &.color--required {
         span {
-          background-color: $alert;
+          background-color: $pink;
         }
       }
 
@@ -792,7 +792,7 @@ header {
 
       &.color--optional {
         span {
-          background-color: $green;
+          background-color: $greenLight;
         }
       }
     }
