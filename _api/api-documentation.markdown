@@ -265,9 +265,9 @@ Sections:
     - string[]
   - Column Title: Description
     Rows:
-    - Required on create|| Organization name
-    - Optional|| `active` OR `deleted`
-    - Optional|| List of partner-specific IDs of the users who are members of this
+    - required on create|| Organization name
+    - optional|| `active` OR `deleted`
+    - optional|| List of partner-specific IDs of the users who are members of this
       organization
   Code:
   - Text: 'Example request to update and organization''s status to deleted:'
